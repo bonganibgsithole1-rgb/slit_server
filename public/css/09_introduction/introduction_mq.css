@@ -1,0 +1,17 @@
+@media only screen and (max-width: 699px) {
+  #introductionSection h2 {
+    font-size: 33px;
+    margin-bottom: 9px;
+  }
+  #introductionSection #explanation .belowNav .introductionVideo,
+  #introductionSection #explanation .belowNav .introductionVideo iframe {
+    width: 100%;
+  }
+  #introductionSection #explanation .belowNav .introductionVideo,
+  #introductionSection #explanation .belowNav .explanationContent {
+    width: 100%;
+  }
+  #introductionSection #explanation .belowNav .explanationContent {
+    padding: 20px 0;
+  }
+}

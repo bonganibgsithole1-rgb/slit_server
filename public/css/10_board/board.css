@@ -56,17 +56,14 @@
   background-color: white;
   border: none;
   border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
   text-align: left;
   padding-left: 10px;
 }
 #boardSection .subSection .level ul li .history {
   width: 100%;
   float: left;
-  display: none;
-}
-.showHistory {
-  display: block !important;
+  display: block;
+  border-bottom: 1px solid lightgray;
 }
 .showBorder {
   border-bottom: none !important;

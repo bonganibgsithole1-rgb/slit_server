@@ -74,7 +74,8 @@
 #navbarSection .popUps .shortCut li:hover {
   cursor: pointer;
 }
-#navbarSection .popUps .shortCut li p {
+#navbarSection .popUps .shortCut li a {
+  text-decoration: none;
   width: 100%;
   margin: 0;
   padding: 0;
