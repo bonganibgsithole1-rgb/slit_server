@@ -52,6 +52,7 @@
   }
   #navbarSection #hamburger svg {
     width: 34px;
+    cursor: pointer;
   }
   #navbarSection .phonePopUp {
     display: none;
