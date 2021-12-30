@@ -2,6 +2,14 @@
   overflow: auto;
   height: 90px;
 }
+#navbarSection .subSection,
+#navbarSection .subSection .logoDiv,
+#navbarSection .subSection .logoDiv img {
+  height: 100%;
+}
+#navbarSection .subSection .logoDiv img {
+  padding: 10px 0;
+}
 #navbarSection p,
 #navbarSection a,
 #navbarSection h3 {
