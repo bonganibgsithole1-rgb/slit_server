@@ -1,3 +1,10 @@
+/*  */
+/* DARK GREEN - Pakistan Green - #0b650b */
+/* LIGHT GREEN - Ao English - #0E810E */
+/* YELLOW - Selective yellow - #ffbb00 */
+/* DARK YELLOW - Selective yellow - #ffbb00 */
+/* BLACK - Rich black Flora - #0d1b2a */
+/*  */
 * {
   box-sizing: border-box;
 }
@@ -87,7 +94,7 @@ h2 {
 }
 .navList li svg {
   width: 20%;
-  fill: #36369e;
+  fill: #0b650b;
   float: left;
   margin: 13px 0;
 }
@@ -109,7 +116,7 @@ h2 {
 .navList li .dropDownDiv svg {
   margin-left: 10px;
   width: 10px;
-  fill: red;
+  fill: #ffbb00;
   float: left;
 }
 .navList li:nth-of-type(1) .dropDownDiv svg {
@@ -117,4 +124,12 @@ h2 {
 }
 .navList li:nth-of-type(1) .dropDownDiv p {
   width: auto;
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #0b650b;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
 }

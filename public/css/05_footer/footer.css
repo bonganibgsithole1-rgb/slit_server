@@ -10,7 +10,7 @@
   padding: 0;
   height: 100px;
   padding-left: 9%;
-  background-color: #36369e;
+  background-color: #0e810e;
 }
 #footerSection .logoDiv svg {
   fill: white;
@@ -32,7 +32,7 @@
 #footerSection .navList li .dropDownDiv p {
   width: 100%;
   font-size: 18px;
-  color: #36369e;
+  color: #0b650b;
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 30px;

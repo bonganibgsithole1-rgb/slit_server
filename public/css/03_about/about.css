@@ -8,6 +8,8 @@
 }
 #aboutSection .navList {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 #aboutSection .navList li {
   border: 1px solid #5d585829;
