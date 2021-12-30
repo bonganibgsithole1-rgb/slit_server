@@ -1,22 +1,13 @@
-arr = ["understand", "access", "connect", "about"];
+let arr = ["understand", "connect", "about"];
 for (let i = 0; i < arr.length; i++) {
-  let liOrder = "#navbarSection .navList #" + arr[i] + "Li";
-  let popOrder = "#navbarSection #" + arr[i] + "PopUp";
-
-  function mouseOver(a, b) {
-    $(a).on("mouseover click", function () {
-      $(b).css({ display: "flex" });
-    });
-  }
-  function mouseOut(a, b) {
-    $(a).on("mouseout", function () {
-      $(b).css({ display: "none" });
-    });
-  }
-  mouseOver(liOrder, popOrder);
-  mouseOver(popOrder, popOrder);
-  mouseOut(liOrder, popOrder);
-  mouseOut(popOrder, popOrder);
+  let popup = ` #navbarSection #${arr[i]}PopUp`;
+  let liAndPopup = `#navbarSection .navList #${arr[i]}Li, ${popup}`;
+  $(liAndPopup).on("mouseover click", function () {
+    $(popup).css({ display: "flex" });
+  });
+  //   $(liAndPopup).on("mouseout", function () {
+  //     $(popup).css({ display: "none" });
+  //   });
 }
 $("#navbarSection #hamburger svg").on("click", function () {
   $("#navbarSection .phonePopUp").toggleClass("show");
