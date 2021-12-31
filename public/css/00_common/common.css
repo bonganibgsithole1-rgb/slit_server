@@ -46,14 +46,10 @@ h2 {
   width: 16.66666666666666%;
   overflow: auto;
   float: right;
-  border-left: 1px solid #5d585829;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.navList #aboutLi {
-  border-right: 1px solid #5d585829;
 }
 .navList li .blueTopLine {
   width: 100%;
@@ -95,6 +91,10 @@ h2 {
   fill: #0b650b;
   float: left;
   margin: 13px 0;
+}
+.navList li .navbarPng {
+  width: 34px;
+  margin: 10px 0 5px 0;
 }
 .navList li .dropDownDiv {
   width: 100%;

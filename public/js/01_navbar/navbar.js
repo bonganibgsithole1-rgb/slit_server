@@ -1,4 +1,4 @@
-let arr = ["understand", "connect", "about"];
+let arr = ["learn", "read", "about", "donate"];
 for (let i = 0; i < arr.length; i++) {
   let popup = ` #navbarSection #${arr[i]}PopUp`;
   let liAndPopup = `#navbarSection .navList #${arr[i]}Li, ${popup}`;

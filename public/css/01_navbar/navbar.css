@@ -15,8 +15,8 @@
 #navbarSection h3 {
   color: #0d1b2a;
 }
-#navbarSection .navList li {
-  padding-bottom: 19px;
+#navbarSection .navList li .dropDownDiv {
+  height: 25px;
 }
 #navbarSection .navList li:hover {
   background-color: #8e83831a;
