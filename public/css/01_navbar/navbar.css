@@ -1,38 +1,63 @@
 #navbarSection {
   overflow: auto;
-  height: 90px;
+  height: 100px;
 }
 #navbarSection .subSection,
-#navbarSection .subSection .logoDiv,
-#navbarSection .subSection .logoDiv img {
+#navbarSection .subSection #logoDiv,
+#navbarSection .subSection #logoDiv img {
   height: 100%;
 }
-#navbarSection .subSection .logoDiv img {
+#navbarSection .subSection #logoDiv img {
   padding: 10px 0;
 }
-#navbarSection p,
-#navbarSection a,
-#navbarSection h3 {
-  color: #0d1b2a;
+#navbarSection #navBtns {
+  width: 50%;
+  overflow: auto;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
 }
-#navbarSection .navList li .dropDownDiv {
-  height: 25px;
+#navbarSection #navBtns li {
+  width: 20%;
+  height: 100%;
+  overflow: auto;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#navbarSection .navList li:hover {
+#navbarSection #navBtns li:hover {
   background-color: #8e83831a;
   cursor: pointer;
 }
-#navbarSection .navList li .dropDownDiv p {
-  margin: 0;
+#navbarSection #navBtns li .navbarPng {
+  width: 34px;
+  margin: 10px 0 5px 0;
 }
-#navbarSection .navList li .dropDownDiv svg {
-  margin: 0;
-  margin-left: 6px;
-  width: 8px;
-}
-#navbarSection .navList li:nth-of-type(5) .dropDownDiv svg {
-  fill: red;
+#navbarSection #navBtns li .dropDownDiv {
+  width: 100%;
+  overflow: auto;
   float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 25px;
+}
+#navbarSection #navBtns li .dropDownDiv p {
+  width: auto;
+  float: left;
+  font-weight: 800;
+  font-size: 13px;
+  margin: 0;
+}
+#navbarSection #navBtns li .dropDownDiv svg {
   margin: 0;
   margin-left: 6px;
   width: 8px;
@@ -138,4 +163,16 @@
 }
 #navbarSection .phonePopUp {
   display: none;
+}
+#navbarSection #logoDiv {
+  width: 50%;
+  height: auto;
+  float: left;
+}
+#navbarSection #logoDiv svg {
+  width: 160px;
+  float: left;
+}
+#navbarSection #logoDiv svg:hover {
+  cursor: pointer;
 }
