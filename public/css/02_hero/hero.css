@@ -1,27 +1,16 @@
 #heroSection {
-  background-color: #0e810e;
   overflow: auto;
   position: relative;
 }
-#heroSection #heroImageDiv {
-  width: 54%;
-  float: left;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding-bottom: 10px;
-  padding-top: 10px;
+#heroSection,
+#heroSection #videoDiv {
   background-color: #0e810e;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
-#heroSection #heroImageDiv iframe {
-  width: 100%;
-  height: 397px;
+#heroSection .subSection {
+  padding: 30px 0;
 }
 #heroSection .subSection div {
-  width: 46%;
+  width: 425px;
   height: 420px;
   float: left;
 }
@@ -29,24 +18,25 @@
 #heroSection .subSection p {
   color: white;
 }
+#heroSection .subSection h2 {
+  margin-bottom: 30px;
+}
 #heroSection .subSection p {
   font-size: 17px;
-  padding-right: 24%;
+  margin-top: 15px;
   line-height: 27px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  font-family: "Open Sans", sans-serif;
 }
-#heroSection .subSection button {
-  height: 44px;
-  margin-top: 21px;
+#heroSection #videoDiv {
   width: 54%;
-  border-radius: 23px;
-  border: none;
-  background-color: white;
-  font-size: 17px;
-  font-weight: 600;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#heroSection #videoDiv iframe {
+  width: 100%;
+  height: 397px;
 }
