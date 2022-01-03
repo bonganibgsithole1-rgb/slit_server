@@ -9,13 +9,12 @@
   align-items: center;
   height: 100px;
   justify-content: space-between;
-  background-color: #0e810e;
-}
-#footerSection #logoRibbon h4 {
-  display: inline-block;
 }
 #footerSection #logoRibbon img {
-  height: 70%;
+  height: 60%;
+}
+#footerSection #logoRibbon #byoWebsitesLogo {
+  height: 32%;
 }
 #footerSection .siteMap {
   margin-top: 35px;

@@ -82,19 +82,22 @@
   display: flex;
   justify-content: space-between;
 }
-#navbarSection .popUps .iconName,
-#navbarSection .popUps .iconSummary,
-#navbarSection .popUps .shortCut {
+#navbarSection .popUps .popupIcon,
+#navbarSection .popUps .popupText,
+#navbarSection .popUps .popupLink {
   margin-top: 30px;
 }
-#navbarSection .popUps .shortCut {
+#navbarSection .popUps .popupIcon img {
+  width: 65px;
+}
+#navbarSection .popUps .popupLink {
   height: auto;
   width: 20%;
   list-style: none;
   float: left;
   padding: 0;
 }
-#navbarSection .popUps .shortCut li {
+#navbarSection .popUps .popupLink li {
   width: 100%;
   float: left;
   padding-bottom: 10px;
@@ -104,10 +107,10 @@
   margin-top: 10px;
   text-align: right;
 }
-#navbarSection .popUps .shortCut li:hover {
+#navbarSection .popUps .popupLink li:hover {
   cursor: pointer;
 }
-#navbarSection .popUps .shortCut li a {
+#navbarSection .popUps .popupLink li a {
   text-decoration: none;
   width: 100%;
   margin: 0;
@@ -120,10 +123,10 @@
   font-size: 15px;
   font-weight: 700;
 }
-#navbarSection .popUps .shortCut li:hover p {
+#navbarSection .popUps .popupLink li:hover p {
   color: purple;
 }
-#navbarSection .iconName {
+#navbarSection .popupIcon {
   width: 148px;
   float: left;
   height: 115px;
@@ -133,11 +136,11 @@
   background-color: #ffbb00;
   border-radius: 30px;
 }
-#navbarSection .iconName svg {
+#navbarSection .popupIcon svg {
   width: 50%;
   fill: #0d1b2a;
 }
-#navbarSection .iconSummary {
+#navbarSection .popupText {
   width: 50%;
   height: 100%;
   float: left;
