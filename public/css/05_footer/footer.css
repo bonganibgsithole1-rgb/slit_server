@@ -26,11 +26,11 @@
   height: 300px;
 }
 #footerSection .siteMap li img {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   width: 30px;
 }
 #footerSection .siteMap li a {
   display: block;
-  margin: 15px 0;
+  margin-bottom: 13px;
   cursor: pointer;
 }
