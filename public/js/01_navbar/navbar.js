@@ -1,7 +1,7 @@
 let arr = ["learn", "read", "about", "donate"];
 for (let i = 0; i < arr.length; i++) {
   let popup = ` #navbarSection #${arr[i]}PopUp`;
-  let liAndPopup = `#navbarSection .navList #${arr[i]}Li, ${popup}`;
+  let liAndPopup = `#navbarSection #navBtns #${arr[i]}Li, ${popup}`;
   $(liAndPopup).on("mouseover click", function () {
     $(popup).css({ display: "block" });
   });
