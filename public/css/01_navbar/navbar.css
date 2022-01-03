@@ -7,8 +7,15 @@
 #navbarSection .subSection #logoDiv img {
   height: 100%;
 }
+#navbarSection .subSection #logoDiv {
+  width: 50%;
+  float: left;
+}
 #navbarSection .subSection #logoDiv img {
   padding: 10px 0;
+}
+#navbarSection .phonePopUp {
+  display: none;
 }
 #navbarSection #navBtns {
   width: 50%;
@@ -36,11 +43,11 @@
   background-color: #8e83831a;
   cursor: pointer;
 }
-#navbarSection #navBtns li .navbarPng {
+#navbarSection #navBtns li img {
   width: 34px;
   margin: 10px 0 5px 0;
 }
-#navbarSection #navBtns li .dropDownDiv {
+#navbarSection #navBtns li div {
   width: 100%;
   overflow: auto;
   float: left;
@@ -50,14 +57,14 @@
   flex-direction: row;
   height: 25px;
 }
-#navbarSection #navBtns li .dropDownDiv p {
+#navbarSection #navBtns li div p {
   width: auto;
   float: left;
   font-weight: 800;
   font-size: 13px;
   margin: 0;
 }
-#navbarSection #navBtns li .dropDownDiv svg {
+#navbarSection #navBtns li div svg {
   margin: 0;
   margin-left: 6px;
   width: 8px;
@@ -76,7 +83,6 @@
   z-index: 20 !important;
   top: 100px !important;
   background-color: white;
-  border-top: 1px solid lightgray;
 }
 #navbarSection .popUps .subSection {
   display: flex;
@@ -102,7 +108,6 @@
   float: left;
   padding-bottom: 10px;
   height: auto;
-  border-bottom: 1px solid lightgray;
   padding-left: 5%;
   margin-top: 10px;
   text-align: right;
@@ -123,9 +128,6 @@
   font-size: 15px;
   font-weight: 700;
 }
-#navbarSection .popUps .popupLink li:hover p {
-  color: purple;
-}
 #navbarSection .popupIcon {
   width: 148px;
   float: left;
@@ -136,23 +138,19 @@
   background-color: #ffbb00;
   border-radius: 30px;
 }
-#navbarSection .popupIcon svg {
-  width: 50%;
-  fill: #0d1b2a;
-}
 #navbarSection .popupText {
   width: 50%;
   height: 100%;
   float: left;
 }
-#navbarSection .popUps h3 {
+#navbarSection .popUps .popupText h3 {
   font-size: 30px;
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 10px;
   cursor: pointer;
 }
-#navbarSection .popUps p {
+#navbarSection .popUps .popupText p {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -163,19 +161,4 @@
   font-size: 16px;
   font-weight: 100;
   line-height: 21px;
-}
-#navbarSection .phonePopUp {
-  display: none;
-}
-#navbarSection #logoDiv {
-  width: 50%;
-  height: auto;
-  float: left;
-}
-#navbarSection #logoDiv svg {
-  width: 160px;
-  float: left;
-}
-#navbarSection #logoDiv svg:hover {
-  cursor: pointer;
 }
