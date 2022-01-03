@@ -10,11 +10,11 @@
   height: 420px;
   float: left;
 }
-#heroSection .subSection h2,
+#heroSection .subSection h1,
 #heroSection .subSection p {
   color: white;
 }
-#heroSection .subSection h2 {
+#heroSection .subSection h1 {
   margin-bottom: 30px;
 }
 #heroSection .subSection p {

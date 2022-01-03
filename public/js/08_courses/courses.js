@@ -1,5 +1,5 @@
-let hovedParagraph = $("#chaptersSection .chapterBoxes p");
-let underlined = $("#chaptersSection li .chapterBoxes .chaptersHeading");
+let hovedParagraph = $("#coursesSection .chapterBoxes p");
+let underlined = $("#coursesSection li .chapterBoxes .chaptersHeading");
 function mouse(a, b) {
   a.on("mouseover", function () {
     b.css({ textDecoration: "underline" });

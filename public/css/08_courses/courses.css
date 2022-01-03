@@ -1,0 +1,69 @@
+#coursesSection {
+  margin: 100px 0;
+}
+#coursesSection .courseBtn {
+  float: left;
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  height: 56px;
+  color: white;
+  background-color: #4a6da7;
+  cursor: pointer;
+}
+#coursesSection .courseBtn svg {
+  width: 20px;
+  height: auto;
+  float: left;
+  fill: white;
+}
+#coursesSection .courseBtn p {
+  width: auto;
+  margin-right: 6px;
+}
+#coursesSection #progressText {
+  font-size: 15px;
+  margin-top: 30px;
+}
+#coursesSection #progressBar {
+  width: 100%;
+  float: left;
+  height: 20px;
+  background-color: #6685b74f;
+}
+#coursesSection .courseDiv {
+  width: 100%;
+  float: left;
+}
+#coursesSection .courseDiv h3 {
+  margin-top: 30px;
+}
+#coursesSection .courseDiv h3 span {
+  font-weight: normal;
+}
+#coursesSection .courseDiv ul {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+#coursesSection .courseDiv ul .lesson {
+  width: 47%;
+  box-shadow: lightgrey -1px 2px 11px 1px;
+  height: auto;
+  cursor: pointer;
+  float: left;
+  padding: 17px 17px;
+  border-top: 10px solid #6685b74f;
+}
+#coursesSection .courseDiv ul .lesson img {
+  width: 100%;
+}
+#coursesSection ul .lesson {
+  width: 100%;
+  margin-top: 30px;
+  float: left;
+  font-size: 18px;
+}
