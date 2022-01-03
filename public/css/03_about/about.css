@@ -2,39 +2,17 @@
   overflow: auto;
   padding: 20px 0;
 }
-#aboutSection .subSection h3 {
-  font-size: 30px;
-  font-weight: 600;
+#aboutSection h3 {
+  margin: 25px 0;
 }
-#aboutSection ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
+#aboutSection .siteMap li img {
+  width: 40px;
 }
-#aboutSection ul li {
-  width: 20%;
-  height: 400px;
-  display: block;
-  position: relative;
-  padding: 10px 20px;
-  border: 1px solid #5d585829;
-  border-top: none;
-}
-#aboutSection ul li .blueTopLine {
+#aboutSection .siteMap li .blueTopLine {
   position: absolute;
   top: 0;
   left: 0;
   height: 10px;
   width: 100%;
   background-color: black;
-}
-#aboutSection ul li img {
-  margin-top: 17.5px;
-  margin-bottom: 12.5px;
-}
-#aboutSection ul li h4 {
-  margin-bottom: 12.5px;
-}
-#aboutSection ul li p {
-  margin-bottom: 7.5px;
 }

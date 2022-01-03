@@ -1,8 +1,11 @@
-/* DARK GREEN - Pakistan Green - #0b650b */
+/*  */
+/* YELLOW - Selective yellow - #FFBB00 */
+/* DARK GREEN - Pakistan Green - #0B650B */
 /* LIGHT GREEN - Ao English - #0E810E */
-/* YELLOW - Selective yellow - #ffbb00 */
-/* DARK YELLOW - Selective yellow - #ffbb00 */
-/* BLACK - Rich black Flora - #0d1b2a */
+/* SEA GREEN - Light sea green - #17C3B2 */
+/* PINK - Medium violet red - #C52184 */
+/* GREY - Languid lavender - #D0C4DF */
+/*  */
 * {
   box-sizing: border-box;
 }
@@ -33,12 +36,46 @@ body {
   margin: 0 auto;
   overflow: auto;
 }
+p {
+  margin: 10px 0;
+  font-size: 17px;
+}
 h2 {
   font-size: 44px;
   line-height: 47px;
   font-weight: 800;
 }
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
 ul {
   padding: 0;
+  margin: 0;
   list-style: none;
+}
+#heroSection,
+#footerSection #logoRibbon {
+  background: linear-gradient(90deg, #0b650b 10%, #0e810e 40%);
+}
+.siteMap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.siteMap li {
+  width: 22%;
+  height: 400px;
+  display: block;
+  position: relative;
+  padding: 10px 15px;
+  border: 1px solid #5d585829;
+  border-top: none;
+}
+.siteMap li img {
+  margin-top: 17.5px;
+  margin-bottom: 12.5px;
+}
+.siteMap li h4 {
+  margin-bottom: 12.5px;
 }

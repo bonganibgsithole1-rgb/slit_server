@@ -1,98 +1,36 @@
 #footerSection {
   overflow: auto;
-  background-color: #eef7fd;
   margin-top: 30px;
 }
-#footerSection .logoDiv {
+#footerSection #logoRibbon {
   width: 100%;
+  padding: 0 9%;
   display: flex;
   align-items: center;
-  padding: 0;
   height: 100px;
-  padding-left: 9%;
+  justify-content: space-between;
   background-color: #0e810e;
 }
-#footerSection .logoDiv svg {
-  fill: white;
+#footerSection #logoRibbon h4 {
+  display: inline-block;
 }
-#footerSection .navList {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 40px;
+#footerSection #logoRibbon img {
+  height: 70%;
 }
-#footerSection .navList li {
-  width: 25%;
-  display: block;
+#footerSection .siteMap {
+  margin-top: 35px;
+}
+#footerSection .siteMap li {
   border: none;
-  padding-right: 6%;
-}
-#footerSection .navList li .dropDownDiv {
-  display: block;
-}
-#footerSection .navList li .dropDownDiv p {
-  width: 100%;
-  font-size: 18px;
-  color: #0b650b;
-  font-weight: 700;
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-family: "Open Sans", sans-serif;
-}
-#footerSection .navList li svg {
-  width: 14%;
-}
-#footerSection .footerLists {
-  list-style: none;
-  float: left;
-  display: flex;
-  justify-content: left;
-  flex-direction: column;
-  width: 100%;
   padding: 0;
+  height: 300px;
 }
-#footerSection .footerLists li {
-  width: 100%;
-  float: left;
-  margin-bottom: 17px;
-  font-weight: 100;
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  font-size: 15px;
+#footerSection .siteMap li img {
+  margin-bottom: 0px;
+  width: 30px;
 }
-#footerSection .footerLists li:hover {
-  color: purple;
-}
-#footerSection #privateStatement {
-  width: 100%;
-  float: left;
-  height: 50px;
-  background-color: white;
-  padding-left: 4%;
-  padding-right: 4%;
+#footerSection .siteMap li a {
   display: block;
-  font-size: 14px;
-  color: #737473;
-  font-weight: 600;
-  align-items: center;
-}
-#footerSection #privateStatement p:nth-of-type(1),
-#footerSection #privateStatement p:nth-of-type(2) {
-  width: auto;
-  float: left;
-}
-#footerSection #privateStatement p:nth-of-type(2) {
-  margin-left: 20px;
-}
-#footerSection #privateStatement p:nth-of-type(3) {
-  float: right;
-  width: auto;
-}
-#footerSection .navList li:nth-of-type(4) svg {
-  margin-top: 9px;
-  width: 33px;
-  margin-bottom: 11px;
+  margin: 15px 0;
+  cursor: pointer;
 }

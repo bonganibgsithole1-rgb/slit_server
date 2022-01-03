@@ -74,7 +74,7 @@
   position: absolute;
   display: none;
   z-index: 20 !important;
-  top: 90px !important;
+  top: 100px !important;
   background-color: white;
   border-top: 1px solid lightgray;
 }

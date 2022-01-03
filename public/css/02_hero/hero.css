@@ -2,10 +2,6 @@
   overflow: auto;
   position: relative;
 }
-#heroSection,
-#heroSection #videoDiv {
-  background-color: #0e810e;
-}
 #heroSection .subSection {
   padding: 30px 0;
 }
