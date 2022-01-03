@@ -14,5 +14,18 @@
   left: 0;
   height: 10px;
   width: 100%;
-  background-color: black;
+  background-color: #17c3b2;
+  border: 1px solid #17c3b2;
+}
+#aboutSection .siteMap li:nth-of-type(2) .blueTopLine {
+  background-color: #c52184;
+  border: 1px solid #c52184;
+}
+#aboutSection .siteMap li:nth-of-type(3) .blueTopLine {
+  background-color: #d0c4df;
+  border: 1px solid #d0c4df;
+}
+#aboutSection .siteMap li:nth-of-type(4) .blueTopLine {
+  background-color: #ebca48;
+  border: 1px solid #ebca48;
 }
