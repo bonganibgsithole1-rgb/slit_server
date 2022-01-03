@@ -49,6 +49,14 @@ h3 {
   font-size: 30px;
   font-weight: 600;
 }
+h4 {
+  font-size: 23px;
+  font-weight: 600;
+}
+h5 {
+  font-size: 23px;
+  font-weight: 500;
+}
 ul {
   padding: 0;
   margin: 0;

@@ -18,15 +18,11 @@
 #donateSection .welcome h3 {
   width: 100%;
   color: #464646;
-  font-size: 24px;
-  font-weight: 500;
   margin: 0;
 }
 #donateSection .welcome h2 {
   width: 100%;
-  font-weight: 700;
   margin: 5px 0;
-  font-size: 34px;
   color: #464646;
 }
 #donateSection .welcome div {
@@ -81,10 +77,8 @@
 }
 #donateSection h4 {
   margin: 20px 0;
-  font-size: 18px;
   float: left;
   width: 100%;
-  font-weight: 600;
 }
 #donateSection p {
   float: left;

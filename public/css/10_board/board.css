@@ -10,8 +10,6 @@
 #boardSection .subSection .level h5 {
   width: 100%;
   float: left;
-  font-size: 23px;
-  font-weight: 500;
 }
 #boardSection .subSection .level ul {
   list-style: none;
