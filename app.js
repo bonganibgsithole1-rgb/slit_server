@@ -13,9 +13,13 @@ app.get("/board", function (req, res) {
 app.get("/donate", function (req, res) {
   res.render("pages/03_donate.ejs");
 });
-app.get("/chapters", function (req, res) {
-  res.render("pages/04_course(landing).ejs");
+app.get("/courses", function (req, res) {
+  res.render("pages/04_courses.ejs");
 });
-app.listen("3090", function () {
+
+app.get("/navbar", function (req, res) {
+  res.render("partials/01_navbar.ejs");
+});
+app.listen("3000", function () {
   console.log("Server is connected");
 });

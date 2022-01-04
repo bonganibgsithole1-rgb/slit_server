@@ -1,253 +1,27 @@
 #donateSection {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+#donateSection .row {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-#donateSection .subSection {
-  margin: 0 auto;
-}
-#donateSection .welcome {
-  float: left;
-  width: 100%;
-  margin: 20px 0;
-}
-#donateSection label,
-#donateSection a {
-  cursor: pointer;
-}
-#donateSection .welcome h3 {
-  width: 100%;
-  color: #464646;
-  font-size: 24px;
-  font-weight: 500;
-  margin: 0;
-}
-#donateSection .welcome h2 {
-  width: 100%;
-  font-weight: 700;
-  margin: 5px 0;
-  font-size: 34px;
-  color: #464646;
-}
-#donateSection .welcome div {
-  width: 100%;
-  height: 8px;
-  background-color: orange;
-}
-#donateSection .options {
-  float: left;
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-}
-#donateSection li,
-#donateSection div,
-#donateSection svg {
-  float: left;
-}
-#donateSection svg {
-  width: 33px;
-  height: 33px;
-  fill: orange;
-}
-#donateSection li {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ffad1654;
-  width: 100%;
-  justify-content: center;
-  height: 57px;
-  background-color: #ffefd9;
-  border-radius: 4px;
-}
-#donateSection li b {
-  color: gray;
-}
-#donateSection li span {
-  margin-left: 5px;
-}
-#donateSection .options:nth-of-type(2) {
   justify-content: space-between;
-  display: flex;
 }
-#donateSection ul:nth-of-type(2) li {
-  width: 20%;
-  height: 44px;
-  cursor: pointer;
-}
-#donateSection ul:nth-of-type(2) li:hover {
-  background-color: #ffefd144;
-}
-#donateSection h4 {
-  margin: 20px 0;
-  font-size: 18px;
+#donateSection .row .cell {
+  width: 30%;
   float: left;
-  width: 100%;
-  font-weight: 600;
-}
-#donateSection p {
-  float: left;
-}
-#donateSection #amountInput {
-  float: left;
-  width: 25%;
-  border-radius: 4px;
-  border: 1px solid lightgray;
-  margin-right: 75%;
-  height: 40px;
-  outline: none;
-}
-#donateSection .radio {
-  float: left;
-  margin-right: 10px;
-}
-#donateSection .hiding {
-  float: left;
-  margin: 15px 0;
-  font-size: 17px;
-  display: flex;
-  align-items: center;
-}
-#donateSection label {
-  float: left;
-}
-#donateSection .topUp,
-#donateSection .topUp .choose {
-  float: left;
-}
-#donateSection .topUp {
-  width: 100%;
-  margin-top: 20px;
-}
-#donateSection .topUp .yesorno {
-  display: flex;
-  align-items: center;
-}
-#donateSection .topUp .choose {
-  width: 100%;
-  padding-left: 4px;
-}
-#donateSection .topUp .choose input {
-  width: auto;
-  float: left;
-  margin: 0;
-  margin-right: 15px;
-}
-#donateSection .topUp .choose label {
-  float: left;
-  margin-right: 30px;
-  font-size: 18px;
-}
-#donateSection .mediumParagraph {
   margin: 10px 0;
-  font-weight: 600;
-  font-size: 15px;
 }
-#donateSection .moreInfo {
-  float: left;
-  display: flex;
-  height: 29px;
-  align-items: center;
-}
-#donateSection .moreInfo svg {
-  width: 20px;
-  float: left;
-  fill: blue;
-  margin-right: 10px;
-}
-#donateSection .moreInfo p {
-  float: left;
-  color: blue;
-  font-size: 17px;
-}
-
-#donateSection .commentDiv {
-  margin-top: 25px;
-}
-#donateSection .commentDiv,
-#donateSection .commentDiv p,
-#donateSection .commentDiv div {
-  float: left;
-  width: 100%;
-}
-#donateSection .commentDiv p {
-  margin: 0;
-}
-#donateSection #textComment {
-  float: left;
-  font-size: 15px;
-  resize: vertical;
-  width: 100%;
-  margin-top: 20px;
-  border: 1px solid #cdcdcd;
-  outline: none;
-  min-height: 66px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-}
-#donateSection .choose2 div {
-  width: 100%;
-  margin-top: 5px;
-  display: flex;
-  align-items: center;
-}
-#donateSection .choose2 div a {
-  color: #0000ffad;
-}
-#donateSection .receipt p {
-  width: 100%;
-  font-size: 17px;
-  margin: 10px 0;
-  font-weight: 600;
-}
-#donateSection .receipt .texts {
-  width: 100%;
-  height: 45px;
-  border: 1px solid lightgray;
-  outline: none;
-  padding-left: 10px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-}
-#donateSection .receipt label {
-  float: left;
-  margin-left: 20px;
-  font-size: 18px;
-}
-#donateSection .receipt input {
-  margin: 0;
-  border: 1px solid lightgray;
-  border-radius: 4px;
-  border: none;
-  width: 17px;
-  height: 17px;
-}
-#donateSection .choose {
-  margin: 15px 0;
-}
-#donateSection .agreement {
-  float: left;
-}
-#donateSection .agreement button {
-  border: none;
-  background-color: #3e3effc2;
-  color: white;
-  font-size: 17px;
-  font-weight: 600;
-  cursor: pointer;
-  padding: 12px 29px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-}
-#donateSection .agreement p {
+#donateSection .row .cell h5,
+#donateSection .row .cell input,
+#donateSection .row .cell select {
   width: 100%;
   float: left;
-  padding-left: 20px;
-  font-weight: 100;
-  font-size: 16px;
-  margin: 8px 0;
-  color: gray;
 }
-#donateSection .agreement a {
-  color: blue;
+#donateSection .row .cell input,
+#donateSection .row .cell select {
+  height: 35px;
+}
+#donateSection .row .cell h5 span {
+  font-size: 12px;
 }

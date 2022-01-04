@@ -1,14 +1,4 @@
 @media only screen and (max-width: 1324px) {
-  h2 {
-    padding-right: 0;
-    font-size: 30px;
-    line-height: 41px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
   .subSection {
     width: 92%;
   }

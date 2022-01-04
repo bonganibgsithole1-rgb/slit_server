@@ -1,38 +1,16 @@
 @media only screen and (max-width: 1024px) and (min-width: 700px) {
-  @media only screen and (max-width: 807px) {
-    #heroSection #heroImageDiv {
-      padding-top: 29px;
-    }
-    #heroSection .subSection button {
-      width: 75%;
-    }
-  }
-  #heroSection .subSection button {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-  }
   #heroSection .subSection h2 {
     margin-top: 7px;
-  }
-  @media only screen and (max-width: 909px) and (min-width: 700px) {
-    #heroSection .subSection button {
-      width: 71%;
-    }
   }
 }
 @media only screen and (max-width: 699px) {
   #heroSection {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     padding-bottom: 40px;
   }
-  #heroSection #heroImageDiv {
-    width: 100%;
-    position: relative;
-    display: block;
+  #heroSection #videoDiv{
+    
   }
   #heroSection .subSection {
     height: 100%;
@@ -43,9 +21,5 @@
   }
   #heroSection .subSection p {
     padding-right: 0;
-  }
-  #heroSection #heroImageDiv img,
-  #heroSection #heroImageDiv {
-    padding: 0;
   }
 }
