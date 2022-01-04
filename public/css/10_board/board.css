@@ -1,75 +1,31 @@
-#boardSection .subSection {
-  overflow: auto;
+#boardSection {
+  margin-top: 30px;
+  margin-bottom: 100px;
 }
-#boardSection .subSection .level {
-  width: 100%;
-  height: auto;
-  overflow: auto;
+#boardSection .subSection ul {
+  display: flex;
   float: left;
+  justify-content: space-between;
+  margin-top: 40px;
 }
-#boardSection .subSection .level h5 {
-  width: 100%;
-  float: left;
-  font-size: 23px;
-  font-weight: 500;
-}
-#boardSection .subSection .level ul {
-  list-style: none;
-  float: left;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-#boardSection .subSection .level ul li {
-  width: 50%;
+#boardSection .subSection ul li {
+  width: 47%;
   height: auto;
   float: left;
-  padding-right: 60px;
-  margin-bottom: 40px;
 }
-#boardSection .subSection .level ul li .videoDiv {
+#boardSection .subSection ul li h4 {
+  margin: 10px 0;
+}
+#boardSection .subSection ul li h4 span {
+  font-weight: normal;
+}
+#boardSection .subSection ul li .videoDiv {
   width: 100%;
   height: 300px;
   overflow: hidden;
   float: left;
 }
-#boardSection .subSection .level ul li .videoDiv iframe {
+#boardSection .subSection ul li .videoDiv iframe {
   width: 100%;
   height: 100%;
-}
-#boardSection .subSection .level ul li p {
-  width: 100%;
-  float: left;
-  font-size: 21px;
-  margin: 0;
-  padding: 10px;
-}
-#boardSection .subSection .level ul li p span {
-  float: left;
-}
-#boardSection .subSection .level ul li button {
-  height: 45px;
-  width: 100%;
-  cursor: pointer;
-  margin-top: 10px;
-  font-size: 17px;
-  background-color: white;
-  border: none;
-  border-top: 1px solid lightgray;
-  text-align: left;
-  padding-left: 10px;
-}
-#boardSection .subSection .level ul li .history {
-  width: 100%;
-  float: left;
-  display: block;
-  border-bottom: 1px solid lightgray;
-}
-.showBorder {
-  border-bottom: none !important;
-}
-#boardSection .subSection .level ul li .history p {
-  width: 100%;
-  float: left;
-  font-size: 16px;
 }

@@ -2,95 +2,30 @@
   overflow: auto;
   padding: 20px 0;
 }
-#aboutSection .subSection h3 {
-  font-size: 30px;
-  font-weight: 600;
+#aboutSection h3 {
+  margin: 25px 0;
 }
-#aboutSection .navList {
+#aboutSection .siteMap li img {
+  width: 40px;
+}
+#aboutSection .siteMap li .blueTopLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
   width: 100%;
+  background-color: #17c3b2;
+  border: 1px solid #17c3b2;
 }
-#aboutSection .navList li {
-  border: 1px solid #5d585829;
-  border-top: none;
-  border-radius: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+#aboutSection .siteMap li:nth-of-type(2) .blueTopLine {
+  background-color: #c52184;
+  border: 1px solid #c52184;
 }
-#aboutSection .navList li,
-#aboutSection .navList li .dropDownDiv {
-  width: 23%;
-  display: block;
+#aboutSection .siteMap li:nth-of-type(3) .blueTopLine {
+  background-color: #d0c4df;
+  border: 1px solid #d0c4df;
 }
-#aboutSection .navList li .dropDownDiv {
-  width: 100%;
-  padding: 0 10% 0 10%;
-}
-#aboutSection .navList li:nth-of-type(2) {
-  margin: 0 1.33333333333% 0 2.666666666%;
-}
-#aboutSection .navList li:nth-of-type(3) {
-  margin: 0 2.66666666666% 0 1.333333333333%;
-}
-#aboutSection .navList li .blueTopLine:nth-of-type(1) {
-  height: 9px;
-  width: 100%;
-  margin: 0;
-}
-#aboutSection .navList li svg {
-  margin-left: 10%;
-}
-#aboutSection .navList li .dropDownDiv p:nth-of-type(1) {
-  font-size: 19px;
-  color: #36369e;
-}
-#aboutSection .navList li .dropDownDiv p:nth-of-type(2) {
-  font-size: 16px;
-  margin: 0;
-  font-weight: 100;
-  color: black;
-  line-height: 26px;
-  margin-bottom: 30px;
-  min-height: 182px;
-  padding-right: 14%;
-}
-#aboutSection .navList li svg {
-  display: block;
-  float: left;
-  margin-top: 23px;
-}
-#aboutSection .navList li .learnMoreDiv .blueTopLine {
-  height: 1px;
-  float: left;
-  width: 100%;
-}
-#aboutSection .navList li .learnMoreDiv {
-  width: 100%;
-  float: left;
-  padding: 0 10%;
-}
-#aboutSection .navList li .learnMoreDiv p {
-  width: auto;
-  font-size: 15px;
-  color: black;
-  float: left;
-  font-weight: 700;
-  font-family: "Open Sans", sans-serif;
-}
-#aboutSection .navList li:nth-of-type(1) .blueTopLine {
-  background-color: #ffb060;
-}
-#aboutSection .navList li:nth-of-type(2) .blueTopLine {
-  background-color: #88cefa;
-}
-#aboutSection .navList li:nth-of-type(3) .blueTopLine {
-  background-color: #bfe78f;
-}
-#aboutSection .navList li:nth-of-type(4) .blueTopLine {
-  background-color: #56c5bb;
-}
-#aboutSection .navList li .learnMoreDiv svg {
-  float: left;
-  margin: 22px 0 0 5px;
-  fill: red;
-  width: 8px;
+#aboutSection .siteMap li:nth-of-type(4) .blueTopLine {
+  background-color: #ebca48;
+  border: 1px solid #ebca48;
 }
