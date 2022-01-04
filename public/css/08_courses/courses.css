@@ -2,30 +2,6 @@
   margin-top: 30px;
   margin-bottom: 100px;
 }
-#coursesSection .courseBtn {
-  float: left;
-  width: 15%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: row;
-  padding: 10px;
-  height: 56px;
-  background-color: #0e810e;
-  cursor: pointer;
-  margin-top: 10px;
-}
-#coursesSection .courseBtn svg {
-  width: 20px;
-  height: auto;
-  float: left;
-  fill: white;
-}
-#coursesSection .courseBtn p {
-  width: auto;
-  color: white;
-  margin-right: 6px;
-}
 #coursesSection #progressText {
   font-size: 15px;
   margin-top: 30px;
