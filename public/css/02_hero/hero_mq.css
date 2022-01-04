@@ -1,21 +1,27 @@
-@media only screen and (max-width: 1024px) and (min-width: 700px) {
+@media only screen and (max-width: 1096px) and (min-width: 700px) {
   #heroSection .subSection h2 {
     margin-top: 7px;
   }
 }
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 1096px) {
   #heroSection {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     padding-bottom: 40px;
   }
-  #heroSection #videoDiv{
-    
+
+  #heroSection #videoDiv {
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+  #heroSection .subSection div {
+    height: auto;
+    width: 100%;
   }
   #heroSection .subSection {
-    height: 100%;
-    width: 100%;
     bottom: 0;
+    padding-bottom: 0;
     top: unset;
     position: relative;
   }
