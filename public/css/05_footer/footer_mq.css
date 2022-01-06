@@ -1,99 +1,31 @@
-@media only screen and (max-width: 699px) {
-  #footerSection .logoDiv {
-    padding-left: 4%;
-  }
-  #footerSection .subSection {
-    overflow: auto;
-  }
-  #footerSection .navList li {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  #footerSection .footerLists {
-    display: none;
-  }
-  #footerSection .navList li .dropDownDiv {
-    width: auto;
-  }
-  #footerSection .navList li svg {
-    margin: 0;
-    margin-right: 20px;
-    width: 35px;
-  }
-  #footerSection .navList li .dropDownDiv p {
-    margin-bottom: 0;
-    margin-top: 11px;
-  }
-  #footerSection .navList li:nth-of-type(4) svg {
-    width: 35px;
-  }
-  #footerSection #privateStatement p:nth-of-type(1) {
-    min-width: 122px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-  }
-  #footerSection #privateStatement p:nth-of-type(1),
-  #footerSection #privateStatement p:nth-of-type(2) {
-    width: auto;
-    float: left;
-  }
-  #footerSection #privateStatement p:nth-of-type(2) {
-    width: auto;
-    float: right;
-    min-width: 140px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-  }
-  #footerSection #privateStatement {
+@media only screen and (max-width: 1024px) {
+  #footerSection .siteMap {
     display: block;
-    height: auto;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  #footerSection #privateStatement p:nth-of-type(3) {
-    margin-left: 0;
-    width: 100%;
     float: left;
-    margin-top: 2px;
   }
-  #footerSection .navList {
+  #footerSection .siteMap li {
+    float: left;
+  }
+}
+@media only screen and (max-width: 699px) {
+  #footerSection .siteMap li {
     width: 100%;
-    padding-top: 34px;
-    padding-bottom: 0px;
+    height: auto;
+    padding-bottom: 35px;
+  }
+  #footerSection #logoRibbon img{
+    height: 45px;
+  }
+  #footerSection #logoRibbon #byoWebsitesLogo{
+    height: 28px;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 700px) {
-  #footerSection .footerLists li {
-    line-height: 23px;
+  #footerSection .siteMap li {
+    width: 49%;
   }
-  #footerSection .navList li svg {
-    width: 19%;
-  }
-  #footerSection .navList li:nth-of-type(4) svg {
-    width: 19%;
-    margin: 13px 0;
-  }
-  #footerSection #privateStatement p:nth-of-type(3) {
-    margin-left: auto;
-  }
-  #footerSection #privateStatement p:nth-of-type(1),
-  #footerSection #privateStatement p:nth-of-type(2) {
-    width: auto;
-  }
-
-  #footerSection #privateStatement p:nth-of-type(2) {
-    margin-left: 30px;
-  }
-  #footerSection #privateStatement {
-    padding-left: 4%;
-  }
-  #footerSection .logoDiv {
-    padding-left: 4%;
+  #footerSection .siteMap li:nth-of-type(1),
+  #footerSection .siteMap li:nth-of-type(3) {
+    margin-right: 2%;
   }
 }

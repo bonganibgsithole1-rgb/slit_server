@@ -1,37 +1,21 @@
 @media only screen and (max-width: 699px) {
   #newsSection #newsContent,
-  #newsSection #newsImageDiv {
+  #newsSection img {
     width: 100%;
   }
-  #newsSection #newsContent div,
-  #newsSection #newsContent p {
-    line-height: 21px;
-    font-size: 15px;
-  }
   #newsSection #newsContent {
-    padding: 9% 0% 3% 0%;
+    padding: 3% 0% 3% 0%;
   }
   #newsSection #newsContent p {
     color: #313131;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 700px) {
-  #newsSection #newsContent div,
-  #newsSection #newsContent p {
-    font-size: 15px;
-  }
   #newsSection #newsContent p {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-  }
-  #newsSection #newsContent div {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
   }
 }

@@ -54,8 +54,8 @@
     font-weight: 600;
     display: flex;
     font-size: 18px;
-    justify-content: center;
     width: 70%;
+    margin-left: 38px;
   }
   #navbarSection .navList {
     display: none;
