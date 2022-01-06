@@ -4,6 +4,10 @@
 }
 #aboutSection h3 {
   margin: 25px 0;
+  float: left;
+}
+#aboutSection .siteMap li {
+  height: 415px;
 }
 #aboutSection .siteMap li img {
   width: 40px;
