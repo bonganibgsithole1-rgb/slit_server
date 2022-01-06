@@ -1,25 +1,12 @@
 @media only screen and (max-width: 699px) {
-  #coursesSection .chapterBoxes .chaptersHeading {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+  #coursesSection .courseDiv ul {
+    display: block;
   }
-}
-@media only screen and (max-width: 1115px) and (min-width: 700px) {
-  #coursesSection .chapterBoxes p {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+  #coursesSection .courseDiv ul .lesson {
+    width: 100%;
+    margin-bottom: 15px;
   }
-  #coursesSection .chapterBoxes .chaptersHeading {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+  #coursesSection {
+    margin-bottom: 30px;
   }
 }

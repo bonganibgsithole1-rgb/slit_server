@@ -1,11 +1,14 @@
 @media only screen and (max-width: 699px) {
-  #boardSection .subSection .level ul li {
+  #boardSection .subSection ul {
+    display: block;
+  }
+  #boardSection .subSection ul li {
     width: 100%;
-    padding: 0;
+    margin-bottom: 35px;
+  }
+  #boardSection {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 700px) {
-  #boardSection .subSection .level ul li .videoDiv {
-    height: 240px;
-  }
 }

@@ -4,15 +4,20 @@
 }
 #donateSection .row {
   width: 100%;
-  display: flex;
+  display: block;
   justify-content: space-between;
 }
 #donateSection .row .cell {
-  width: 30%;
+  width: 31.33333333333%;
   float: left;
   margin: 10px 0;
+  margin-right: 3%;
 }
-#donateSection .row .cell h5,
+#donateSection .row .cell:nth-of-type(3),
+#donateSection .row .cell:nth-of-type(6) {
+  margin-right: 0;
+}
+#donateSection .row .cell #donateSection .row .cell h5,
 #donateSection .row .cell input,
 #donateSection .row .cell select {
   width: 100%;
