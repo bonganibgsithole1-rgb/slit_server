@@ -1,0 +1,191 @@
+#lessonsSection {
+  display: flex;
+  overflow: auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#lessonsSection .subSection {
+  box-shadow: lightgrey -3px 7px 24px 2px;
+  margin: 20px 0;
+}
+#lessonsSection svg {
+  width: 3.5%;
+  fill: #0e810e;
+  cursor: pointer;
+  float: left;
+  min-width: 36px;
+  margin: 0 2.25%;
+}
+#lessonsSection .mobileNavigation {
+  display: none;
+}
+#lessonsSection svg:hover {
+  fill: #0b650b;
+}
+#lessonsSection .subSection .imageDiv {
+  width: 40%;
+  float: left;
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+#lessonsSection .subSection img {
+  height: 100%;
+  float: left;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#lessonsSection .subSection ol {
+  width: 100%;
+  padding: 0;
+  float: left;
+  font-size: 19px;
+  padding: 0 6.5%;
+}
+#lessonsSection .subSection ol li {
+  width: 100%;
+  margin-top: 13px;
+}
+#lessonsSection .subSection p {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 4%;
+  float: left;
+}
+#lessonsSection .subSection iframe {
+  height: 490px;
+  width: 100%;
+  padding: 0 3.8%;
+}
+#lessonsSection .subSection .halfContent {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 60%;
+  padding: 0 5%;
+  flex-direction: column;
+}
+#lessonsSection .subSection .imageDiv_3 {
+  width: 50%;
+}
+#lessonsSection .subSection3 {
+  display: flex;
+}
+#lessonsSection .subSection3 h3 {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+#lessonsSection .subSection3 {
+  padding: 0;
+}
+#lessonsSection .subSection3 p {
+  border-top: 1px solid lightgray;
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#lessonsSection .subSection .imageDiv_4 {
+  padding: 0 70px;
+}
+#lessonsSection .subSection4 {
+  padding: 100px 70px 100px 0;
+}
+#lessonsSection .subSection4 .halfContent {
+  display: block;
+}
+#lessonsSection .subSection4 .halfContent p {
+  border: none;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  float: revert;
+  margin-bottom: 20px;
+}
+#lessonsSection .subSection4 .halfContent .halfLinks {
+  list-style: none;
+  float: left;
+  color: #3b3bd1;
+}
+#lessonsSection .subSection4 .halfContent .halfLinks svg {
+  width: 20px;
+  float: left;
+}
+#lessonsSection .subSection4 ol {
+  margin-top: 15px;
+  padding-top: 20px;
+  border-top: 1px solid lightgray;
+}
+#lessonsSection .subSection4 .halfContent .halfLinks li {
+  float: left;
+  width: auto;
+}
+#lessonsSection .subSection4 h3 {
+  margin-bottom: 20px;
+}
+#lessonsSection .subSection5 .halfContent .halfLinks {
+  list-style: auto;
+  color: black;
+}
+#lessonsSection .subSection5 .halfContent {
+  display: flex;
+}
+#lessonsSection .subSection6 {
+  flex-direction: column;
+  padding: 60px 0;
+}
+#lessonsSection .subSection6 .imageDiv,
+#lessonsSection .subSection6 .halfContent {
+  width: 100%;
+}
+#lessonsSection .subSection6 .imageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+#lessonsSection .subSection6 .imageDiv img {
+  width: 14%;
+}
+#lessonsSection .subSection6 .imageExplanation {
+  float: left;
+  width: 86%;
+  margin: 0;
+  padding: 0 12% 0 0%;
+}
+#lessonsSection .subSection6 .imageExplanation p {
+  border: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#lessonsSection .subSection6 h5 {
+  font-size: 21px;
+  margin: 0;
+  color: grey;
+  padding: 10px 0;
+}
+#lessonsSection .subSection6 ol {
+  border: none;
+  padding-left: 3%;
+  padding-top: 0;
+  padding-right: 3%;
+}
+#lessonsSection .subSection6 .halfContent .halfLinks li {
+  width: 100%;
+  cursor: pointer;
+  min-height: 50px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #bfbfbf33;
+  border: 1px solid lightgray;
+}
+#lessonsSection .subSection6 .halfContent .halfLinks {
+  margin-top: 0;
+}

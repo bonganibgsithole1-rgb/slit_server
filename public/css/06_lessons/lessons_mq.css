@@ -1,0 +1,54 @@
+@media only screen and (max-width: 699px) {
+  #lessonsSection {
+    flex-direction: column;
+  }
+  #lessonsSection #alignedSvg {
+    display: block !important;
+  }
+  #lessonsSection .subSection .imageDiv {
+    float: left;
+    width: 100%;
+  }
+  #lessonsSection .subSection img {
+    width: 100%;
+  }
+  #lessonsSection #leftArrow,
+  #lessonsSection #rightArrow {
+    display: none !important;
+  }
+  #lessonsSection .mobileNavigation {
+    display: flex;
+    float: left;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgb(194, 181, 181);
+    padding: 25px 0;
+    margin-top: 20px;
+  }
+  #lessonsSection .mobileNavigation div {
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  #lessonsSection .mobileNavigation div:nth-of-type(2) {
+    justify-content: right;
+  }
+  #lessonsSection .mobileNavigation p,
+  #lessonsSection .mobileNavigation svg {
+    float: left;
+  }
+  #lessonsSection .mobileNavigation p {
+    width: auto;
+    margin: 0 10px;
+  }
+  #lessonsSection .subSection3 {
+    flex-direction: column;
+  }
+  #lessonsSection .subSection3 .halfContent {
+    width: 100%;
+    padding: 20px;
+  }
+}
