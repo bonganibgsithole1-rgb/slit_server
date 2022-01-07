@@ -38,23 +38,31 @@
   top: 0;
   z-index: -10;
 }
-#lessonsSection .subSection ol {
+#lessonsSection .subSection1 .imageDiv {
+  width: 100%;
+}
+#lessonsSection .subSection1 .imageDiv img {
+  width: 100%;
+  height: unset;
+}
+#lessonsSection .subSection1 h4 {
+  margin: 50px 0;
+  padding: 0 4.7%;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+#lessonsSection .subSection1 ol {
   width: 100%;
   padding: 0;
   float: left;
   font-size: 19px;
   padding: 0 6.5%;
 }
-#lessonsSection .subSection ol li {
+#lessonsSection .subSection1 ol li {
   width: 100%;
   margin-top: 13px;
 }
-#lessonsSection .subSection p {
-  width: 100%;
-  margin-top: 50px;
-  padding: 0 4%;
-  float: left;
-}
+/* ended here */
 #lessonsSection .subSection iframe {
   height: 490px;
   width: 100%;
