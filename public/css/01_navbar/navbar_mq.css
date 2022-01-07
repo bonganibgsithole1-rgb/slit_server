@@ -39,8 +39,9 @@
     box-shadow: #0b650b 0px 1px 9px -1px;
   }
   #navbarSection .phonePopUp li {
+    position: relative;
     display: flex;
-    margin: 10px 0;
+    padding: 12px 0;
     align-items: center;
     justify-content: center;
   }
@@ -56,9 +57,14 @@
     font-size: 18px;
     width: 70%;
     margin-left: 38px;
+    text-decoration: none;
   }
-  #navbarSection .navList {
-    display: none;
+  #navbarSection .phonePopUp a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
   #navbarSection #hamburger {
     padding-top: 30px;

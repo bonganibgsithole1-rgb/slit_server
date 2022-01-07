@@ -13,11 +13,19 @@
     height: auto;
     padding-bottom: 35px;
   }
-  #footerSection #logoRibbon img{
+  #footerSection #logoRibbon img {
     height: 45px;
   }
-  #footerSection #logoRibbon #byoWebsitesLogo{
+  #footerSection #logoRibbon #byoWebsitesLogo {
     height: 28px;
+  }
+  @media only screen and (max-width: 378px) {
+    #footerSection #logoRibbon img {
+      height: 33px;
+    }
+    #footerSection #logoRibbon #byoWebsitesLogo {
+      height: 21px;
+    }
   }
 }
 @media only screen and (max-width: 1024px) and (min-width: 700px) {
