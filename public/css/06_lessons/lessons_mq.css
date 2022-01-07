@@ -8,9 +8,7 @@
   #lessonsSection .subSection .imageDiv {
     float: left;
     width: 100%;
-  }
-  #lessonsSection .subSection img {
-    width: 100%;
+    height: 400px;
   }
   #lessonsSection #leftArrow,
   #lessonsSection #rightArrow {

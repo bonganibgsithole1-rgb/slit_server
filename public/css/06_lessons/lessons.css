@@ -27,6 +27,7 @@
   float: left;
   position: relative;
   height: 500px;
+  z-index: 5;
   overflow: hidden;
 }
 #lessonsSection .subSection img {
@@ -35,6 +36,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -10;
 }
 #lessonsSection .subSection ol {
   width: 100%;
