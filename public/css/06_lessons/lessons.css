@@ -98,64 +98,57 @@
   align-items: center;
   padding: 0 3.8%;
 }
-#lessonsSection .subSection .imageDiv_3 {
-  width: 50%;
-}
-#lessonsSection .subSection3 h3 {
-  width: 100%;
-  margin: 0;
-  text-align: left;
-}
-#lessonsSection .subSection3 {
-  padding: 0;
-}
-#lessonsSection .subSection3 p {
-  border-top: 1px solid lightgray;
-  margin: 0;
-  width: 100%;
-  padding: 0;
-  margin-top: 20px;
-  padding-top: 20px;
-}
-#lessonsSection .subSection .imageDiv_4 {
-  padding: 0 70px;
-}
+/* sub4 */
 #lessonsSection .subSection4 {
-  padding: 100px 70px 100px 0;
+  height: 500px;
+  padding: 0;
+}
+#lessonsSection .subSection4 .imageDiv {
+  width: 50%;
+  height: 100%;
 }
 #lessonsSection .subSection4 .halfContent {
   display: block;
+  padding: 25px 12%;
+  padding-bottom: 4px;
 }
 #lessonsSection .subSection4 .halfContent p {
   border: none;
   width: auto;
-  padding: 0;
-  margin: 0;
-  float: revert;
-  margin-bottom: 20px;
+  margin-top: 5px;
 }
-#lessonsSection .subSection4 .halfContent .halfLinks {
+#lessonsSection .subSection4 .halfContent p:nth-of-type(2) {
+  margin-top: 5px;
+}
+#lessonsSection .subSection4 .halfContent ol {
   list-style: none;
   float: left;
   color: #3b3bd1;
 }
-#lessonsSection .subSection4 .halfContent .halfLinks svg {
+#lessonsSection .subSection4 .halfContent ol svg {
   width: 20px;
   float: left;
 }
 #lessonsSection .subSection4 ol {
-  margin-top: 15px;
-  padding-top: 20px;
+  margin-top: 5px;
+  padding-top: 15px;
   border-top: 1px solid lightgray;
 }
-#lessonsSection .subSection4 .halfContent .halfLinks li {
+#lessonsSection .subSection4 .halfContent ol li {
   float: left;
-  width: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  padding-bottom: 2px;
+}
+#lessonsSection .subSection4 .halfContent ol li:nth-of-type(1) {
+  margin-bottom: 15px;
 }
 #lessonsSection .subSection4 h3 {
   margin-bottom: 20px;
 }
-#lessonsSection .subSection5 .halfContent .halfLinks {
+#lessonsSection .subSection5 .halfContent ol {
   list-style: auto;
   color: black;
 }

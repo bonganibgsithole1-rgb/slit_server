@@ -1,4 +1,30 @@
+@media only screen and (max-width: 1199px) {
+  #lessonsSection .subSection4 .halfContent {
+    padding: 25px 6%;
+  }
+  @media only screen and (max-width: 970px) {
+    #lessonsSection .subSection4 .halfContent {
+      padding: 25px 2%;
+    }
+  }
+  @media only screen and (max-width: 970px) {
+    #lessonsSection .subSection4 {
+      height: 600px;
+    }
+  }
+}
 @media only screen and (max-width: 699px) {
+  @media only screen and (min-width: 600px) {
+    body #lessonsSection .subSection .imageDiv {
+      height: 340px;
+    }
+  }
+  @media only screen and (max-width: 699px) {
+    body #lessonsSection .subSection .imageDiv img {
+      height: 100%;
+      width: unset;
+    }
+  }
   #lessonsSection {
     flex-direction: column;
   }
@@ -62,5 +88,15 @@
   #lessonsSection .subSection1 h4 {
     padding: 0 1.8%;
     margin-top: 10px;
+  }
+  #lessonsSection .subSection4 img {
+    width: 100%;
+    height: unset;
+  }
+  #lessonsSection .subSection4 {
+    height: auto;
+  }
+  #lessonsSection .subSection4 .halfContent ol li {
+    padding-bottom: 5px;
   }
 }
