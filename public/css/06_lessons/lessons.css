@@ -8,6 +8,16 @@
   box-shadow: lightgrey -3px 7px 24px 2px;
   margin: 20px 0;
 }
+#lessonsSection .subSection .halfContent {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 60%;
+  padding: 0 5%;
+  flex-direction: column;
+}
 #lessonsSection svg {
   width: 3.5%;
   fill: #0e810e;
@@ -66,27 +76,30 @@
   width: 100%;
   margin-top: 13px;
 }
-/* ended here */
-#lessonsSection .subSection iframe {
-  height: 490px;
-  width: 100%;
-  padding: 0 3.8%;
+#lessonsSection .subSection3 {
+  display: flex;
 }
-#lessonsSection .subSection .halfContent {
-  overflow: auto;
+/* ended here */
+#lessonsSection .subSection2 {
+  height: 500px;
+}
+#lessonsSection .subSection2 .imageDiv {
+  height: 420px;
+  width: 100%;
+  padding: 15px 3.8%;
+}
+#lessonsSection .subSection2 .imageDiv iframe {
+  height: 100%;
+  width: 100%;
+}
+#lessonsSection .subSection2 p {
+  height: 60px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  float: left;
-  width: 60%;
-  padding: 0 5%;
-  flex-direction: column;
+  padding: 0 3.8%;
 }
 #lessonsSection .subSection .imageDiv_3 {
   width: 50%;
-}
-#lessonsSection .subSection3 {
-  display: flex;
 }
 #lessonsSection .subSection3 h3 {
   width: 100%;

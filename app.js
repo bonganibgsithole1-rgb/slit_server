@@ -22,6 +22,12 @@ app.get("/lessons", function (req, res) {
 app.get("/lessons2", function (req, res) {
   res.render("partials/13_lesson.ejs");
 });
+app.get("/lessons4", function (req, res) {
+  res.render("partials/14_lesson.ejs");
+});
+app.get("/lessons5", function (req, res) {
+  res.render("partials/15_lesson.ejs");
+});
 app.listen("3000", function () {
   console.log("Server is connected");
 });
