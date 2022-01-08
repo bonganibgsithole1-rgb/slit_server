@@ -20,7 +20,7 @@ app.get("/lessons", function (req, res) {
   res.render("pages/05_lessons.ejs");
 });
 app.get("/lessons2", function (req, res) {
-  res.render("partials/13_lessons2.ejs");
+  res.render("partials/13_lesson.ejs");
 });
 app.listen("3000", function () {
   console.log("Server is connected");

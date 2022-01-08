@@ -49,4 +49,18 @@
     width: 100%;
     padding: 20px;
   }
+  #lessonsSection .subSection1 {
+    height: auto;
+  }
+  #lessonsSection .subSection1 .imageDiv {
+    height: 400px;
+  }
+  #lessonsSection .subSection1 .imageDiv img {
+    height: 100%;
+    width: unset;
+  }
+  #lessonsSection .subSection1 h4 {
+    padding: 0 1.8%;
+    margin-top: 10px;
+  }
 }
