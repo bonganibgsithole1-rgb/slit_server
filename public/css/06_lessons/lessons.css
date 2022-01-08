@@ -152,10 +152,16 @@
   list-style: auto;
   color: black;
 }
+#lessonsSection .subSection5 .halfContent ol li b {
+  margin-left: 5px;
+}
+#lessonsSection .subSection5 .halfContent ol li {
+  display: list-item;
+}
 #lessonsSection .subSection5 .halfContent {
   display: flex;
 }
-#lessonsSection .subSection6 {
+#lessonsSection .subSection5 #lessonsSection .subSection6 {
   flex-direction: column;
   padding: 60px 0;
 }
