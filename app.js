@@ -29,9 +29,7 @@ app.get("/courses/:course/:lesson/:slide", function (req, res) {
   let slide = req.params.slide;
   let file =
     "views/" + "courses/" + course + "/" + lesson + "/" + slide + ".ejs";
-  console.log("" + file);
   let fileContent = fs.readFileSync(file, "utf8");
-  // console.log(fileContent);
   res.send(fileContent);
 });
 
