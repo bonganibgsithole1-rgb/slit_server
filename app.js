@@ -1,6 +1,8 @@
 let express = require("express");
 let app = express();
 let path = require("path");
+let fs = require("fs");
+const { connect } = require("http2");
 
 app.use(express.static("public"));
 app.set("view engine", "ejs");
@@ -22,15 +24,17 @@ app.get("/courses/C01L01S01", function (req, res) {
   res.render("pages/05_lessons.ejs");
 });
 app.get("/courses/:course/:lesson/:slide", function (req, res) {
-  // console.log(req.params.lesson);
-  // console.log(req.params.slide);
-  // console.log(req.params.course);
   let course = req.params.course;
   let lesson = req.params.lesson;
   let slide = req.params.slide;
-
-  res.send("nansi imali yakho 123456789");
+  let file =
+    "views/" + "courses/" + course + "/" + lesson + "/" + slide + ".ejs";
+  console.log("" + file);
+  let fileContent = fs.readFileSync(file, "utf8");
+  // console.log(fileContent);
+  res.send(fileContent);
 });
+
 app.listen("3000", function () {
   console.log("Server is connected");
 });
