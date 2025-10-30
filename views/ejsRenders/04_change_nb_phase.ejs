@@ -1,0 +1,48 @@
+<%nbs.forEach(function(nb){%>
+<!--  -->
+<li id="<%=nb._id%>">
+  <a href="/blogsAndNews#<%=nb._id%>"></a>
+  <% if(nb.nb_gallery_type === 'image'){%>
+  <div class="image_container">
+    <img src="<%=nb.nb_gallery_link%>" alt="" />
+  </div>
+  <%}else{%>
+  <!--  -->
+  <%if(nb.nb_gallery_type === 'video'){%>
+  <div class="video_container">
+    <iframe src="<%=nb.nb_gallery_link%>" frameborder="0"></iframe>
+  </div>
+  <%}%>
+  <!--  -->
+  <%}%>
+  <div class="context_container">
+    <h5><%=nb.nb_type%></h5>
+    <h4><%=nb.nb_title%></h4>
+    <p class="limittosix"><%-nb.nb_body%></p>
+
+    <div class="view_more">
+      <button>
+        <span>Lean More</span>
+        <svg viewBox="0 0 32 32">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+              }
+            </style>
+          </defs>
+          <title></title>
+          <g data-name="Layer 2" id="Layer_2">
+            <path
+              d="M12,25a1,1,0,0,1-.71-.29,1,1,0,0,1,0-1.42L18.59,16l-7.3-7.29a1,1,0,1,1,1.42-1.42l8,8a1,1,0,0,1,0,1.42l-8,8A1,1,0,0,1,12,25Z"
+            ></path>
+          </g>
+          <g id="frame">
+            <rect class="cls-1" height="32" width="32"></rect>
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</li>
+<%})%>

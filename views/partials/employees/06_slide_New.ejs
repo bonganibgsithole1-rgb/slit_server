@@ -1,0 +1,105 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"
+    ><a href="/employees/course/<%=course_id%>/lesson/<%=lesson_id%>/view"
+      >Lessons slides</a
+    ></span
+  >
+  <span class="pageChoosen"><a href="/employees/home">Home Employees</a></span>
+</div>
+<div class="section sectionCourses" id="lessonAddSection">
+  <div class="subSection">
+    <ul class="subSectionCourseLists">
+      <h3>Add New Slide</h3>
+      <form
+        action="/employees/course/<%=course_id%>/lesson/<%=lesson_id%>/newSlide"
+        method="post"
+        id="create_new_slide"
+      >
+        <div class="textAreaSection">
+          <div class="slide_number_container">
+            <div class="error_message"></div>
+            <input
+              type="number"
+              name="slide_number"
+              placeholder="Slide number"
+              class="slide_number"
+              id="slide_number"
+              required
+            />
+          </div>
+
+          <select name="slide_type" id="slide_type">
+            <option value="video" selected="">Video</option>
+            <option value="image">Image</option>
+          </select>
+          <div class="slide_video_or_image_link">
+            <div class="error_message"></div>
+            <input
+              type="text"
+              name="slide_url_Video"
+              id="slide_url_Video"
+              placeholder="Slide Video Link"
+            />
+            <input
+              type="text"
+              name="slide_url_image"
+              id="slide_url_image"
+              class="slide_type_hidden"
+              placeholder="Slide Image Link"
+            />
+          </div>
+          <label for="slide_content_type">Slide Content Type</label>
+          <select name="slide_content_type" id="slide_content_type">
+            <option value="to_do_list">To do list</option>
+            <option value="slide_video_image_view">Slide watch</option>
+            <option value="dig_deeper">Dig deeper</option>
+            <option value="summary">Summary</option>
+          </select>
+          <div class="selected_content_title">
+            <div class="error_message" id="error_message1"></div>
+            <input
+              type="text"
+              id="slide_content_title"
+              name="slide_content_title"
+              placeholder="Slide content title"
+            />
+            <textarea
+              name="slide_body"
+              id="slide_body"
+              class="slide_content_hidden"
+              placeholder="Slide Body"
+            ></textarea>
+            <div class="to_do_list_inputs">
+              <div class="saved_to_do_lists"></div>
+              <div class="to_do_list_container anchor_doesnt_exists">
+                <input
+                  type="text"
+                  class="to_do_list_input"
+                  name="to_do_list"
+                  placeholder="To do list title"
+                  id="to_do_list_title"
+                />
+                <input
+                  type="text"
+                  class="to_do_list_input"
+                  name="to_do_list1_anchor_link"
+                  placeholder="To do list link"
+                  id="to_do_list_anchor"
+                />
+                <button type="button" id="save_to_do">save</button>
+              </div>
+              <div class="error_message"></div>
+            </div>
+          </div>
+          <!-- <div class="quill_editor_container">
+            <div id="editor"></div>
+          </div> -->
+        </div>
+        <div class="btnContainer">
+          <div class="error_message"></div>
+          <button class="submit_btn">Create Slide</button>
+        </div>
+      </form>
+    </ul>
+  </div>
+</div>

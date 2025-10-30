@@ -1,0 +1,23 @@
+<h2>Syllabus</h2>
+<div class="syllabusContent">
+  <%courses.forEach(function(course){%>
+  <div class="courseContent">
+    <h5><%=course.course_title%></h5>
+    <ul>
+      <% lessons.forEach(function(lesson){%>
+      <!--  -->
+      <%if(''+lesson.course_id === ''+course._id){%>
+      <li>
+        <input type="checkbox" name="lesson_checked" checked /><span
+          ><a href="/courses/<%=course._id%>/lesson/<%=lesson._id%>/viewLesson"
+            ><%=lesson.lesson_title%></a
+          ></span
+        >
+      </li>
+      <%}%>
+      <!--  -->
+      <%})%>
+    </ul>
+  </div>
+  <%})%>
+</div>

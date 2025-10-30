@@ -1,0 +1,147 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"
+    ><a href="/employees/course/<%=course_id%>/lesson/<%=lesson_id%>/view"
+      >Lesson slides</a
+    ></span
+  >
+  <span class="pageChoosen"><a href="/employees/home">Home Employees</a></span>
+</div>
+<div class="section sectionCourses" id="lessonAddSection">
+  <div class="subSection">
+    <ul class="subSectionCourseLists">
+      <h3>Edit Slide</h3>
+      <form
+        action="/employees/slide/<%=slide._id%>/action/edit"
+        method="post"
+        id="edit_slide"
+      >
+        <div class="textAreaSection">
+          <div class="slide_number_container">
+            <div class="error_message"></div>
+            <input
+              type="number"
+              name="slide_number"
+              value="<%=slide.slide_number%>"
+              placeholder="Slide number"
+              class="slide_number"
+              id="slide_number"
+              required
+            />
+          </div>
+
+          <select name="slide_type" id="slide_type">
+            <option value="video" <%=slide.slide_type === 'video'?'selected':''%>>Video</option>
+            <option value="image" <%=slide.slide_type === 'image'?'selected':''%>>Image</option>
+          </select>
+          <div class="slide_video_or_image_link">
+            <div class="error_message"></div>
+            <input
+              type="text"
+              name="slide_url_Video"
+              id="slide_url_Video"
+              class="<%=slide.slide_type === 'image'?'slide_type_hidden':''%>"
+              placeholder="Slide Video Link"
+              value='<%=slide.slide_type === 'video'?slide.slide_type_url:''%>'
+            />
+            <input
+              type="text"
+              name="slide_url_image"
+              id="slide_url_image"
+              class="<%=slide.slide_type === 'video'?'slide_type_hidden':''%>"
+              placeholder="Slide Image Link"
+              value='<%=slide.slide_type === 'image'?slide.slide_type_url:''%>'
+            />
+          </div>
+          <label for="slide_content_type">Slide Content Type</label>
+          <select name="slide_content_type" id="slide_content_type">
+            <option value="to_do_list" <%=slide.slide_content_type === 'to_do_list'?'selected':''%>>To do list</option>
+            <option value="slide_video_image_view" <%=slide.slide_content_type === 'slide_video_image_view'?'selected':''%>>Slide watch</option>
+            <option value="dig_deeper" <%=slide.slide_content_type === 'dig_deeper'?'selected':''%>>Dig deeper</option>
+            <option value="summary" <%=slide.slide_content_type === 'summary'?'selected':''%>>Summary</option>
+          </select>
+          <div class="selected_content_title">
+            <div class="error_message" id="error_message1"></div>
+            <input
+              type="text"
+              id="slide_content_title"
+              name="slide_content_title"
+            class="<%=(''+slide.slide_body).trim().length ===0?'':'slide_content_hidden'%>"
+              placeholder="Slide content title"
+            value="<%=slide.slide_content_title%>"
+              />
+              
+               <!--  -->
+            <textarea
+              name="slide_body"
+              id="slide_body"
+              class="<%=(!((''+slide.slide_body).trim().length ===0 ))?'':'slide_content_hidden'%>"
+              placeholder="Slide Body"
+            ><%=slide.slide_body%></textarea>
+            <div class="to_do_list_inputs <%=(''+slide.slide_body).trim().length ===0?'':'slide_content_hidden'%>" >
+              <div class="saved_to_do_lists">
+                 <!--  -->
+               <%if(slide.slide_to_do_list_arr.length > 0 ){%>
+                  <!--  -->
+                 <%slide.slide_to_do_list_arr.forEach(function(to_do_list){%>
+                  <!--  -->
+                  <% if((''+to_do_list).trim().length > 0){%>
+
+                  <%if(slide.slide_content_type == 'dig_deeper'){%>
+                     <li>
+                        <span class="limittoone"><%=to_do_list%></span>
+                        <button>delete</button>
+                     </li>
+                     <%}else{%>
+                        
+                      <li>
+                        <span class="limittoone"><%=to_do_list%></span>
+                        <button>delete</button>
+                     </li>
+                     <%}%>
+                     <%}%>
+                     <%})%>
+                     <!--  -->
+                     <%}%>
+                  </div>
+              <div class="to_do_list_container anchor_doesnt_exists">
+                <input
+                  type="text"
+                  class="to_do_list_input"
+                  name="to_do_list"
+                  placeholder="To do list title"
+                  id="to_do_list_title"
+                />
+                <input
+                  type="text"
+                  class="to_do_list_input"
+                  name="to_do_list1_anchor_link"
+                  placeholder="To do list link"
+                  id="to_do_list_anchor"
+                />
+                <button type="button" id="save_to_do">save</button>
+              </div>
+              <div class="error_message"></div>
+            </div>
+           
+          </div>
+          <!-- <div class="quill_editor_container">
+             <div id="editor"></div>
+           </div> -->
+        </div>
+        <div class="btnContainer">
+          <div class="error_message"></div>
+          <button class="submit_btn">Edit Slide</button>
+        </div>
+      </form>
+      <div class="deleteContainer">
+         <button class="deleteContainer delete_slide" id="<%=slide._id%>">
+           Delete
+         </button>
+       </div>
+    </ul>
+  </div>
+
+  <span class="course_id" id="<%=course_id%>" style="display: none;"></span>
+  <span class="lesson_id" id="<%=lesson_id%>" style="display: none;"></span>
+  <span class="slide_id" id="<%=slide._id%>" style="display: none;"></span>
+</div>

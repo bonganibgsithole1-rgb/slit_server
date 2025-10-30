@@ -1,0 +1,91 @@
+<div class="horizontalNav tabsLists">
+  <span><a href="/signIn">Sign In</a></span>
+  <span class="pageChoosen"><a href="/signUp">Sign Up</a></span>
+  <span><a href="/community">Our Community</a></span>
+</div>
+<div class="section" id="signInSection">
+  <div class="signContainer subSection subSection_sign">
+    <div class="containerContentSignUp">
+      <div class="h2ContainerInsider">
+        <h2>Create New Account</h2>
+      </div>
+
+      <div class="inputsContainer">
+        <form action="/singIn" id="slitSignUp">
+          <div class="inputContainer">
+            <label for="profile_name"></label>
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="profile_name"
+              id="profile_name"
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="profile_email"></label>
+            <input
+              type="text"
+              placeholder="Email"
+              name="profile_email"
+              id="profile_email"
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="profile_password"></label>
+            <input
+              type="password"
+              placeholder="Password"
+              name="profile_password"
+              id="profile_password"
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="profile_age"></label>
+            <input
+              type="number"
+              placeholder="Age"
+              name="profile_age"
+              id="profile_age"
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <select name="communication_type" id="communication_type">
+              <option value="1">I am learning sign language</option>
+              <option value="2">I am deaf or hard of hearing</option>
+              <option value="3">I have mutism or speech difficulties</option>
+            </select>
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputMessageError"></div>
+          <button type="submit" class="submitInfoBtn">Submit</button>
+        </form>
+      </div>
+      <div id="main-err-box"></div>
+      <div class="signUpOption">
+        <span><a href="/signIn"></a>Already have an account</span>
+      </div>
+      <button class="iamEmployee">
+        <a href="/employees/signUp"></a>
+        <span>Sign Up as Employeee</span>
+      </button>
+    </div>
+    <div class="containerSignDetail">
+      <div class="h2Container">
+        <h2>Create account and</h2>
+      </div>
+      <div class="reasonsForSignCont">
+        <ul>
+          <li>1. Apply for Sign Language Interpretation</li>
+          <li>2. Book and Guarrantee a seat at our festivals</li>
+          <li>3. Join Our Community</li>
+          <li>4. Activate Online Lesson</li>
+          <li>5. Donate, to our organisation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

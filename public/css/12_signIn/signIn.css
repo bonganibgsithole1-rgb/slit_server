@@ -1,0 +1,247 @@
+#signInSection .mesage_signUpContainer {
+  width: 65%;
+  float: left;
+}
+#signInSection .mesage_signUpContainer .message_span {
+  padding: 20px;
+  font-size: 15px;
+  float: left;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#signInSection .mesage_signUpContainer .success_message {
+  margin-right: 5px;
+}
+#signInSection .mesage_signUpContainer .message_span.err_negative {
+  background-color: hsl(700, 90%, 93%);
+  color: hsl(700, 90%, 35%);
+}
+#signInSection .mesage_signUpContainer .message_span.err_positive {
+  background-color: hsl(200, 90%, 93%);
+  color: hsl(200, 90%, 35%);
+}
+#signInSection .h2Container {
+  float: left;
+  width: 100%;
+  margin-bottom: 25px;
+}
+#signInSection .h2ContainerInsider {
+  display: none;
+}
+#signInSection .signContainer {
+  min-height: 70vh;
+  float: left;
+  background-color: hsl(0, 0%, 97%);
+}
+#signInSection .subSectionEmployeeSign.signContainer {
+  min-height: 100vh !important;
+}
+#signInSection .subSectionEmployeeSign.signContainer .containerContentSignIn {
+  float: left !important;
+  width: 65%;
+}
+#signInSection .signOptionsButtons {
+  width: 100%;
+  float: left;
+  border-radius: 4px;
+  border: 1px solid hsl(0, 0%, 70%);
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+#signInSection .signOptionsButtons:hover {
+  background-color: hsl(0, 0%, 98%);
+}
+#signInSection .signOptionsButtons svg,
+#signInSection .signOptionsButtons span {
+  float: left;
+}
+#signInSection .signOptionsButtons svg {
+  margin-right: 5px;
+}
+#signInSection .containerContentSignUp,
+#signInSection .containerContentSignIn {
+  float: right;
+  width: 45%;
+}
+#signInSection .containerSignDetail {
+  float: left;
+  width: 55%;
+}
+#signInSection .containerSignDetail .reasonsForSignCont {
+  float: left;
+  width: 100%;
+}
+#signInSection .containerSignDetail .reasonsForSignCont li {
+  width: 100%;
+  float: left;
+  font-size: 19px;
+  font-weight: 100;
+  color: hsl(0, 0%, 30%);
+  margin-bottom: 5px;
+}
+#signInSection .inputsContainer {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+#signInSection .inputsContainer form {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+#signInSection .inputsContainer .inputContainer {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#signInSection .inputsContainer .inputContainer.image_container_div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  flex-direction: column;
+  margin-top: 21px;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+}
+#signInSection .inputsContainer .inputContainer.image_container_div:hover {
+  box-shadow: 0px 0px 1px 1px hsl(0, 0%, 70%);
+}
+#signInSection
+  .inputsContainer
+  .inputContainer.image_container_div
+  .image_container {
+  cursor: pointer;
+}
+#signInSection .inputsContainer .inputContainer.image_container_div div {
+  width: auto;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#signInSection .inputsContainer .inputContainer.image_container_div div span {
+  width: auto;
+  cursor: pointer;
+  font-size: 16px;
+}
+#signInSection .inputsContainer .inputContainer.image_container_div div svg {
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+}
+#signInSection .inputsContainer .image_container {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#signInSection .inputsContainer .image_container img {
+  height: 100%;
+}
+#signInSection .inputsContainer .inputContainer input,
+#signInSection .inputsContainer .inputContainer select {
+  float: left;
+  width: 100%;
+  padding: 12px 5px;
+  color: hsl(0, 0%, 30%);
+  border-radius: 4px;
+  border: 1px solid hsl(0, 0%, 60%);
+  background-color: hsl(0, 0%, 100%);
+}
+#signInSection .inputsContainer .inputContainer input:focus,
+#signInSection .inputsContainer .inputContainer select:focus {
+  border: 1px solid hsl(200, 100%, 47%);
+}
+#signInSection .inputsContainer .submitInfoBtn {
+  border: none;
+  background-color: hsl(500, 100%, 37%);
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+#signInSection .inputsContainer .submitInfoBtn:hover {
+  background-color: hsl(500, 80%, 45%);
+}
+#signInSection .signUpOption {
+  float: left;
+  width: 100%;
+}
+#signInSection .signUpOption span {
+  font-size: 17px;
+  color: hsl(200, 80%, 40%);
+  font-family: sans-serif;
+  position: relative;
+}
+#signInSection .signUpOption span a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#signInSection .signUpOption span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#main-err-box {
+  width: 100%;
+}
+#main-err-box p {
+  background-color: hsl(0, 100%, 90%);
+  padding: 15px 5px;
+  font-size: 15px;
+}
+#main-err-box p.positive_feedback {
+  background-color: hsl(200, 100%, 90%);
+}
+#signInSection .iamEmployee {
+  float: left;
+  border: 1px solid hsl(200, 100%, 40%);
+  color: hsl(200, 80%, 40%);
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 10px 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  position: relative;
+  cursor: pointer;
+}
+#signInSection .iamEmployee:hover {
+  color: hsl(200, 80%, 60%);
+  border: 1px solid hsl(200, 80%, 60%);
+}
+#signInSection .iamEmployee a {
+  float: left;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#signInSection .inputsContainer .inputContainer .inputMessageError {
+  float: left;
+  width: 100%;
+}
+#signInSection .inputsContainer .inputContainer .inputMessageError p {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 13px;
+  color: hsl(700, 90%, 50%);
+}

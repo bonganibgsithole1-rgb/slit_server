@@ -1,0 +1,90 @@
+<h3>Manage Employee</h3>
+<div class="manage_employees">
+  <form method="POST" action="/edit_employee_role" id="edit_employee_role">
+    <div class="input_container">
+      <div class="label_element">
+        <label for="can_edit_calander_ON">Can edit calander</label>
+      </div>
+      <div class="radio_elements">
+        <input type="radio" name="can_edit_calander" id="can_edit_calander_ON"
+        value="on" <%=employee.manage_calander?'checked':''%> />
+        <span for="can_edit_calander">ON</span>
+        <input type="radio" name="can_edit_calander" id="can_edit_calander_OFF"
+        value="off" <%=!employee.manage_calander?'checked':''%> />
+        <span for="can_edit_calander">OFF</span>
+      </div>
+    </div>
+    <div class="input_container">
+      <div class="label_element">
+        <label for="can_edit_nandb_ON">News and blogs editing</label>
+      </div>
+      <div class="radio_elements">
+        <input type="radio" name="can_edit_nandb" id="can_edit_nandb_ON"
+        value="on" <%=employee.manage_newsandblogs?'checked':''%> />
+        <span for="can_edit_nandb">ON</span>
+        <input type="radio" name="can_edit_nandb" id="can_edit_nandb_OFF"
+        value="off" <%=!employee.manage_newsandblogs?'checked':''%> />
+        <span for="can_edit_nandb">OFF</span>
+      </div>
+    </div>
+    <div class="input_container">
+      <div class="label_element">
+        <label for="can_edit_online_lessons_ON">Online lessons</label>
+      </div>
+      <div class="radio_elements">
+        <input type="radio" name="can_edit_online_lessons"
+        id="can_edit_online_lessons_ON" value="on"
+        <%=employee.manage_courses?'checked':''%> />
+        <span for="can_edit_online_lessons">ON</span>
+        <input type="radio" name="can_edit_online_lessons"
+        id="can_edit_online_lessons_OFF" value="off"
+        <%=!employee.manage_courses?'checked':''%> />
+        <span for="can_edit_online_lessons">OFF</span>
+      </div>
+    </div>
+    <div class="input_container">
+      <div class="label_element">
+        <label for="can_edit_gallery_ON">Edit gallery</label>
+      </div>
+      <div class="radio_elements">
+        <input type="radio" name="can_edit_gallery" id="can_edit_gallery_ON"
+        value="on" <%=employee.manage_gallery?'checked':''%> />
+        <span for="can_edit_gallery">ON</span>
+        <input type="radio" name="can_edit_gallery" id="can_edit_gallery_OFF"
+        value="off" <%=!employee.manage_gallery?'checked':''%> />
+        <span for="can_edit_gallery">OFF</span>
+      </div>
+    </div>
+    <div class="input_container">
+      <div class="label_element">
+        <label for="can_edit_employees_ON">Can Edit Employees</label>
+      </div>
+      <div class="radio_elements">
+        <input type="radio" name="can_edit_employees" id="can_edit_employees_ON"
+        value="on" <%=employee.manage_employees?'checked':''%> />
+        <span for="can_edit_employees">ON</span>
+        <input type="radio" name="can_edit_employees"
+        id="can_edit_employees_OFF" value="off"
+        <%=!employee.manage_employees?'checked':''%> />
+        <span for="can_edit_employees">OFF</span>
+      </div>
+    </div>
+    <div class="input_container">
+      <div class="label_element">
+        <label for="can_booking_notification_ON">Booking notification</label>
+      </div>
+      <div class="radio_elements">
+        <input type="radio" name="can_booking_notification"
+        id="can_booking_notification_ON" value="on"
+        <%=employee.manage_appointments?'checked':''%> />
+        <span for="can_booking_notification">ON</span>
+        <input type="radio" name="can_booking_notification"
+        id="can_booking_notification_OFF" value="off"
+        <%=!employee.manage_appointments?'checked':''%> />
+        <span for="can_booking_notification">OFF</span>
+      </div>
+    </div>
+    <button id="save_employee_roles">Edit</button>
+  </form>
+</div>
+<span id="<%=employee._id%>" class="employee_id" style="display: none"></span>

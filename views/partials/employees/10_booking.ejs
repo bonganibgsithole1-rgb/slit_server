@@ -1,0 +1,81 @@
+<div class="horizontalNav tabsLists">
+  <a href="/employees/home">Employees Home</a>
+</div>
+<div class="section" id="homeEmployeeSection">
+  <div class="subSection">
+    <h3>Bookings</h3>
+    <ul class="booking_lists">
+      <% let count_booking = 1%>
+      <!--  -->
+      <%if(bookings.length >0 ){%>
+      <!--  -->
+      <%bookings.forEach(function(booking){%>
+      <li id="<%=booking._id%>">
+        <input
+          type="text"
+          id="booking_nos<%=count_booking%>"
+          class="booking_nos"
+          value="<%=count_booking%>"
+        />
+        <input
+          type="text"
+          id="booking_company_name<%=count_booking%>"
+          value="<%=booking.booking_company_name%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="booking_contact_number<%=count_booking%>"
+          value="<%=booking.booking_contact_number%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="booking_email_address<%=count_booking%>"
+          value="<%=booking.booking_email_address%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="booking_request_date<%=count_booking%>"
+          value="<%=booking.booking_request_date%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="booking_status<%=count_booking%>"
+          value="<%=booking.booking_status%>"
+          disabled
+        />
+
+        <button id="view_more_on_booking" class="load_summary">
+          view more
+        </button>
+      </li>
+      <%count_booking++%>
+      <!--  -->
+      <%})%>
+      <!--  -->
+      <%}else{%>
+      <!--  -->
+      <span>No bookings available</span>
+      <%}%>
+    </ul>
+  </div>
+</div>
+<div class="absolutePage disabled">
+  <div class="blackWindow"></div>
+  <div class="section">
+    <div class="cancelNav">
+      <button>
+        <svg class="cancelNavBody" viewBox="0 0 200 200">
+          <title></title>
+          <path
+            d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="subSection"></div>
+  </div>
+</div>

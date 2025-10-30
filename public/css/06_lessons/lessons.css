@@ -2,11 +2,33 @@
   display: flex;
   overflow: auto;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 14px;
+  min-height: auto;
 }
 #lessonsSection .subSection {
   box-shadow: lightgrey -3px 7px 24px 2px;
   margin: 20px 0;
+  width: 65%;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 8px;
+  min-height: 70vh;
+  padding: 30px 5%;
+  /* max-height: 70vh; */
+  overflow: auto;
+}
+#lessonsSection .subSection .edit_slide_btn {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+#lessonsSection .subSection .edit_slide_btn button {
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
 }
 #lessonsSection .subSection .halfContent {
   overflow: auto;
@@ -18,13 +40,24 @@
   padding: 0 5%;
   flex-direction: column;
 }
+#lessonsSection .slidingBtnsArrows {
+  float: left;
+  width: auto;
+  height: auto;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: transparent;
+  padding: 0;
+  margin-top: 30vh;
+}
 #lessonsSection svg {
-  width: 3.5%;
   fill: #0e810e;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   float: left;
-  min-width: 36px;
-  margin: 0 2.25%;
 }
 #lessonsSection .mobileNavigation {
   display: none;
@@ -38,26 +71,33 @@
   position: relative;
   height: 500px;
   z-index: 5;
+  display: flex;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 #lessonsSection .subSection img {
   height: 100%;
   float: left;
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   top: 0;
-  z-index: -10;
+  /* z-index: -10; */
 }
 #lessonsSection .subSection1 {
   height: auto;
 }
 #lessonsSection .subSection1 .imageDiv {
   width: 100%;
-  height: 350px;
+  height: 53vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #lessonsSection .subSection1 .imageDiv img {
   width: 100%;
-  height: unset;
+  height: auto;
 }
 #lessonsSection .subSection1 h4 {
   margin: 50px 0;
@@ -74,19 +114,26 @@
 }
 #lessonsSection .subSection1 ol li {
   width: 100%;
+  margin: 0;
+  min-height: auto;
+  padding: 0;
   margin-top: 13px;
+  display: list-item;
+  border: none;
+  padding: 0;
+  list-style: auto;
 }
 #lessonsSection .subSection3 {
   display: flex;
+  flex-wrap: wrap;
 }
 /* ended here */
-#lessonsSection .subSection2 {
-  height: 500px;
-}
 #lessonsSection .subSection2 .imageDiv {
   height: 420px;
   width: 100%;
   padding: 15px 3.8%;
+  position: relative;
+  border-radius: 5px;
 }
 #lessonsSection .subSection2 .imageDiv iframe {
   height: 100%;
@@ -97,6 +144,8 @@
   display: flex;
   align-items: center;
   padding: 0 3.8%;
+  font-size: 19px;
+  font-weight: 600;
 }
 /* sub4 */
 #lessonsSection .subSection4 {
@@ -104,7 +153,6 @@
   padding: 0;
 }
 #lessonsSection .subSection4 .imageDiv {
-  width: 50%;
   height: 100%;
 }
 #lessonsSection .subSection4 .halfContent {
@@ -115,7 +163,6 @@
 #lessonsSection .subSection4 .halfContent p {
   border: none;
   width: auto;
-  margin-top: 5px;
 }
 #lessonsSection .subSection4 .halfContent p:nth-of-type(2) {
   margin-top: 5px;
@@ -124,6 +171,12 @@
   list-style: none;
   float: left;
   color: #3b3bd1;
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 #lessonsSection .subSection4 .halfContent ol svg {
   width: 20px;
@@ -138,25 +191,46 @@
   float: left;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  position: relative;
+  margin: 0;
   font-size: 18px;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
+  padding: 0;
+  min-height: auto;
+  padding-bottom: 5px;
+  border: none;
 }
-#lessonsSection .subSection4 .halfContent ol li:nth-of-type(1) {
-  margin-bottom: 15px;
+#lessonsSection .subSection4 .halfContent ol li a {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+#lessonsSection .subSection4 .halfContent ol li a:hover {
+  color: hsl(200, 100%, 40%);
+}
+#lessonsSection
+  .subSection4
+  .halfContent
+  ol.dig_deeper_links
+  li:nth-of-type(1) {
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 #lessonsSection .subSection4 h3 {
   margin-bottom: 20px;
 }
 #lessonsSection .subSection5 .halfContent ol {
   list-style: auto;
+  width: 100%;
   color: black;
-}
-#lessonsSection .subSection5 .halfContent ol li b {
-  margin-left: 5px;
 }
 #lessonsSection .subSection5 .halfContent ol li {
   display: list-item;
+  overflow: visible;
 }
 #lessonsSection .subSection5 .halfContent {
   display: flex;
@@ -222,4 +296,7 @@
   background-color: #bfbfbf33;
   border: 1px solid lightgray;
   margin-bottom: 15px;
+}
+.slit_lesson .edit_slide_btn {
+  display: none !important;
 }

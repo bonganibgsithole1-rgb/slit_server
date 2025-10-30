@@ -2,6 +2,18 @@
   #donateSection {
     margin-bottom: 30px;
   }
+  #donateSection .howYourDonAreUsed .galleryFeature .h3Container svg {
+    display: block;
+  }
+  #donateSection .howYourDonAreUsed .galleryFeature .galleryCont svg {
+    display: none;
+  }
+  #donateSection .howYourDonAreUsed .galleryFeature .galleryCont .imageDiv {
+    width: 98%;
+  }
+  #donateSection .howYourDonAreUsed .imageDescription {
+    padding: 0 2%;
+  }
 }
 @media only screen and (max-width: 699px) {
   #donateSection .row .cell {

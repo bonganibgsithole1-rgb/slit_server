@@ -1,0 +1,46 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/employees/courses">Courses List</a></span>
+  <span class="pageChoosen"><a href="/employees/home">Employees Home</a></span>
+</div>
+<div class="section" id="addCourseSection">
+  <div class="subSection">
+    <h3>Add new course</h3>
+    <ul class="subSectionCourseLists">
+      <form
+        action="/employees/courses/<%=course._id%>/action/edit"
+        method="post"
+      >
+        <div class="textAreaSection">
+          <input
+            type="number"
+            name="course_number"
+            placeholder="Course number"
+            value="<%=course.course_number%>"
+            required
+          />
+          <input
+            type="text"
+            name="course_title"
+            placeholder="Course description"
+            value="<%=course.course_title%>"
+            required
+          />
+          <textarea
+            name="course_body"
+            id="course_body"
+            placeholder="Course explanation"
+            required
+          >
+<%=course.course_body%></textarea
+          >
+        </div>
+        <button class="submit_btn">Edit Course</button>
+      </form>
+      <div class="deleteContainer">
+        <button class="deleteContainer delete_course" id="<%=course._id%>">
+          Delete
+        </button>
+      </div>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+#interpretersSection .subSection {
+  padding: 20px 5%;
+  margin: 30px 0;
+}
+#interpretersSection .pageHero .imageHeroContainer {
+  padding: 15px;
+}
+#interpretersSection .imageDivider {
+  width: 90%;
+  height: auto;
+  border-radius: 4px;
+}
+#interpretersSection .imageDivider .imageContainer {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  height: auto;
+}
+#interpretersSection .imageDivider img {
+  width: 100%;
+  float: left;
+  height: auto;
+}
+#interpretersSection .translatorsDiv {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+#interpretersSection .embededDiv {
+  float: left;
+  width: 100%;
+  height: auto;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
+  padding: 20px 10px;
+  margin-bottom: 15px;
+}
+#interpretersSection .embededDiv_noBorder{
+  padding: 0;
+  border: none;
+}
+#interpretersSection .embededDiv .from_languages {
+  float: left;
+  width: 100%;
+}
+#interpretersSection .embededDiv .from_languages p {
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+  font-weight: 400;
+}
+#interpretersSection .embededDiv .from_languages li {
+  float: left;
+  margin-bottom: 5px;
+  width: 100%;
+  font-size: 15px;
+  color: hsl(0, 0%, 30%);
+}
+#interpretersSection h4 {
+  margin-bottom: 10px;
+  float: left;
+}
+#interpretersSection .translatorsDiv li {
+  width: calc(98% / 3);
+  float: left;
+  border-radius: 6px;
+  padding: 10px 2%;
+  border: 1px solid hsl(0, 0%, 92%);
+  margin: calc(2% / 6);
+  margin-bottom: 8px;
+}
+#interpretersSection .translatorVideoFrame,
+#interpretersSection .translatorVideoFrame iframe {
+  float: left;
+  width: auto;
+  height: auto;
+}
+#interpretersSection .translatorsDiv li h5 {
+  float: left;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+#interpretersSection .translatorsDiv li .experience,
+#interpretersSection .translatorsDiv .translatorInAction {
+  float: left;
+  width: 100%;
+  color: hsl(0, 0%, 30%);
+  margin-top: 10px;
+}
+#interpretersSection .translatorsDiv .translatorInAction {
+  color: hsl(200, 100%, 40%);
+  cursor: pointer;
+}
+#interpretersSection .translatorsDiv .translatorInAction:hover {
+  text-decoration: underline;
+}

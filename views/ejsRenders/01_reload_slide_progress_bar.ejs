@@ -1,0 +1,13 @@
+<!--  -->
+<%let is_covered = 'covered'%>
+<!--  -->
+<%slides.forEach(function(myslide){%>
+<!--  -->
+<li class="<%=is_covered%>"></li>
+<%if(''+myslide._id === ''+slide._id){%>
+<!--  -->
+<% is_covered = 'not_covered'%>
+<!--  -->
+<%}%>
+<!--  -->
+<%})%>

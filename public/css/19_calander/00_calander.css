@@ -1,0 +1,108 @@
+#calander {
+  float: left;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid hsl(0, 0%, 90%);
+  width: 50%;
+  margin-top: 15px;
+}
+#calander .calander_detail {
+  float: left;
+  margin: 20px 0;
+}
+#calander .calander_top_nav {
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+  padding-bottom: 5px;
+  margin-bottom: 7px;
+}
+#calander .curr_month {
+  float: left;
+  font-weight: 100;
+  color: hsl(0, 0%, 20%);
+  font-size: 21px;
+}
+#calander .chevron_icons {
+  float: left;
+  width: auto;
+  display: flex;
+}
+#calander .chevron_icons span {
+  padding: 6px;
+  margin-right: 5px;
+  border-radius: 4px;
+  border: 1px solid hsl(0, 0%, 100%);
+  cursor: pointer;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#calander .chevron_icons #icon_left {
+  margin-right: 0;
+}
+#calander .chevron_icons span:hover {
+  background-color: hsl(0, 0%, 99%);
+  border: 1px solid hsl(0, 0%, 90%);
+}
+#calander .chevron_icons span svg {
+  width: 18px;
+  height: 18px;
+}
+#calander .days_lists {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#calander .days_lists {
+  margin: 10px 0 5px 0;
+  color: hsl(200, 50%, 55%);
+}
+#calander .date_lists li,
+#calander .days_lists li {
+  float: left;
+  width: calc(100% / 7);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin: 1px 0;
+}
+#calander .date_lists li span {
+  float: left;
+  border-radius: 50%;
+  cursor: pointer;
+  color: hsl(0, 0%, 20%);
+  padding: 8px;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+}
+#calander .date_lists li span:hover {
+  background-color: hsl(0, 0%, 95%);
+}
+
+#calander .date_lists .focusedDate span {
+  background-color: hsl(500, 50%, 60%);
+  color: white;
+}
+#calander .date_lists .unfocusedDate span {
+  color: hsl(0, 0%, 60%);
+}
+#calander .date_lists .focusedDate span:hover {
+  background-color: hsl(500, 50%, 65%);
+}

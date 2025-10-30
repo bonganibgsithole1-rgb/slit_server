@@ -1,0 +1,51 @@
+<div class="record_date">
+  <span><%=curr_day%> <%=months_list[curr_month]%> <%=curr_year%></span>
+</div>
+
+<div class="btns_container">
+  <button id="add_event">New Event</button>
+</div>
+<ul class="events_list_container">
+  <% if(loaded_events.length > 0){%>
+  <!--  -->
+  <% loaded_events.forEach(function(event){%>
+  <li class="event_list" id="<%=event._id%>">
+    <h3><%=event.event_explanation%></h3>
+    <div class="time_container">
+      <% if(event.event_duration_type === 'all_day'){%>
+      <span>All Day</span>
+      <%}else{%>
+      <span
+        >From
+        <%=event.event_start_time%>:<%=event.event_start_time_minutes%></span
+      >
+      <span
+        >To <%=event.event_end_time%>:<%=event.event_end_time_minutes%></span
+      >
+      <%}%>
+    </div>
+    <div class="videoAdvertisment">
+      <% if(event.event_gallery_type === 'image'){%>
+      <img
+        src="<%=event.event_gallery_url%>"
+        alt="<%=event.event_gallery_url%>"
+      />
+      <%}else{%>
+      <iframe
+        src="<%=event.event_gallery_url%>"
+        frameborder="0"
+        allowfullscreen=""
+      ></iframe>
+      <%}%>
+    </div>
+
+    <div class="btns_container">
+      <button id="edit_event_btn">Edit Event</button>
+    </div>
+  </li>
+  <%})%>
+  <!--  -->
+  <%}else{%>
+  <div class="no_event">There are no events for this day</div>
+  <%}%>
+</ul>

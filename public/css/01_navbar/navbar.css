@@ -1,15 +1,35 @@
 #navbarSection {
   overflow: auto;
-  height: 100px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navbarSection .subSection {
+  padding: 0 5%;
 }
 #navbarSection .subSection,
 #navbarSection .subSection #logoDiv,
 #navbarSection .subSection #logoDiv img {
   height: 100%;
 }
-#navbarSection .subSection #logoDiv {
-  width: 50%;
+.div_cont_separate {
+  height: 100%;
+}
+#navbarSection .subSection .logo_ham_cont {
   float: left;
+  width: auto;
+  height: 100%;
+}
+
+#navbarSection .subSection #logoDiv {
+  width: auto;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
 }
 #navbarSection .subSection #logoDiv img {
   padding: 10px 0;
@@ -31,7 +51,7 @@
 }
 #navbarSection #navBtns li {
   width: 20%;
-  height: 100%;
+  height: auto;
   overflow: auto;
   float: right;
   display: flex;
@@ -39,6 +59,10 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  justify-content: flex-start;
+}
+#navbarSection #navBtns li.focused_btn {
+  background-color: hsl(0, 0%, 90%);
 }
 #navbarSection #navBtns li a {
   width: 100%;
@@ -52,7 +76,7 @@
   cursor: pointer;
 }
 #navbarSection #navBtns li img {
-  width: 34px;
+  width: 44px;
   margin: 10px 0 5px 0;
 }
 #navbarSection #navBtns li div {
@@ -64,12 +88,13 @@
   align-items: center;
   flex-direction: row;
   height: 25px;
+  margin-top: 4px;
 }
 #navbarSection #navBtns li div p {
   width: auto;
   float: left;
-  font-weight: 800;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 14px;
   margin: 0;
 }
 #navbarSection #navBtns li div svg {
@@ -88,9 +113,13 @@
   min-height: 200px;
   position: absolute;
   display: none;
-  z-index: 20 !important;
-  top: 100px !important;
+  z-index: 65 !important;
+  top: 99px !important;
+  border-top: 1px solid hsl(0, 0%, 90%);
   background-color: white;
+}
+#navbarSection .popUps.highlight_item {
+  border: 2px solid hsl(200, 100%, 50%);
 }
 #navbarSection .popUps .subSection {
   display: flex;
@@ -113,12 +142,19 @@
 }
 #navbarSection .popUps .popupLink li {
   width: 100%;
-  float: left;
+  float: right;
   padding-bottom: 10px;
   height: auto;
   padding-left: 5%;
   margin-top: 10px;
   text-align: right;
+}
+#navbarSection .popUps .popupLink li span {
+  float: right;
+  position: relative;
+}
+#navbarSection .popUps .popupLink li span:hover a {
+  color: hsl(200, 100%, 45%);
 }
 #navbarSection .popUps .popupLink li:hover {
   cursor: pointer;

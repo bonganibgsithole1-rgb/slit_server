@@ -1,6 +1,42 @@
 #donateSection {
-  margin-top: 30px;
-  margin-bottom: 100px;
+  float: left;
+  background-color: hsl(0, 0%, 100%);
+}
+#donateSection .subSection {
+  float: left;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* display: flex; */
+  z-index: 2;
+  position: relative;
+  left: 0;
+}
+#donateSection .left_ImageSection {
+  float: left;
+  width: 35%;
+  position: relative;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+#donateSection .left_ImageSection img {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+#donateSection .right_ContentSection {
+  float: left;
+  width: 65%;
+  padding: 30px 20px;
+}
+#donateSection .background_colorBlack {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.2;
 }
 #donateSection .row {
   width: 100%;
@@ -8,10 +44,15 @@
   justify-content: space-between;
 }
 #donateSection .row .cell {
-  width: 31.33333333333%;
+  width: 100%;
   float: left;
   margin: 10px 0;
-  margin-right: 3%;
+  margin-right: 0%;
+}
+#donateSection .row .cell h5 {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 #donateSection .row .cell:nth-of-type(3),
 #donateSection .row .cell:nth-of-type(6) {
@@ -24,9 +65,301 @@
   float: left;
 }
 #donateSection .row .cell input,
-#donateSection .row .cell select {
+#donateSection .row .cell select,
+#donateSection .row .cell textarea {
   height: 35px;
+  width: 60%;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 4px;
+}
+#donateSection .row .cell input:focus,
+#donateSection .row .cell select:focus,
+#donateSection .row .cell textarea:focus {
+  outline: 1px solid hsl(500, 100%, 85%);
+}
+#donateSection .row .cell #comment_donate_input {
+  width: 60%;
+  min-height: 100px;
+  min-width: 60%;
+  font-size: 16px;
+  max-width: 60%;
+  padding: 10px;
+}
+#donateSection .row .cell .moreInputInfo {
+  float: left;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px 0;
+  margin-right: 40%;
+  align-items: center;
+}
+#donateSection .row .cell .moreInputInfo span {
+  color: hsl(0, 0%, 40%);
+  font-size: 14px;
+  cursor: pointer;
+}
+#donateSection .row .cell .moreInputInfo span:hover {
+  color: hsl(0, 0%, 52%);
+}
+#donateSection .row .cell #hideOrShowDonationAmount_par {
+  float: left;
+  width: auto;
+  margin: 0;
+  margin-right: 5px;
+}
+#donateSection .row .cell #hideOrShowDonationAmount_par input {
+  display: none;
+}
+#donateSection .row .cell #hideOrShowDonationAmount_par span {
+  float: left;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: 1px solid hsl(0, 0%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#donateSection .row .cell #hideOrShowDonationAmount_par span svg {
+  width: 11px;
+  height: 12px;
+  float: left;
+}
+#donateSection
+  .row
+  .cell
+  .moreInputInfo.checkDonationAmount
+  #hideOrShowDonationAmount_par
+  span {
+  border: 1px solid hsl(200, 100%, 60%);
+  outline: 2px solid hsl(200, 100%, 90%);
+}
+#donateSection
+  .row
+  .cell
+  .moreInputInfo.checkDonationAmount
+  #hideOrShowDonationAmount_par
+  span
+  svg {
+  fill: hsl(200, 100%, 35%);
+}
+#donateSection .row .cell #hideOrShowDonationAmount_par span:hover {
+  outline: 2px solid hsl(200, 100%, 93%);
+  border: 1px solid hsl(0, 0%, 80%);
 }
 #donateSection .row .cell h5 span {
   font-size: 12px;
+}
+#donateSection .row .cell h4 {
+  margin-bottom: 10px;
+}
+#donateSection .row .cell .donationMethods {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+}
+#donateSection .row .cell .donationMethods .donationMethodDivCont {
+  float: left;
+  width: 15%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  flex-direction: column;
+}
+#donateSection .row .cell .donationMethods .donationMethodDivCont .input_check,
+#donateSection .row .cell .donationMethods .donationMethodDivCont .clickSvg {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin-bottom: 10px;
+}
+#donateSection
+  .row
+  .cell
+  .donationMethods
+  .donationMethodDivCont
+  .input_check
+  input {
+  display: none;
+}
+#donateSection
+  .row
+  .cell
+  .donationMethods
+  .donationMethodDivCont
+  .input_check
+  .checkbox_inputCont {
+  float: left;
+  width: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  border: 1px solid hsl(0, 0%, 40%);
+  z-index: 6;
+  background-color: white;
+  border-radius: 100%;
+}
+#donateSection
+  .row
+  .cell
+  .donationMethods
+  .donationMethodDivCont
+  .input_check
+  .checkbox_inputCont.checkedBox {
+  outline: 3px solid hwb(200 45% 0%);
+  border-radius: 100%;
+  width: 15px;
+  border: none;
+  height: 15px;
+}
+#donateSection
+  .row
+  .cell
+  .donationMethods
+  .donationMethodDivCont
+  .input_check
+  .checkbox_inputCont.checkedBox
+  span {
+  border: 1px solid hsl(200, 100%, 100%);
+  float: left;
+  height: 13px;
+  width: 13px;
+  border-radius: 100%;
+  background-color: hsl(200, 100%, 60%);
+}
+#donateSection .row .cell .donationMethods .donationMethodDivCont .clickSvg {
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+  justify-content: center;
+  border-radius: 5px;
+}
+#donateSection
+  .row
+  .cell
+  .donationMethods
+  .donationMethodDivCont
+  .clickSvg.svg_checked {
+  border: 1px solid hsl(200, 100%, 80%);
+}
+#donateSection
+  .row
+  .cell
+  .donationMethods
+  .donationMethodDivCont
+  .clickSvg:hover {
+  border: 1px solid hsl(200, 100%, 90%);
+}
+#donateSection .row .cell .donationMethods .donationMethodDivCont svg {
+  width: 100%;
+  height: 40px;
+}
+#donateSection .cell .select_display_type {
+  margin-top: 15px;
+}
+#donateSection .cell .select_display_type,
+#donateSection .cell .select_display_type li {
+  float: left;
+  width: 100%;
+}
+#donateSection .cell .select_display_type li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  margin-bottom: 7px;
+}
+#donateSection .cell .select_display_type li label,
+#donateSection .cell .select_display_type li input {
+  float: left;
+  width: auto;
+}
+#donateSection .cell .select_display_type li label:hover {
+  color: hsl(0, 0%, 40%);
+  cursor: pointer;
+}
+#donateSection .cell .select_display_type li input {
+  outline: 1px solid hsl(200, 100%, 60%);
+  position: absolute;
+  z-index: 2;
+  display: none;
+  border: none;
+}
+#donateSection .cell .select_display_type li .input_represent {
+  float: left;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  margin-right: 8px;
+}
+#donateSection .cell .select_display_type li .input_represent.checked_input {
+  outline: 3px solid hwb(200 45% 0%);
+  border-radius: 100%;
+  width: 17px;
+  height: 17px;
+}
+#donateSection .cell .select_display_type li span {
+  float: left;
+  width: 100%;
+  height: 100%;
+  border: 1px solid hsl(0, 0%, 40%);
+  position: absolute;
+  z-index: 6;
+  background-color: white;
+  border-radius: 100%;
+}
+#donateSection .cell .select_display_type li span:hover {
+  border: 1px solid hsl(0, 0%, 50%);
+}
+#donateSection
+  .cell
+  .select_display_type
+  li
+  .input_represent.checked_input
+  span {
+  border: 1px solid hsl(200, 100%, 100%);
+  height: 13px;
+  width: 13px;
+  background-color: hsl(200, 100%, 60%);
+}
+
+#donateSection .row .proceedToPayment button {
+  float: left;
+  width: auto;
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: hsl(200, 100%, 50%);
+  border-radius: 5px;
+}
+#donateSection .row .proceedToPayment button:hover {
+  background-color: hsl(200, 100%, 60%);
+  cursor: pointer;
+}
+#donateSection .row .proceedToPayment .agreetotermsofService,
+#donateSection .row .proceedToPayment .agreetotermsofService p {
+  float: left;
+  width: 100%;
+  font-size: 15px;
+  color: hsl(0, 0%, 40%);
+}
+#donateSection .row .proceedToPayment .agreetotermsofService p span {
+  color: hsl(200, 100%, 50%);
+  cursor: pointer;
+}
+#donateSection .row .proceedToPayment .agreetotermsofService p span:hover {
+  color: hsl(200, 100%, 60%);
+}
+
+#donateSection form {
+  float: left;
+  width: 100%;
 }

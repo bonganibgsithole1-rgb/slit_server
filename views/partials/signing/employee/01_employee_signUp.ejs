@@ -1,0 +1,120 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/">Home</a></span>
+  <span class="pageChoosen"><a href="/employees/signIn">Sign In</a></span>
+</div>
+<div class="section" id="signInSection">
+  <div class="signContainer subSection subSection_sign subSectionEmployeeSign">
+    <div class="containerContentSignIn">
+      <div class="inputsContainer">
+        <h2>Sign Up As Employee</h2>
+        <form action="/singInAsEmployee" id="slitSignUp_employee">
+          <div class="inputContainer image_container_div">
+            <div class="image_container">
+              <img
+                src="../../../../../Media/SLIT_IMAGES/doc_profile.jpg"
+                alt=""
+              />
+            </div>
+            <div class="add_image">
+              <svg viewBox="0 0 32 32">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: none;
+                    }
+                  </style>
+                </defs>
+                <title></title>
+                <g data-name="Layer 2" id="Layer_2">
+                  <path
+                    d="M16,29A13,13,0,1,1,29,16,13,13,0,0,1,16,29ZM16,5A11,11,0,1,0,27,16,11,11,0,0,0,16,5Z"
+                  ></path>
+                  <path
+                    d="M16,23a1,1,0,0,1-1-1V10a1,1,0,0,1,2,0V22A1,1,0,0,1,16,23Z"
+                  ></path>
+                  <path d="M22,17H10a1,1,0,0,1,0-2H22a1,1,0,0,1,0,2Z"></path>
+                </g>
+              </svg>
+              <span>Add Profile</span>
+            </div>
+          </div>
+          <div class="inputContainer">
+            <label for="employee_name"></label>
+            <input
+              type="text"
+              placeholder="Employee name"
+              name="employee_name"
+              id="employee_name"
+              required
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="employee_email"></label>
+            <input
+              type="text"
+              placeholder="Email"
+              name="employee_email"
+              id="employee_email"
+              required
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="employee_password"></label>
+            <input
+              type="password"
+              placeholder="Password"
+              name="employee_password"
+              id="employee_password"
+              required
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="employee_confirm_password"></label>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              name="employee_confirm_password"
+              id="employee_confirm_password"
+              required=""
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="employee_pin"></label>
+            <input
+              type="number"
+              placeholder="4 digit pin"
+              name="employee_pin"
+              id="employee_pin"
+              required=""
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="employee_dob">Date of birth</label>
+            <input
+              type="date"
+              placeholder="Date Of Birth"
+              name="employee_dob"
+              id="employee_dob"
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <input
+              type="text"
+              id="employee_verification_code"
+              value=""
+              disabled
+            />
+          </div>
+          <button type="submit" class="submitInfoBtn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="mesage_signUpContainer"></div>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/employees/home">Employees Home</a></span>
+</div>
+<div class="section" id="blogsAndNews">
+  <div class="subSection employee_subsection">
+    <h2>Add new</h2>
+    <div class="add_new_nb_container">
+      <form action="/employees/newsAndBlogs/add_item" id="new_nb_form">
+        <select name="nb_type" id="nb_type">
+          <option value="blog">Blog</option>
+          <option value="news">News</option>
+          <option value="resources">Resources</option>
+        </select>
+        <input
+          type="text"
+          id="nb_title"
+          name="nb_title"
+          placeholder="Title ..."
+          required
+        />
+        <select name="gallery_type" id="gallery_type">
+          <option value="image">Image</option>
+          <option value="video">Video</option>
+        </select>
+        <div class="gallery_selection_inputs">
+          <input
+            type="text"
+            name="gallery_selection_image"
+            id="gallery_selection_image"
+            placeholder="Image Link from google cloud"
+          />
+          <input
+            type="text"
+            class="display_none"
+            id="gallery_selection_video"
+            placeholder="Video Link from youtube"
+            name="gallery_selection_video"
+          />
+          <div class="gallery_selection_error_div error_message"></div>
+        </div>
+        <textarea
+          name="nb_body"
+          placeholder="Body ..."
+          id="nb_body"
+          required
+        ></textarea>
+
+        <div class="other_links">
+          <h5>Add Links</h5>
+          <ul class="other_links_lists"></ul>
+          <div class="other_links_container">
+            <div class="inputs_container">
+              <input
+                type="text"
+                name="nb_other_links_title"
+                id="nb_other_links_title"
+                placeholder="Link title"
+              />
+              <input
+                type="text"
+                id="nb_other_links_anchor"
+                name="nb_other_links_anchor"
+                placeholder="Link url ..."
+              />
+            </div>
+            <button>Add</button>
+          </div>
+          <div class="error_message"></div>
+        </div>
+        <div class="error_message" id="main_error_message_div"></div>
+        <div id="submit_btn_container">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,164 @@
+#communitySection .pageHero .imageHeroContainer {
+  padding: 15px;
+}
+#communitySection .imageDivider {
+  width: 90%;
+  height: auto;
+  border-radius: 4px;
+}
+#communitySection .imageDivider .imageContainer {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  height: auto;
+}
+#communitySection .imageDivider img {
+  width: 100%;
+  float: left;
+  height: auto;
+}
+#communitySection .subSection h2 {
+  float: left;
+  margin-top: 25px;
+  margin-bottom: 10p;
+}
+#communitySection .subSection .community_sectionLists {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+#communitySection .subSection .community_sectionLists h3 {
+  float: left;
+  margin: 20px 0;
+}
+#communitySection .subSection .community_sectionLists .galleryExamples {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .svgScroll {
+  width: 6%;
+  float: left;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .svgScroll
+  button {
+  float: left;
+  width: 35px;
+  min-width: 35px;
+  height: 35px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .svgScroll
+  button:hover {
+  cursor: pointer;
+  border: 1px solid hsl(200, 100%, 60%);
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .svgScroll
+  svg {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .galleryPicsContianer {
+  float: left;
+  width: 88%;
+  display: flex;
+  overflow: auto;
+  padding: 10px 0;
+  max-width: 100%;
+  border-radius: 7px;
+  border: 1px solid hsl(0, 0%, 90%);
+  scroll-behavior: smooth;
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .galleryPicsContianer {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .galleryPicsContianer::-webkit-scrollbar {
+  display: none;
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .galleryPicsContianer
+  .imageDiv {
+  float: left;
+  width: 31%;
+  min-width: 25%;
+  max-width: 25%;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .galleryPicsContianer
+  img {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+#communitySection
+  .subSection
+  .community_sectionLists
+  .galleryExamples
+  .galleryPicsContianer
+  .imageDiv
+  h5 {
+  float: left;
+  font-size: 13px;
+  margin: 3px 0;
+}
+#communitySection .calander_div {
+  float: left;
+  padding: 0;
+  display: flex;
+}

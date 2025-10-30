@@ -1,0 +1,22 @@
+<div class="section" id="headingSection">
+  <div class="subSection">
+    <h4>Lesson <%=lesson.lesson_number%> | <%=lesson.lesson_title%></h4>
+    <ul class="exercisesProgress">
+      <!--  -->
+      <%let is_covered = 'covered'%>
+      <!--  -->
+      <%if(slides){%>
+      <!--  -->
+      <%slides.forEach(function(myslide){%>
+      <!--  -->
+      <li class="<%=is_covered%>"></li>
+      <%if(''+myslide._id === ''+slide._id){%>
+      <!--  -->
+      <% is_covered = 'not_covered'%>
+      <!--  -->
+      <%}%>
+      <!--  -->
+      <%})%> <%}%>
+    </ul>
+  </div>
+</div>

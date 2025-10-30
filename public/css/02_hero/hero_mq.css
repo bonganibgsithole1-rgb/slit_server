@@ -13,6 +13,8 @@
   #heroSection #videoDiv {
     position: relative;
     float: left;
+    justify-content: center;
+    position: relative;
     width: 100%;
   }
   #heroSection .subSection div {

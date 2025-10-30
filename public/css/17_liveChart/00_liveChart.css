@@ -1,0 +1,179 @@
+#liveChart {
+  border: 1px solid #0e810e;
+  padding: 5px;
+  width: 100%;
+  float: left;
+}
+#liveChart .subSection {
+  float: left;
+}
+#liveChart .subSection .sendVia {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+#liveChart .subSection .sendVia #sendViaEmail {
+  margin-right: 5px;
+}
+#liveChart .subSection .sendVia #sendViaWhatsapp {
+  margin-left: 5px;
+}
+#liveChart .subSection .sendVia button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  color: hsl(0, 0%, 20%);
+  border: 1px solid hsl(0, 0%, 20%);
+}
+#liveChart .subSection .sendVia button:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+#liveChart .subSection .sendVia button.focused_via {
+  color: hsl(0, 0%, 100%);
+  border: 1px solid hsl(120, 50%, 35%);
+  background-color: hsl(120, 50%, 35%);
+}
+#liveChart .subSection .sendVia button.focused_via:hover {
+  background-color: hsl(120, 50%, 30%);
+}
+#liveChart .subSection .left_sideIcons {
+  float: left;
+  border-right: 1px solid #29b929;
+  height: auto;
+  width: 55px;
+  padding-right: 5px;
+}
+#liveChart .subSection .right_side_Content {
+  float: left;
+  width: calc(100% - 55px);
+  padding: 20px 12%;
+  display: flex;
+}
+#liveChart .subSection .right_Left_side_cont {
+  float: left;
+  width: 100%;
+  height: auto;
+  min-height: 80vh;
+  display: flex;
+}
+#liveChart .subSection .iconMessage_container {
+  float: left;
+}
+#liveChart .subSection .left_sideIcons .iconMessage {
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: hsl(0, 0%, 100%);
+  justify-content: center;
+  margin: 15px 0;
+  cursor: pointer;
+  border-right: 2px solid transparent;
+  position: relative;
+}
+#liveChart .subSection .left_sideIcons .iconMessage a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#liveChart .subSection .left_sideIcons .iconMessage:hover {
+  border-right: 2px solid hsl(0, 0%, 0%);
+}
+#liveChart .subSection .left_sideIcons .iconMessage:hover svg {
+  fill: #10a610;
+}
+#liveChart .subSection .left_sideIcons .iconMessage svg {
+  width: 40px;
+  float: left;
+  height: 40px;
+  fill: #0e810e;
+}
+#liveChart .subSection .message_container_FullWidth {
+  float: left;
+  width: 100%;
+}
+#liveChart .subSection .message_container_FullWidth .newOrOldMessages {
+  float: left;
+  padding: 10px;
+  width: 100%;
+  padding-left: 63px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #29b929;
+}
+#liveChart .subSection .message_container_FullWidth .newOrOldMessages button {
+  float: left;
+  color: hsl(0, 0%, 100%);
+  background: linear-gradient(90deg, #0b650b 10%, #0e810e 40%);
+  width: auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+#liveChart
+  .subSection
+  .message_container_FullWidth
+  .newOrOldMessages
+  button:hover {
+  background: linear-gradient(90deg, #27a927 10%, #0b9b0b 40%);
+}
+#liveChart .subSection .right_side_Content form {
+  float: left;
+  width: 100%;
+}
+#liveChart .subSection .right_side_Content input,
+#liveChart .subSection .right_side_Content textarea {
+  float: left;
+  width: 100%;
+  height: auto;
+  border: 1px solid hsl(0, 0%, 90%);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+#liveChart .subSection .right_side_Content input:focus,
+#liveChart .subSection .right_side_Content textarea:focus {
+  outline: 1px solid hsl(200, 100%, 50%);
+}
+#liveChart .subSection .right_side_Content textarea {
+  float: left;
+  min-width: 100%;
+  min-height: 150px;
+  max-width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#liveChart .subSection .right_side_Content .sendBtn {
+  float: left;
+  width: 100%;
+}
+#liveChart .subSection .right_side_Content .sendBtn button {
+  float: left;
+  width: auto;
+  padding: 8px 10px;
+  color: hsl(0, 0%, 100%);
+  background: #0b650b;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#liveChart .subSection .right_side_Content .sendBtn svg {
+  float: left;
+  width: 18px;
+  fill: hsl(0, 0%, 100%);
+  margin-right: 5px;
+  height: 18px;
+}
+#liveChart .subSection .right_side_Content .sendBtn button:hover {
+  background-color: #0b9b0b;
+}

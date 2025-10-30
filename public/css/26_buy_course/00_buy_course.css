@@ -1,0 +1,279 @@
+#buy_course_section {
+  float: left;
+  width: 100%;
+  min-height: 70vh;
+}
+#buy_course_section .payments_div {
+  width: 100%;
+  margin-top: 20px;
+}
+#buy_course_section .payments_div h4 {
+  width: 100%;
+  height: auto;
+  font-size: 22px;
+}
+#buy_course_section .payments_method_lists {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+#buy_course_section .payments_method_lists li {
+  width: 13%;
+  padding: 20px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#buy_course_section .payments_method_lists li:hover {
+  padding: 19px;
+  border: 2px solid hsl(0, 0%, 60%);
+}
+#buy_course_section .payments_method_lists li.selected_pm {
+  padding: 19px;
+  border: 2px solid hsl(200, 100%, 60%);
+}
+#buy_course_section .payments_method_lists li svg {
+  width: 35%;
+  height: auto;
+}
+#buy_course_section .containerContentSignIn {
+  width: 100%;
+  margin: 20px 0;
+}
+#buy_course_section .inputsContainer {
+  width: 60%;
+  float: left;
+  margin-bottom: 10px;
+}
+#buy_course_section .inputsContainer form {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+#buy_course_section .inputsContainer .inputContainer {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#buy_course_section .inputsContainer .inputContainer input,
+#buy_course_section .inputsContainer .inputContainer select {
+  float: left;
+  width: 100%;
+  padding: 12px 5px;
+  color: hsl(0, 0%, 30%);
+  border-radius: 4px;
+  border: 1px solid hsl(0, 0%, 60%);
+  background-color: hsl(0, 0%, 100%);
+}
+#buy_course_section .inputsContainer .inputContainer .inputMessageError {
+  float: left;
+  width: 100%;
+}
+#buy_course_section .inputsContainer .inputContainer .inputMessageError p {
+  width: 100%;
+  color: hsl(0, 100%, 50%);
+  font-size: 15px;
+  margin: 0;
+}
+#buy_course_section .inputsContainer .submitInfoBtn {
+  border: none;
+  background-color: hsl(500, 100%, 37%);
+  padding: 10px 15px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#buy_course_section .inputsContainer .submitInfoBtn svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  fill: hsl(0, 0%, 100%);
+}
+#buy_course_section .signUpOption {
+  float: left;
+  width: 100%;
+}
+#buy_course_section .signUpOption span {
+  font-size: 17px;
+  color: hsl(200, 80%, 40%);
+  font-family: sans-serif;
+  position: relative;
+  cursor: pointer;
+}
+#buy_course_section .signUpOption span:hover {
+  color: hsl(200, 80%, 30%);
+}
+#buy_course_section #main-err-box {
+  width: 100%;
+  height: auto;
+}
+#buy_course_section #main-err-box p {
+  width: 60%;
+  background-color: hsl(0, 100%, 97%);
+  color: hsl(0, 100%, 40%);
+  height: auto;
+  padding: 10px;
+  font-size: 15px;
+}
+#buy_course_section #main-err-box p.positive_feedback {
+  background-color: hsl(200, 50%, 97%);
+  color: hsl(200, 100%, 45%);
+}
+#buy_course_section .cell {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+#buy_course_section h4 {
+  margin-top: 10px;
+  font-size: 15px;
+}
+#buy_course_section .payment_methods_container {
+  width: 100%;
+  float: left;
+  margin: 10px 0;
+}
+#buy_course_section .payment_methods_container .payment_method_type {
+  width: 15%;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+  display: flex;
+  height: auto;
+  margin-right: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+}
+#buy_course_section
+  .payment_methods_container
+  .payment_method_type
+  .input_check {
+  float: left;
+  width: auto;
+}
+#buy_course_section
+  .payment_methods_container
+  .payment_method_type
+  .input_check
+  .checkbox_inputCont {
+  margin: 0;
+  width: auto;
+}
+#buy_course_section
+  .payment_methods_container
+  .payment_method_type
+  .input_check
+  .checkbox_inputCont {
+  float: left;
+  width: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15px;
+  border: 1px solid hsl(0, 0%, 40%);
+  z-index: 6;
+  background-color: white;
+  border-radius: 100%;
+}
+#buy_course_section
+  .payment_methods_container
+  .payment_method_type
+  .input_check
+  .checkbox_inputCont.checkedBox {
+  outline: 3px solid hwb(200 45% 0%);
+  border-radius: 100%;
+  width: 15px;
+  border: none;
+  height: 15px;
+}
+#buy_course_section
+  .payment_methods_container
+  .payment_method_type
+  .input_check
+  .checkbox_inputCont.checkedBox
+  span {
+  border: 1px solid hsl(200, 100%, 100%);
+  float: left;
+  height: 13px;
+  width: 13px;
+  border-radius: 100%;
+  background-color: hsl(200, 100%, 60%);
+}
+#buy_course_section .payment_methods_container .payment_method_type .clickSvg {
+  width: 60%;
+  height: auto;
+}
+#buy_course_section
+  .payment_methods_container
+  .payment_method_type
+  .clickSvg
+  svg {
+  width: 100%;
+}
+#buy_course_section .agreetotermsofService {
+  width: 100%;
+}
+#buy_course_section .agreetotermsofService span {
+  margin-right: 5px;
+}
+#buy_course_section .agreetotermsofService span.have_link {
+  color: hsl(200, 100%, 45%);
+  cursor: pointer;
+}
+#buy_course_section .agreetotermsofService span.have_link:hover {
+  color: hsl(200, 100%, 40%);
+}
+#buy_course_section .button_container {
+  width: 100%;
+  margin-top: 10px;
+}
+#buy_course_section .button_container button {
+  border: none;
+  background-color: hsl(500, 50%, 50%);
+  padding: 10px 15px;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+#buy_course_section .button_container button span {
+  float: left;
+}
+#buy_course_section .button_container button svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  fill: hsl(0, 0%, 100%);
+}
+#buy_course_section .button_container button:hover {
+  background-color: hsl(500, 50%, 40%);
+}
+#buy_course_section .cell label {
+  width: 100%;
+  height: auto;
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+#buy_course_section .cell input,
+#buy_course_section .cell select {
+  width: 60%;
+  border: 1px solid hsl(0, 0%, 70%);
+  border-radius: 6px;
+  padding: 10px 8px;
+}
+#buy_course_section .cell input:focus,
+#buy_course_section .cell select:focus {
+  border: 1px solid hsl(200, 100%, 70%);
+}

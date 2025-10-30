@@ -1,0 +1,183 @@
+<div class="horizontalNav tabsLists">
+  <%if(!user_active){%>
+  <span><a href="/signIn">Sign In</a></span>
+  <span><a href="/signUp">Sign Up</a></span>
+  <%}%>
+  <span class="pageChoosen"><a href="/services">Our Community</a></span>
+</div>
+
+<div class="section" id="communitySection">
+  <div class="pageHero">
+    <div class="contentContainer">
+      <h2>Community</h2>
+      <p>Together we are stronger</p>
+    </div>
+    <div class="imageHeroContainer">
+      <div class="imageDivider">
+        <img src="./Media/SLIT_IMAGES/pexels-pixabay-207896.jpg" alt="" />
+      </div>
+      <div class="coloredPortion"></div>
+    </div>
+  </div>
+  <div class="subSection">
+    <h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, maiores?
+    </h2>
+    <div class="communityGallery community_sectionLists">
+      <h3>Images</h3>
+      <div class="galleryExamples">
+        <div class="svgScroll" id="scrollLeft">
+          <button>
+            <svg viewBox="0 0 512 512">
+              <title />
+              <g data-name="1" id="_1">
+                <path
+                  d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="galleryPicsContianer">
+          <% if(gallery_images.length > 0){%>
+          <!--  -->
+          <%gallery_images.forEach(function(g_i){%>
+          <div class="imageDiv">
+            <img src="<%=g_i.gallery_url%>" alt="<%=g_i.gallery_url%>" />
+          </div>
+          <%})%>
+          <!--  -->
+          <%}else{%>
+          <div class="no_content_added">No gallery images added</div>
+          <%}%>
+        </div>
+        <div class="svgScroll" id="scrollRight">
+          <button>
+            <svg viewBox="0 0 512 512">
+              <title />
+              <g data-name="1" id="_1">
+                <path
+                  d="M202.1,450a15,15,0,0,1-10.6-25.61L365.79,250.1,191.5,75.81A15,15,0,0,1,212.71,54.6l184.9,184.9a15,15,0,0,1,0,21.21l-184.9,184.9A15,15,0,0,1,202.1,450Z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="communityGallery community_sectionLists">
+      <h3>Videos Clips</h3>
+      <div class="galleryExamples">
+        <div class="svgScroll" id="scrollLeft">
+          <button>
+            <svg viewBox="0 0 512 512">
+              <title />
+              <g data-name="1" id="_1">
+                <path
+                  d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div class="galleryPicsContianer">
+          <% if(gallery_videos.length > 0){%>
+          <!--  -->
+          <%gallery_videos.forEach(function(g_v){%>
+          <div class="imageDiv">
+            <iframe src="<%=g_v.gallery_url%>" frameborder="0"></iframe>
+          </div>
+          <%})%>
+          <!--  -->
+          <%}else{%>
+          <div class="no_content_added">No gallery videos added</div>
+          <%}%>
+        </div>
+        <div class="svgScroll" id="scrollRight">
+          <button>
+            <svg viewBox="0 0 512 512">
+              <title />
+              <g data-name="1" id="_1">
+                <path
+                  d="M202.1,450a15,15,0,0,1-10.6-25.61L365.79,250.1,191.5,75.81A15,15,0,0,1,212.71,54.6l184.9,184.9a15,15,0,0,1,0,21.21l-184.9,184.9A15,15,0,0,1,202.1,450Z"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="communityCalander community_sectionLists" id="calander">
+      <h3>Attend Our Events</h3>
+      <div class="calander_div">
+        <div id="calander">
+          <div class="calander_top_nav">
+            <div class="curr_month" year="2025" month="10">
+              <select class="calander_months" id="calander_months">
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9" selected="">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+              </select>
+              <select class="calander_year" id="calander_year">
+                <option value="2025" selected="">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select>
+            </div>
+            <div class="chevron_icons">
+              <span id="icon_right">
+                <svg viewBox="0 0 512 512">
+                  <title></title>
+                  <g data-name="1" id="_1">
+                    <path
+                      d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+              <span id="icon_left">
+                <svg viewBox="0 0 512 512">
+                  <title></title>
+                  <g data-name="1" id="_1">
+                    <path
+                      d="M202.1,450a15,15,0,0,1-10.6-25.61L365.79,250.1,191.5,75.81A15,15,0,0,1,212.71,54.6l184.9,184.9a15,15,0,0,1,0,21.21l-184.9,184.9A15,15,0,0,1,202.1,450Z"
+                    ></path>
+                  </g>
+                </svg>
+              </span>
+            </div>
+          </div>
+          <ul class="days_lists">
+            <ul class="days_lists">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thur</li>
+              <li>Fri</li>
+              <li>Sat</li>
+            </ul>
+          </ul>
+          <ul class="date_lists"></ul>
+        </div>
+        <div class="calander_detail">
+          <div class="record_date"></div>
+
+          <ul class="events_list_container"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

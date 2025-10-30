@@ -1,0 +1,110 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/">Slit Home</a></span>
+  <span class="pageChoosen"><button id="employee_logOut">Logout</button></span>
+</div>
+<div class="section" id="homeEmployeeSection">
+  <h3 class="name_tag">
+    <span>Good day, <%=employee_details.employee_name%></span>
+  </h3>
+  <div class="subSection">
+    <h3>Bookings</h3>
+    <ul class="booking_lists">
+      <% let count_booking = 1%>
+      <!--  -->
+      <%if(bookings.length >0 ){%>
+      <!--  -->
+      <%bookings.forEach(function(booking){%>
+      <li id="<%=booking._id%>">
+        <input
+          type="text"
+          id="booking_nos<%=count_booking%>"
+          class="booking_nos"
+          value="<%=count_booking%>"
+        />
+        <input
+          type="text"
+          id="booking_company_name<%=count_booking%>"
+          value="<%=booking.booking_company_name%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="booking_contact_number<%=count_booking%>"
+          value="<%=booking.booking_contact_number%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="booking_email_address<%=count_booking%>"
+          value="<%=booking.booking_email_address%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="booking_request_date<%=count_booking%>"
+          value="<%=booking.booking_request_date%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="booking_status<%=count_booking%>"
+          value="<%=booking.booking_status%>"
+          disabled
+        />
+
+        <button id="view_more_on_booking">view more</button>
+      </li>
+      <%count_booking++%>
+      <!--  -->
+      <%})%>
+      <!--  -->
+      <%}else{%>
+      <!--  -->
+      <span>No pending bookings</span>
+      <%}%>
+    </ul>
+    <div class="view_all_bookings">
+      <button>
+        View all bookings (<%=all_bookings.length%>)
+        <a href="/employees/bookings" class="absoluteAnchor"></a>
+      </button>
+    </div>
+    <h3>Others</h3>
+    <ul class="subSectionListsItem">
+      <li>
+        <span>Employees <a href="/employees/employee_lists"></a></span>
+      </li>
+      <li>
+        <span>Online lessons <a href="/employees/courses"></a></span>
+      </li>
+      <li>
+        <span>Gallery <a href="/employees/gallery"></a></span>
+      </li>
+      <li>
+        <span>Calander <a href="/employees/calander"></a></span>
+      </li>
+      <li>
+        <span>News and blogs <a href="/employees/newsAndBlogs"></a></span>
+      </li>
+      <li>
+        <span>Premium courses <a href="/employees/premium_courses"></a></span>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="absolutePage disabled">
+  <div class="blackWindow"></div>
+  <div class="section">
+    <div class="cancelNav">
+      <button>
+        <svg class="cancelNavBody" viewBox="0 0 200 200">
+          <title></title>
+          <path
+            d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="subSection"></div>
+  </div>
+</div>

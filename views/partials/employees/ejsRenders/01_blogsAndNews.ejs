@@ -1,0 +1,72 @@
+<% if(foundItems.length > 0 ){%>
+<!--  -->
+<%foundItems.forEach(function(foundItem){%>
+<div class="bn_lists_container" id="<%=foundItem.id%>">
+  <div class="content_server">
+    <div class="content_type"><span><%=foundItem.nb_type%></span></div>
+    <div class="image_container">
+      <%if(foundItem.nb_gallery_type === 'image'){%>
+      <img
+        src="<%=foundItem.nb_gallery_link%>"
+        alt="<%=foundItem.nb_gallery_link%>"
+      />
+      <%}%>
+      <!--  -->
+      <%if(foundItem.nb_gallery_type === 'video'){%>
+      <iframe
+        class="iframeYoutube"
+        src="<%=foundItem.nb_gallery_link%>"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+      <%}%>
+    </div>
+    <div class="content_container">
+      <h3><%=foundItem.nb_title%></h3>
+      <p class="preserve_white_space"><%=foundItem.nb_body%></p>
+      <ul class="document_links">
+        <% if(foundItem.nb_links.length > 0){%>
+        <!--  -->
+        <h5>Other links</h5>
+        <!--  -->
+        <%}%>
+        <!--  -->
+        <%foundItem.nb_links.forEach(function(link){%>
+        <!--  -->
+        <li><a href="<%=link.link_tag%>"><%=link.html_content%></a></li>
+        <!--  -->
+        <%})%>
+      </ul>
+      <div class="created_by">
+        <div class="btns_container">
+          <button>
+            <a
+              class="absolute_anchor"
+              href="/employees/newsAndBlogs/edit_nb/<%=foundItem.id%>"
+            ></a>
+            Edit
+          </button>
+          <button id="delete_item">
+            <a
+              class="absolute_anchor"
+              href="/employees/newsAndBlogs/delete_nb/<%=foundItem.id%>"
+            ></a>
+            delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%})%>
+<!--  -->
+<%}else{%>
+<div class="container_no_items">
+  <p>No documents added click the add btn to start creating</p>
+  <div class="btn_container">
+    <button class="absolute_anchor">
+      <a href="/employees/newsAndBlogs/newItem">Add document</a>
+    </button>
+  </div>
+</div>
+<%}%>

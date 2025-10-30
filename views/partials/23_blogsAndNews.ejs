@@ -1,0 +1,75 @@
+<div class="horizontalNav tabsLists">
+  <span><a href="/courses">Online Lessons</a></span>
+  <span class="pageChoosen"><a href="/understandDeaf"> News & Blogs</a></span>
+</div>
+
+<div class="section" id="blogsAndNews">
+  <div class="pageHero">
+    <div class="contentContainer">
+      <h2>News and blogs</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum,
+        expedita earum minus provident.
+      </p>
+    </div>
+    <div class="imageHeroContainer">
+      <div class="imageDivider">
+        <div class="communicationImgContainer">
+          <img
+            src="./Media/SLIT_IMAGES/WhatsApp Image 2024-07-16 at 21.21.51.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="coloredPortion"></div>
+    </div>
+  </div>
+  <div class="mini_nav_option">
+    <button class="focused_button" id="all_docs">All</button>
+    <button id="blogs_docs">Blogs</button>
+    <button id="news_docs">News</button>
+    <button id="resources_docs">Resources</button>
+  </div>
+  <div class="subSection">
+    <%nbs.forEach(function(nb){%>
+    <div class="blogLists" id="<%=nb._id%>">
+      <div class="contenInfomation borderedRight">
+        <h5><%=nb.nb_type%></h5>
+        <h4><%=nb.nb_title%></h4>
+        <div class="explainInformation preserve_white_space">
+          <p class="limittofive"><%=nb.nb_body%></p>
+        </div>
+        <ul class="blog_links">
+          <%nb.nb_links.forEach(function(link){%>
+          <li><a href="<%=link.link_tag%>"><%=link.html_content%></a></li>
+          <%})%>
+        </ul>
+        <div class="containerview_more">
+          <button class="view_more">
+            <span>View All</span>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="imageDiv_Container">
+        <%if(nb.nb_gallery_type === 'image'){%>
+        <img src="<%=nb.nb_gallery_link%>" alt="<%=nb.nb_gallery_link%>" />
+        <%}%>
+        <!--  -->
+        <%if(nb.nb_gallery_type === 'video'){%>
+        <iframe
+          class="iframeYoutube"
+          src="<%=nb.nb_gallery_link%>"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+        <%}%>
+      </div>
+    </div>
+    <%})%>
+  </div>
+</div>

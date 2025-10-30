@@ -1,0 +1,33 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/employees/home">Employees Home</a></span>
+</div>
+<div class="section" id="courseEmployeeSection">
+  <div class="subSection">
+    <ul class="subSectionCourseLists">
+      <h2>Courses</h2>
+      <div class="new_course_div">
+        <button id="add_new_course">
+          New Course <a href="/employees/course/newCourse"></a>
+        </button>
+      </div>
+      <%if(courses.length === 0){%>
+      <p>No Course Available</p>
+      <%}else{%>
+      <!--  -->
+      <%courses.forEach(function(course){%>
+      <div class="courses_lists">
+        <li id="<%=course._id%>">
+          <a href="/employees/course/<%=course._id%>/view"></a>
+          <h3><%=course.course_number%>.<%=course.course_title%></h3>
+          <p class="limittofour"><%=course.course_body%></p>
+        </li>
+        <button>
+          Edit Course <a href="/employees/course/<%=course._id%>/edit"></a>
+        </button>
+      </div>
+      <%})%>
+      <!--  -->
+      <%}%>
+    </ul>
+  </div>
+</div>

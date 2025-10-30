@@ -1,0 +1,43 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/">Home</a></span>
+</div>
+<div class="section sectionCourses" id="lessonAddSection">
+  <div class="subSection">
+    <h3>Add new lesson</h3>
+    <ul class="subSectionCourseLists">
+      <form
+        action="/employees/lesson/addLesson/course_id/<%=course_id%>"
+        method="post"
+      >
+        <div class="textAreaSection">
+          <input
+            type="text"
+            name="lesson_image_url"
+            placeholder="Lesson image url ...from google cloud"
+            id="lesson_image_url"
+            required
+          />
+          <input
+            type="number"
+            name="lesson_number"
+            placeholder="Lesson number"
+            required
+          />
+          <input
+            type="text"
+            name="lesson_title"
+            placeholder="Lesson description"
+            required
+          />
+          <textarea
+            name="lesson_body"
+            id="lesson_body"
+            placeholder="Lesson body"
+            required
+          ></textarea>
+        </div>
+        <button class="submit_btn">New Lesson</button>
+      </form>
+    </ul>
+  </div>
+</div>

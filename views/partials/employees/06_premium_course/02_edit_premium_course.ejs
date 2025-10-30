@@ -1,0 +1,61 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/employees/home">Employees Home</a></span>
+  <span class="pageChoosen"
+    ><a href="/employees/premium_courses/view_students/<%=p_course._id%>"
+      >View premium students</a
+    ></span
+  >
+</div>
+<div class="section" id="p_course_section">
+  <div class="subSection employee_subsection">
+    <h2>Edit course</h2>
+    <div class="add_new_nb_container">
+      <form
+        action="/employees/premium_courses/edit_p_course/<%=p_course._id%>"
+        method="post"
+        p_course_id = '<%=p_course._id%>'
+        id="edit_p_course_form"
+      >
+        <div class="error_message" id="main_error_message_div"></div>
+        <div class="inputs_container">
+          <label for="p_course_title">Title</label>
+          <input
+            type="text"
+            name="p_course_title"
+            value="<%=p_course.p_course_title%>"
+            id="p_course_title"
+            required
+          />
+        </div>
+        <div class="inputs_container">
+          <label for="p_course_amount">Amount in usd</label>
+          <input
+            type="number"
+            name="p_course_amount"
+            id="p_course_amount"
+            value="<%=p_course.p_course_amount%>"
+            required
+          />
+        </div>
+        <div class="inputs_container">
+          <select name="p_course_period" id="p_course_period">
+            <option value="month" <%= p_course.p_course_period === 'month'?'selected':''%>>Month</option>
+            <option value="year" <%= p_course.p_course_period === 'year'?'selected':''%>>Year</option>
+          </select>
+        </div>
+        <div id="submit_btn_container">
+          <button>Edit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="subSection">
+   <h2>Delete course</h2>
+   <div class="delete_btn_container" id="<%=p_course._id%>">
+      <button id="delete_p_course_btn">
+         Delete
+      </button>
+   </div>
+  </div>
+</div>

@@ -1,31 +1,125 @@
-#boardSection {
-  margin-top: 30px;
-  margin-bottom: 100px;
+#boardSection .subSection {
+  margin: 30px 0;
+  float: left;
+}
+#boardSection .pageHero .imageHeroContainer {
+  padding: 15px;
+}
+#boardSection .imageDivider {
+  width: 90%;
+  height: auto;
+  border-radius: 4px;
+}
+#boardSection .imageDivider .imageContainer {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  height: auto;
+}
+#boardSection .imageDivider img {
+  width: 100%;
+  float: left;
+  height: auto;
 }
 #boardSection .subSection ul {
   display: flex;
   float: left;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 #boardSection .subSection ul li {
-  width: 47%;
+  width: 49%;
   height: auto;
   float: left;
+  margin-bottom: 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 7px;
+  padding: 20px;
+}
+#boardSection .subSection ul li .boardBiography {
+  float: left;
+  width: 100%;
+  border-top: 1px solid hsl(0, 0%, 90%);
+  height: auto;
+  margin-bottom: 5px;
+}
+#boardSection .subSection ul li .boardBiography.open p,
+#boardSection .subSection ul li .boardBiography.open .open_svg,
+#boardSection .subSection ul li .boardBiography.closed .closed_svg {
+  display: block;
+}
+#boardSection .subSection ul li .boardBiography.closed p,
+#boardSection .subSection ul li .boardBiography.open .closed_svg,
+#boardSection .subSection ul li .boardBiography.closed .open_svg {
+  display: none;
+}
+
+#boardSection .subSection ul li .boardBiography h5 {
+  float: left;
+  width: 100%;
+  padding: 10px 5px;
+  font-weight: 400;
+  background-color: hsl(0, 0%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#boardSection .subSection ul li .boardBiography h5 span {
+  float: left;
+  width: auto;
+  font-size: 15px;
+}
+#boardSection .subSection ul li .boardBiography h5 div.svgContainer {
+  float: left;
+  width: auto;
+  height: auto;
+}
+#boardSection .subSection ul li .boardBiography p {
+  color: hsl(0, 0%, 37%);
+  font-size: 15px;
 }
 #boardSection .subSection ul li h4 {
   margin: 10px 0;
 }
 #boardSection .subSection ul li h4 span {
   font-weight: normal;
+  margin-right: 3px;
+}
+#boardSection .subSection ul li h4 span.bold {
+  font-weight: 600;
 }
 #boardSection .subSection ul li .videoDiv {
   width: 100%;
   height: 300px;
   overflow: hidden;
   float: left;
+  position: relative;
 }
 #boardSection .subSection ul li .videoDiv iframe {
   width: 100%;
   height: 100%;
+}
+#boardSection .subSection .socialsDiv {
+  float: left;
+  width: 100%;
+  margin: 10px 0;
+}
+#boardSection .subSection .socialsDiv button {
+  float: left;
+  width: auto;
+  border: 1px solid hsl(200, 100%, 40%);
+  margin-right: 10px;
+  color: hsl(200, 100%, 40%);
+  font-family: sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-style: italic;
+  font-size: 15px;
+}
+#boardSection .subSection .socialsDiv button:hover {
+  color: hsl(200, 100%, 45%);
+  cursor: pointer;
 }

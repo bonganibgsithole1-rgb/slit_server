@@ -1,0 +1,93 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"
+    ><a href="/employees/newsAndBlogs#<%=foundItem._id%>">
+      View Document</a
+    ></span
+  >
+  <span class="pageChoosen"><a href="/employees/home">Employees Home</a></span>
+</div>
+<div class="section" id="blogsAndNews">
+  <div class="subSection employee_subsection" id="<%=foundItem._id%>">
+    <h2>Edit item</h2>
+    <div class="add_new_nb_container">
+      <form action="/employees/newsAndBlogs/edit_item" id="edit_nb_form">
+        <select name="nb_type" id="nb_type">
+          <option value="blog" <%=foundItem.nb_type === 'blog' ?'selected':''%>>Blog</option>
+          <option value="news" <%=foundItem.nb_type === 'news' ?'selected':''%>>News</option>
+          <option value="resources" <%=foundItem.nb_type === 'resources' ?'selected':''%>>Resources</option>
+        </select>
+        <input
+          type="text"
+          id="nb_title"
+          name="nb_title"
+          placeholder="Title ..."
+          required
+          value="<%=foundItem.nb_title%>"
+        />
+        <select name="gallery_type" id="gallery_type">
+          <option value="image" <%=foundItem.nb_gallery_type === 'image' ?'selected':''%>>Image</option>
+          <option value="video"<%=foundItem.nb_gallery_type === 'video' ?'selected':''%>>Video</option>
+        </select>
+        <div class="gallery_selection_inputs">
+          <input
+            type="text"
+            class="<%=foundItem.nb_gallery_type === 'image' ?'':'display_none'%>"
+            name="gallery_selection_image"
+            id="gallery_selection_image"
+            value="<%=foundItem.nb_gallery_type === 'image' ? foundItem.nb_gallery_link:''%>"
+            placeholder="Image Link from google cloud"
+          />
+          <input
+            type="text"
+            class="<%=foundItem.nb_gallery_type === 'video' ?'':'display_none'%>"
+            id="gallery_selection_video"
+            placeholder="Video Link from youtube"
+            value="<%=foundItem.nb_gallery_type === 'video' ? foundItem.nb_gallery_link:''%>"
+            name="gallery_selection_video"
+          />
+          <div class="gallery_selection_error_div error_message"></div>
+        </div>
+        <textarea
+          name="nb_body"
+          placeholder="Body ..."
+          id="nb_body"
+          required
+        ><%- foundItem.nb_body%></textarea>
+
+        <div class="other_links">
+          <h5>Edit Links</h5>
+          <ul class="other_links_lists">
+            <%foundItem.nb_links.forEach(function(link){%>
+               <li>
+                  <span class="limittoone"><a href="<%=link.link_tag%>"><%=link.html_content%></a></span>
+                  <button class="delete_link">delete</button>
+               </li>
+               <%})%>
+          </ul>
+          <div class="other_links_container">
+            <div class="inputs_container">
+              <input
+                type="text"
+                name="nb_other_links_title"
+                id="nb_other_links_title"
+                placeholder="Link title"
+              />
+              <input
+                type="text"
+                id="nb_other_links_anchor"
+                name="nb_other_links_anchor"
+                placeholder="Link url ..."
+              />
+            </div>
+            <button>Add</button>
+          </div>
+          <div class="error_message"></div>
+        </div>
+        <div class="error_message" id="main_error_message_div"></div>
+        <div id="submit_btn_container">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

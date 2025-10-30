@@ -1,0 +1,26 @@
+@media only screen and (max-width: 699px) {
+  #signInSection .containerSignDetail {
+    display: none;
+  }
+  #signInSection .h2ContainerInsider {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+  #signInSection .containerContentSignUp,
+  #signInSection .containerContentSignIn {
+    width: 100%;
+  }
+  #signInSection .signContainer {
+    min-height: 55vh !important;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 700px) {
+  #signInSection .containerSignDetail {
+    width: 40%;
+  }
+  #signInSection .containerContentSignUp,
+  #signInSection .containerContentSignIn {
+    width: 55%;
+  }
+}

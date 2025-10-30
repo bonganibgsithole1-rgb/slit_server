@@ -1,0 +1,140 @@
+<div class="add_new_calander_gallery_container" id="<%=event._id%>">
+  <h3>Event For <%=event.event_calander_day%> <%=months_list[event.event_calander_month]%>, <%=event.event_calander_year%></h3>
+  <form
+    id="edit_calander_event"
+  >
+    <select name="event_gallery_type" id="event_gallery_type">
+      <option value="image" <%= event.event_gallery_type === 'image'?'selected':''%>>Image</option>
+      <option value="video" <%= event.event_gallery_type === 'video'?'selected':''%>>Video</option>
+    </select>
+    <input
+      type=""
+      id="focused_day"
+      name="focused_day"
+      style="display: none"
+      value="<%=event.event_calander_day%>"
+    />
+    <input
+      type=""
+      id="focused_month"
+      name="focused_month"
+      style="display: none"
+      value="<%=event.event_calander_month%>"
+    />
+    <input
+      type=""
+      id="focused_year"
+      name="focused_year"
+      style="display: none"
+      value="<%=event.event_calander_year%>"
+    />
+    <div class="event_gallery_url">
+      <input
+        type="text"
+        name="event_gallery_url"
+        id="event_gallery_url"
+        placeholder="Event gallery url ..."
+        value="<%=event.event_gallery_url%>"
+        required=""
+      />
+
+      <div class="calander_gallery_url_error_div error_message"></div>
+    </div>
+    <div class="event_explanation">
+      <input
+        type="text"
+        name="event_explanation"
+        id="event_explanation"
+        value="<%=event.event_explanation%>"
+        placeholder="Event explanation ..."
+      />
+
+      <div class="event_explanation_error_div error_message"></div>
+    </div>
+    <div class="calander_event_duration">
+      <div class="select_event_duration_type">
+        <span>Duration :</span>
+        <select name="event_duration_type" id="event_duration_type">
+          <option value="all_day" <%= event.event_duration_type === 'all_day'?'selected':''%>>All Day</option>
+          <option value="select_time" <%= event.event_duration_type === 'select_time'?'selected':''%>>Select Time</option>
+        </select>
+      </div>
+      <div class="start_time_duration time_duration_div<%= event.event_duration_type === 'select_time'?'': ' hidden_div'%>">
+        <span class="start_time"> Start Time </span>
+        <select name="event_start_time" id="event_start_time">
+          <option value="00" <%= ~~event.event_start_time === 0 ?'selected':''%>>00</option>
+          <option value="1" <%= ~~event.event_start_time === 1 ?'selected':''%>>01</option>
+          <option value="2" <%= ~~event.event_start_time === 2 ?'selected':''%>>02</option>
+          <option value="3" <%= ~~event.event_start_time === 3 ?'selected':''%>>03</option>
+          <option value="4" <%= ~~event.event_start_time === 4 ?'selected':''%>>04</option>
+          <option value="5" <%= ~~event.event_start_time === 5 ?'selected':''%>>05</option>
+          <option value="6" <%= ~~event.event_start_time === 6 ?'selected':''%>>06</option>
+          <option value="7" <%= ~~event.event_start_time === 7 ?'selected':''%>>07</option>
+          <option value="8" <%= ~~event.event_start_time === 8 ?'selected':''%>>08</option>
+          <option value="9" <%= ~~event.event_start_time === 9 ?'selected':''%>>09</option>
+          <option value="10" <%= ~~event.event_start_time === 10 ?'selected':''%>>10</option>
+          <option value="11" <%= ~~event.event_start_time === 11 ?'selected':''%>>11</option>
+          <option value="12" <%= ~~event.event_start_time === 12 ?'selected':''%>>12</option>
+          <option value="13" <%= ~~event.event_start_time === 13 ?'selected':''%>>13</option>
+          <option value="14" <%= ~~event.event_start_time === 14 ?'selected':''%>>14</option>
+          <option value="15" <%= ~~event.event_start_time === 15 ?'selected':''%>>15</option>
+          <option value="16" <%= ~~event.event_start_time === 16 ?'selected':''%>>16</option>
+          <option value="17" <%= ~~event.event_start_time === 17 ?'selected':''%>>17</option>
+          <option value="18" <%= ~~event.event_start_time === 18 ?'selected':''%>>18</option>
+          <option value="19" <%= ~~event.event_start_time === 19 ?'selected':''%>>19</option>
+          <option value="20" <%= ~~event.event_start_time === 20 ?'selected':''%>>20</option>
+          <option value="21" <%= ~~event.event_start_time === 21 ?'selected':''%>>21</option>
+          <option value="22" <%= ~~event.event_start_time === 22 ?'selected':''%>>22</option>
+          <option value="23" <%= ~~event.event_start_time === 23 ?'selected':''%>>23</option>
+        </select>
+        <select name="event_start_time_minutes" id="event_start_time_minutes">
+          <option value="00" <%= ~~event.event_start_time_minutes === 0 ?'selected':''%>>00</option>
+          <option value="15" <%= ~~event.event_start_time_minutes === 15 ?'selected':''%>>15</option>
+          <option value="30" <%= ~~event.event_start_time_minutes === 30 ?'selected':''%>>30</option>
+          <option value="45" <%= ~~event.event_start_time_minutes === 45 ?'selected':''%>>45</option>
+          <option value="60" <%= ~~event.event_start_time_minutes === 60 ?'selected':''%>>60</option>
+        </select>
+      </div>
+      <div class="end_time_duration time_duration_div<%= event.event_duration_type === 'select_time'?'': ' hidden_div'%>">
+        <span class="end_time"> End Time </span>
+        <select name="event_end_time" id="event_end_time">
+          <option value="00" <%= ~~event.event_end_time === 0 ?'selected':''%>>00</option>
+          <option value="1" <%= ~~event.event_end_time === 1 ?'selected':''%>>01</option>
+          <option value="2" <%= ~~event.event_end_time === 2 ?'selected':''%>>02</option>
+          <option value="3" <%= ~~event.event_end_time === 3 ?'selected':''%>>03</option>
+          <option value="4" <%= ~~event.event_end_time === 4 ?'selected':''%>>04</option>
+          <option value="5" <%= ~~event.event_end_time === 5 ?'selected':''%>>05</option>
+          <option value="6" <%= ~~event.event_end_time === 6 ?'selected':''%>>06</option>
+          <option value="7" <%= ~~event.event_end_time === 7 ?'selected':''%>>07</option>
+          <option value="8" <%= ~~event.event_end_time === 8 ?'selected':''%>>08</option>
+          <option value="9" <%= ~~event.event_end_time === 9 ?'selected':''%>>09</option>
+          <option value="10" <%= ~~event.event_end_time === 10 ?'selected':''%>>10</option>
+          <option value="11" <%= ~~event.event_end_time === 11 ?'selected':''%>>11</option>
+          <option value="12" <%= ~~event.event_end_time === 12 ?'selected':''%>>12</option>
+          <option value="13" <%= ~~event.event_end_time === 13 ?'selected':''%>>13</option>
+          <option value="14" <%= ~~event.event_end_time === 14 ?'selected':''%>>14</option>
+          <option value="15" <%= ~~event.event_end_time === 15 ?'selected':''%>>15</option>
+          <option value="16" <%= ~~event.event_end_time === 16 ?'selected':''%>>16</option>
+          <option value="17" <%= ~~event.event_end_time === 17 ?'selected':''%>>17</option>
+          <option value="18" <%= ~~event.event_end_time === 18 ?'selected':''%>>18</option>
+          <option value="19" <%= ~~event.event_end_time === 19 ?'selected':''%>>19</option>
+          <option value="20" <%= ~~event.event_end_time === 20 ?'selected':''%>>20</option>
+          <option value="21" <%= ~~event.event_end_time === 21 ?'selected':''%>>21</option>
+          <option value="22" <%= ~~event.event_end_time === 22 ?'selected':''%>>22</option>
+        </select>
+        <select name="event_end_time_minutes" id="event_end_time_minutes">
+           <option value="00" <%= ~~event.event_end_time_minutes === 0 ?'selected':''%>>00</option>
+          <option value="15" <%= ~~event.event_end_time_minutes === 15 ?'selected':''%>>15</option>
+          <option value="30" <%= ~~event.event_end_time_minutes === 30 ?'selected':''%>>30</option>
+          <option value="45" <%= ~~event.event_end_time_minutes === 45 ?'selected':''%>>45</option>
+          <option value="60" <%= ~~event.event_end_time_minutes === 60 ?'selected':''%>>60</option>
+         </select>
+      </div>
+    </div>
+    <div class="error_message" id="main_error_message_div"></div>
+    <div id="submit_btn_container">
+      <button>edit</button>
+    </div>
+  </form>
+  <div class="btns_container"><button id="delete_event">Delete</button></div>
+</div>

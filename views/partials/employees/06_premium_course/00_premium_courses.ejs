@@ -1,0 +1,86 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/employees/home">Home Employees</a></span>
+</div>
+<div class="section" id="premiumCoursesSection">
+  <div class="subSection">
+    <h2>Add Premiums</h2>
+    <div class="add_premium">
+      <button id="add_p_course_btn">
+        Add Premium <a href="/employees/premium_courses/add_p_course"></a>
+      </button>
+    </div>
+    <ul class="premium_lists">
+      <%let courses_count = 1%>
+      <!--  -->
+      <%p_courses.forEach(function(p_course){%>
+      <!--  -->
+      <li>
+        <input
+          type="text"
+          id="p_course_title<%=courses_count%>"
+          name="p_course_title<%=courses_count%>"
+          value="<%=p_course.p_course_title%>"
+          disabled
+        />
+        <input
+          type="text"
+          id="p_course_amount<%=courses_count%>"
+          value="<%=p_course.p_course_amount%>"
+          name="p_course_amount<%=courses_count%>"
+          disabled
+        />
+        <select
+          name="p_course_period<%=courses_count%>"
+          id="p_course_period<%=courses_count%>"
+          disabled
+        >
+          <option value="month" <%= p_course.p_course_period === 'month'?'selected':''%>>Month</option>
+          <option value="year" <%= p_course.p_course_period === 'year'?'selected':''%>>Year</option>
+        </select>
+        <input
+          type="text"
+          id="students_list2"
+          value="10 students"
+          name="students_list2"
+          disabled
+        />
+        <button>View <a href="/employees/premium_courses/edit_p_course/<%=p_course._id%>"></a></button>
+      </li>
+      <!--  -->
+      <%})%>
+    </ul>
+    <h2>Premium Courses</h2>
+
+    <ul class="premium_courses">
+      <%courses.forEach(function(course){%>
+
+      <li class="courses_list">
+        <h3><%=course.course_title%></h3>
+        <ul class="lessons_section">
+          <% let lesson_count=1%> <% lessons.forEach(function(lesson){%>
+          <!--  -->
+          <%if(''+lesson.course_id === ''+course._id){%>
+          <li class="lessons_list" id="<%=lesson._id%>">
+            <!--  -->
+            <span><%=lesson.lesson_number%>.<%=lesson.lesson_title%></span>
+            <input type="checkbox" name="is_premium"
+            <%=lesson.lesson_is_premium?'checked':''%>/>
+            <!--  -->
+          </li>
+          <%lesson_count++%>
+          <!--  -->
+          <%}%>
+          <!--  -->
+          <%})%>
+        </ul>
+      </li>
+      <%})%>
+    </ul>
+    <div class="add_courses_container">
+      <p>Check all the courses which you want to be premium</p>
+      <div class="btn_container">
+        <button id="edit_and_save">Edit and Save</button>
+      </div>
+    </div>
+  </div>
+</div>

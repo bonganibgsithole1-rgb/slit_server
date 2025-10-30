@@ -1,0 +1,120 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/employees/home">Employees Home</a></span>
+</div>
+<div class="section" id="blogsAndNews">
+  <div class="subSection employee_subsection">
+    <h2>News and blogs section</h2>
+    <div class="mini_nav_option">
+      <button class="focused_button" id="all_docs">All</button>
+      <button id="blog_docs">Blogs</button>
+      <button id="news_docs">News</button>
+      <button id="resources_docs">Resources</button>
+    </div>
+    <div class="container_lists">
+      <% if(foundItems.length > 0 ){%>
+      <!--  -->
+      <%foundItems.forEach(function(foundItem){%>
+      <div class="bn_lists_container" id="<%=foundItem.id%>">
+        <div class="content_server">
+          <div class="content_type"><span><%=foundItem.nb_type%></span></div>
+          <div class="image_container">
+            <%if(foundItem.nb_gallery_type === 'image'){%>
+            <img
+              src="<%=foundItem.nb_gallery_link%>"
+              alt="<%=foundItem.nb_gallery_link%>"
+            />
+            <%}%>
+            <!--  -->
+            <%if(foundItem.nb_gallery_type === 'video'){%>
+            <iframe
+              class="iframeYoutube"
+              src="<%=foundItem.nb_gallery_link%>"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <%}%>
+          </div>
+          <div class="content_container">
+            <h3><%=foundItem.nb_title%></h3>
+            <p class="preserve_white_space"><%=foundItem.nb_body%></p>
+            <ul class="document_links">
+              <% if(foundItem.nb_links.length > 0){%>
+              <!--  -->
+              <h5>Other links</h5>
+              <!--  -->
+              <%}%>
+              <!--  -->
+              <%foundItem.nb_links.forEach(function(link){%>
+              <!--  -->
+              <li><a href="<%=link.link_tag%>"><%=link.html_content%></a></li>
+              <!--  -->
+              <%})%>
+            </ul>
+            <div class="created_by">
+              <%employees.forEach(function(employee){%>
+              <!--  -->
+              <%if(''+employee._id === ''+foundItem.nb_creator){%>
+              <!--  -->
+              <span>Created by, <%=employee.employee_name%></span>
+              <%}%>
+              <!--  -->
+              <%})%>
+              <div class="btns_container">
+                <button>
+                  <a
+                    class="absolute_anchor"
+                    href="/employees/newsAndBlogs/edit_nb/<%=foundItem.id%>"
+                  ></a>
+                  Edit
+                </button>
+                <button id="delete_item">
+                  <a
+                    class="absolute_anchor"
+                    href="/employees/newsAndBlogs/delete_nb/<%=foundItem.id%>"
+                  ></a>
+                  delete
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <%})%>
+      <!--  -->
+      <%}else{%>
+      <div class="container_no_items">
+        <p>No documents added click the add btn to start creating</p>
+        <div class="btn_container">
+          <button class="absolute_anchor">
+            <a href="/employees/newsAndBlogs/newItem">Add document</a>
+          </button>
+        </div>
+      </div>
+      <%}%>
+    </div>
+  </div>
+</div>
+<div class="addNewBlog">
+  <button>
+    <a href="/employees/newsAndBlogs/newItem" class="absolute_anchor"></a>
+    <svg viewBox="0 0 32 32">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+          }
+        </style>
+      </defs>
+      <title></title>
+      <g data-name="Layer 2" id="Layer_2">
+        <path
+          d="M16,29A13,13,0,1,1,29,16,13,13,0,0,1,16,29ZM16,5A11,11,0,1,0,27,16,11,11,0,0,0,16,5Z"
+        ></path>
+        <path
+          d="M16,23a1,1,0,0,1-1-1V10a1,1,0,0,1,2,0V22A1,1,0,0,1,16,23Z"
+        ></path>
+        <path d="M22,17H10a1,1,0,0,1,0-2H22a1,1,0,0,1,0,2Z"></path>
+      </g>
+    </svg>
+  </button>
+</div>

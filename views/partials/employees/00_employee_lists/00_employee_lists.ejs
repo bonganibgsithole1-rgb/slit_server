@@ -1,0 +1,76 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/employees/home">Employees Home</a></span>
+</div>
+<div class="section" id="employee_lists_section">
+  <h3 class="name_tag">
+    <span>Employee List</span>
+  </h3>
+  <ul class="employee_lists_title">
+    <li>
+      <span id="employee_number"></span>
+      <span class="input_wave" id="employee_inputs">Name</span>
+      <span class="input_wave" id="employee_inputs">Email</span>
+      <span class="input_wave" id="employee_inputs">DOB</span>
+    </li>
+  </ul>
+  <ul class="employee_lists">
+    <% let employee_count = 1%>
+    <!--  -->
+    <% employees.forEach(function(employee){%>
+    <li id="<%=employee._id%>" class="employee_row">
+      <span><%=employee_count%>.</span>
+      <input
+        type="text"
+        name="employee_name"
+        value="<%=employee.employee_name%>"
+        disabled="true"
+      />
+      <input
+        type="text"
+        name="employee_email"
+        value="<%=employee.employee_email%>"
+        disabled="true"
+      />
+      <%if(employee.employee_dob){%>
+      <!--  -->
+      <% let dateObj = new Date(employee.employee_dob)
+      <!--  -->
+      let formatted = dateObj.toISOString().split('T')[0]; %>
+      <input
+        type="text"
+        name="employee_dob"
+        value="<%=formatted%>"
+        disabled="true"
+      />
+      <%}else{%>
+      <input type="text" name="employee_dob" value="" disabled="true" />
+      <%}%>
+      <!--  -->
+      <% if(employee.employee_active){%>
+      <button id="deactive_status" class="is_active">Deactivate</button>
+      <%}else{%>
+      <button id="active_status" class="">Activate</button>
+      <%}%>
+      <button id="manage">Manage</button>
+    </li>
+    <%employee_count++%>
+    <!--  -->
+    <%})%>
+  </ul>
+</div>
+<div class="absolutePage disabled">
+  <div class="blackWindow"></div>
+  <div class="section">
+    <div class="cancelNav">
+      <button>
+        <svg class="cancelNavBody" viewBox="0 0 200 200">
+          <title></title>
+          <path
+            d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div class="subSection"></div>
+  </div>
+</div>

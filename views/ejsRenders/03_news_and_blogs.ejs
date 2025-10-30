@@ -1,0 +1,48 @@
+<%if(nbs.length >0){%>
+<!--  -->
+<%nbs.forEach(function(nb){%>
+<div class="blogLists" id="<%=nb._id%>">
+  <div class="contenInfomation borderedRight">
+    <h5><%=nb.nb_type%></h5>
+    <h4><%=nb.nb_title%></h4>
+    <div class="explainInformation preserve_white_space">
+      <p class="limittofive"><%=nb.nb_body%></p>
+    </div>
+    <ul class="blog_links">
+      <%nb.nb_links.forEach(function(link){%>
+      <li><a href="<%=link.link_tag%>"><%=link.html_content%></a></li>
+      <%})%>
+    </ul>
+    <div class="containerview_more">
+      <button class="view_more">
+        <span>View All</span>
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="imageDiv_Container">
+    <%if(nb.nb_gallery_type === 'image'){%>
+    <img src="<%=nb.nb_gallery_link%>" alt="<%=nb.nb_gallery_link%>" />
+    <%}%>
+    <!--  -->
+    <%if(nb.nb_gallery_type === 'video'){%>
+    <iframe
+      class="iframeYoutube"
+      src="<%=nb.nb_gallery_link%>"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+    <%}%>
+  </div>
+</div>
+<%})%>
+<!--  -->
+<%}else{%>
+<!--  -->
+<div class="blogLists">There is no information here</div>
+<!--  -->
+<%}%>

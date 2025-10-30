@@ -1,0 +1,104 @@
+#commentsSection .pageHero .imageHeroContainer {
+  float: left;
+  padding: 10px;
+}
+#commentsSection .imageDivider {
+  width: 90%;
+  height: auto;
+  border-radius: 4px;
+}
+#commentsSection .imageDivider .communicationImgContainer {
+  float: left;
+  width: 100%;
+  height: AUTO;
+}
+#commentsSection .imageDivider .imageContainer {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  height: auto;
+}
+#commentsSection .imageDivider img {
+  width: 100%;
+  float: left;
+  height: auto;
+}
+#commentsSection .groupOfCommentators {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+#commentsSection .groupOfCommentators h4 {
+  font-size: 25px;
+  float: left;
+  width: 100%;
+}
+#commentsSection .groupOfCommentators .personels {
+  float: left;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 2px 2px hsl(0, 0%, 90%);
+  border-radius: 5px;
+  margin: 20px 0;
+}
+#commentsSection .groupOfCommentators .personels .personelCount {
+  float: left;
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+#commentsSection .groupOfCommentators .personels .personelName {
+  float: left;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+}
+#commentsSection .groupOfCommentators .personels .personelCount .personComment {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#commentsSection
+  .groupOfCommentators
+  .personels
+  .personelCount.borderRight {
+  border-right: 1px solid hsl(0, 0%, 90%);
+}
+#commentsSection .groupOfCommentators .personels .personelCount span {
+  float: left;
+  width: calc(100% - 50px);
+  color: hsl(0, 0%, 30%);
+}
+#commentsSection .groupOfCommentators .personels .personelCount svg {
+  float: left;
+  width: 20px;
+  height: 20px;
+  fill: hsl(0, 0%, 40%);
+}
+#commentsSection .groupOfCommentators .personels .personelVideoOrPic {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#commentsSection .groupOfCommentators .personels .personelVideoOrPic img {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+#commentsSection .groupOfCommentators .personels .personelVideoOrPic iframe {
+  width: 100%;
+  height: 100%;
+  float: left;
+}

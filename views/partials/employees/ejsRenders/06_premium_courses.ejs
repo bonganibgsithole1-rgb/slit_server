@@ -1,0 +1,23 @@
+<%courses.forEach(function(course){%>
+
+<li class="courses_list">
+  <h3><%=course.course_title%></h3>
+  <ul class="lessons_section">
+    <% let lesson_count=1%> <% lessons.forEach(function(lesson){%>
+    <!--  -->
+    <%if(''+lesson.course_id === ''+course._id){%>
+    <li class="lessons_list" id="<%=lesson._id%>">
+      <!--  -->
+      <span><%=lesson.lesson_number%>.<%=lesson.lesson_title%></span>
+      <input type="checkbox" name="is_premium"
+      <%=lesson.lesson_is_premium?'checked':''%>/>
+      <!--  -->
+    </li>
+    <%lesson_count++%>
+    <!--  -->
+    <%}%>
+    <!--  -->
+    <%})%>
+  </ul>
+</li>
+<%})%>

@@ -1,0 +1,39 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/employees/home">Employees Home</a></span>
+  <span class="pageChoosen"><a href="/employees/signUp">Sign Up</a></span>
+</div>
+<div class="section" id="signInSection">
+  <div class="signContainer subSection subSection_sign subSectionEmployeeSign">
+    <div class="containerContentSignIn">
+      <div class="inputsContainer">
+        <h2>Sign In As Employee</h2>
+        <form action="/singInAsEmployee" id="slitSignIn_employee">
+          <div class="inputContainer">
+            <label for="employee_email"></label>
+            <input
+              type="email"
+              placeholder="Email"
+              name="employee_email"
+              id="employee_email"
+              required
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <div class="inputContainer">
+            <label for="employee_password"></label>
+            <input
+              type="password"
+              placeholder="Password"
+              name="employee_password"
+              id="employee_password"
+              required
+            />
+            <div class="inputMessageError"></div>
+          </div>
+          <button type="submit" class="submitInfoBtn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="mesage_signUpContainer"></div>
+  </div>
+</div>

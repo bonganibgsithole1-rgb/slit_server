@@ -1,0 +1,24 @@
+@media only screen and (max-width: 1024px) {
+  #communicationSection .serviceListContainer .servicesList {
+    border: none;
+    padding: 0;
+    justify-content: space-between;
+  }
+  #communicationSection .serviceListContainer .servicesList li {
+    width: 49%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 90%) !important;
+  }
+  #communicationSection
+    .serviceListContainer
+    .servicesList
+    li:nth-last-of-type(1) {
+    border: 1px solid hsl(0, 0%, 90%) !important;
+  }
+}
+@media only screen and (max-width: 699px) {
+  #communicationSection .serviceListContainer .servicesList li {
+    width: 100%;
+  }
+}

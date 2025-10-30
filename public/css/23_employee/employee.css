@@ -1,0 +1,925 @@
+#homeEmployeeSection {
+  float: left;
+  width: 100%;
+  min-height: 75vh;
+}
+input,
+select {
+  border: 1px solid hsl(120, 80%, 20%);
+  color: hsl(0, 0%, 0%);
+}
+input:focus,
+select:focus {
+  border: 1px solid hsl(200, 50%, 65%) !important;
+}
+#homeEmployeeSection .subSection {
+  float: left;
+  width: 100%;
+  padding: 10px 1%;
+  margin: 0;
+}
+#homeEmployeeSection .subSection .booking_lists {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+#homeEmployeeSection .subSection .view_all_bookings {
+  width: 100%;
+}
+#homeEmployeeSection .subSection .view_all_bookings button {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+#homeEmployeeSection .subSection .view_all_bookings button a {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#homeEmployeeSection .subSection .booking_lists li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 17px;
+  border: 1px solid hsl(0, 0%, 90%);
+}
+#homeEmployeeSection .subSection .booking_lists li input.booking_nos {
+  width: 3%;
+}
+#homeEmployeeSection .subSection .booking_lists li input {
+  width: 15%;
+  border: none;
+  margin-right: 1%;
+  padding: 10px;
+  float: left;
+}
+#homeEmployeeSection .subSection .subSectionListsItem {
+  float: left;
+  width: 100%;
+  /* border-right: 1px solid hsl(0, 0%, 90%); */
+  min-height: 65vh;
+}
+#homeEmployeeSection .subSection .subSectionListsItem li {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  padding: 44px;
+  border: 1px solid hsl(0, 0%, 90%);
+}
+#homeEmployeeSection .subSection .subSectionListsItem li.focusedLi {
+  background-color: hsl(200, 0%, 90%);
+}
+#homeEmployeeSection .subSection .subSectionListsItem li span {
+  float: left;
+  width: auto;
+  position: relative;
+}
+#homeEmployeeSection .subSection .subSectionListsItem li span:hover {
+  color: hsl(200, 50%, 55%);
+  text-decoration: underline;
+}
+#homeEmployeeSection .subSection .subSectionListsItem li span a {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#courseEmployeeSection .subSection .subSectionCourseLists {
+  float: left;
+  width: 80%;
+  margin: 0;
+  padding: 0 10px;
+}
+#courseEmployeeSection .subSection .subSectionCourseLists div.courses_lists,
+.subSection .subSectionCourseLists div.title_lists {
+  width: 24.5%;
+  height: auto;
+  margin-bottom: 25px;
+  margin-left: 0.25%;
+  margin-right: 0.25%;
+}
+#courseEmployeeSection
+  .subSection
+  .subSectionCourseLists
+  div.courses_lists
+  button,
+.subSection .subSectionCourseLists div.title_lists button {
+  width: auto;
+  padding: 8px 15px;
+  position: relative;
+}
+#courseEmployeeSection .subSection .subSectionCourseLists li,
+.subSection .subSectionCourseLists li {
+  float: left;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  min-height: 160px;
+  position: relative;
+}
+#courseEmployeeSection .subSection .subSectionCourseLists li:hover,
+.sectionCourses .subSection .subSectionCourseLists li:hover {
+  border: 1px solid hsl(200, 50%, 65%);
+}
+#courseEmployeeSection .subSection .subSectionCourseLists li a,
+.sectionCourses .subSection .subSectionCourseLists li a {
+  float: left;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#homeEmployeeSection h3 {
+  margin: 10px 0;
+}
+h3.name_tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 100;
+  padding: 12px 0;
+  margin: 10px 0;
+  background-color: hsl(900, 50%, 90%);
+  color: hsl(900, 40%, 25%);
+}
+h3.name_tag.redirecting {
+  background-color: hsl(0, 50%, 90%);
+  color: hsl(0, 40%, 25%);
+}
+#courseEmployeeSection .subSection .subSectionCourseLists li h3,
+.sectionCourses .subSection .subSectionCourseLists li h3 {
+  float: left;
+  width: auto;
+  font-size: 19px;
+}
+#courseEmployeeSection .subSection .subSectionCourseLists li p,
+.sectionCourses .subSection .subSectionCourseLists li p {
+  float: left;
+  width: 100%;
+  margin: 0;
+  margin-top: 5px;
+  color: hsl(0, 0%, 30%);
+}
+#courseEmployeeSection .subSection .subSectionCourseLists button.submit_btn,
+#addLessonSection .subSection .subSectionCourseLists button.submit_btn,
+.sectionCourses .subSection .subSectionCourseLists button.submit_btn {
+  float: left;
+  width: auto;
+  position: relative;
+  padding: 8px 15px;
+}
+#courseEmployeeSection .subSection .subSectionCourseLists .new_course_div,
+#addLessonSection .subSection .subSectionCourseLists .new_course_div,
+.sectionCourses .subSection .subSectionCourseLists .new_course_div {
+  float: left;
+  width: 100%;
+}
+#courseEmployeeSection .subSection .subSectionCourseLists button#add_new_course,
+#addLessonSection .subSection .subSectionCourseLists button#add_new_lesson,
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .new_course_div#add_new_lesson {
+  float: right;
+  margin: 10px 0;
+  padding: 8px 15px;
+  position: relative;
+}
+#courseEmployeeSection .subSection .subSectionCourseLists button a,
+#addLessonSection .subSection .subSectionCourseLists button a,
+.sectionCourses .subSection .subSectionCourseLists button a {
+  float: left;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  position: absolute;
+}
+#homeEmployeeSection .subSection .subSectionCourseLists form {
+  float: left;
+  width: 100%;
+}
+#homeEmployeeSection .subSection .subSectionCourseLists .textareaSection {
+  float: left;
+  width: 100%;
+}
+#addCourseSection,
+#addLessonSection,
+.sectionCourses {
+  min-height: 500px;
+  margin-bottom: 50px;
+}
+#addCourseSection h3,
+.sectionCourses h3 {
+  margin: 20px 0;
+}
+#addLessonSection h3,
+#addLessonSection h2 {
+  margin: 5px 0;
+  margin-bottom: 16px;
+  width: 100%;
+}
+#addCourseSection .subSection .subSectionCourseLists .textAreaSection,
+#addLessonSection .subSection .subSectionCourseLists .textAreaSection,
+.sectionCourses .subSection .subSectionCourseLists .textAreaSection {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.subSection .subSectionCourseLists .textAreaSection .slide_number_container {
+  width: 100%;
+}
+#addCourseSection .subSection .subSectionCourseLists .textAreaSection textarea,
+#addCourseSection .subSection .subSectionCourseLists .textAreaSection input,
+#addLessonSection .subSection .subSectionCourseLists .textAreaSection input,
+#addLessonSection .subSection .subSectionCourseLists .textAreaSection textarea,
+.sectionCourses .subSection .subSectionCourseLists .textAreaSection textarea,
+.sectionCourses .subSection .subSectionCourseLists .textAreaSection input,
+.sectionCourses .subSection .subSectionCourseLists .textAreaSection select {
+  float: left;
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  resize: none;
+  resize: vertical;
+  min-width: 100%;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs {
+  width: 100%;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .saved_to_do_lists {
+  width: 100%;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .saved_to_do_lists
+  li {
+  padding: 5px 3px;
+  border: none;
+  min-height: auto;
+  cursor: default;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .saved_to_do_lists
+  li
+  span {
+  width: auto;
+  position: relative;
+  height: auto;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .saved_to_do_lists
+  li
+  span
+  a {
+  text-decoration: underline;
+  position: initial;
+  width: auto;
+  float: left;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .saved_to_do_lists
+  li
+  button {
+  width: auto;
+  height: auto;
+  float: right;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .to_do_list_container {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .to_do_list_container.anchor_doesnt_exists
+  #to_do_list_title {
+  width: 86%;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .to_do_list_container.anchor_doesnt_exists
+  #to_do_list_anchor {
+  display: none;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .to_do_list_container
+  button {
+  margin: 0;
+  width: auto;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .error_message {
+  width: 100%;
+  height: auto;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .to_do_list_inputs
+  .error_message
+  span {
+  margin: 10px 0;
+  color: hsl(0, 100%, 40%);
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  input.to_do_list_input {
+  width: 43%;
+  min-width: 43%;
+  margin: 0;
+  margin-right: 1%;
+}
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .slide_video_or_image_link,
+.sectionCourses
+  .subSection
+  .subSectionCourseLists
+  .textAreaSection
+  .selected_content_title {
+  width: 100%;
+  height: auto;
+}
+.sectionCourses .error_message {
+  width: 100%;
+  height: auto;
+}
+.sectionCourses .error_message span {
+  font-size: 15px;
+  color: hsl(0, 100%, 50%);
+  margin-bottom: 3px;
+}
+.slide_type_hidden,
+.slide_content_hidden {
+  display: none;
+}
+.sectionCourses .subSection .subSectionCourseLists .textAreaSection label {
+  margin: 10px 0 4px 0;
+  font-size: 14px;
+  color: hsl(0, 0%, 15%);
+}
+#addCourseSection .subSection .subSectionCourseLists .textAreaSection textarea,
+#addLessonSection .subSection .subSectionCourseLists .textAreaSection textarea,
+.sectionCourses .subSection .subSectionCourseLists .textAreaSection textarea {
+  min-height: 100px;
+}
+#addCourseSection .subSection .subSectionCourseLists form button.submit_btn,
+#addLessonSection .subSection .subSectionCourseLists form button.submit_btn,
+.sectionCourses .subSection .subSectionCourseLists form button.submit_btn {
+  margin-top: 20px;
+  padding: 8px 15px;
+}
+.subSection .subSectionCourseLists {
+  width: 45%;
+}
+.subSection .subSectionCourseLists .btnContainer {
+  width: 100%;
+}
+.subSection .subSectionCourseLists .btnContainer button {
+  padding: 8px 10px;
+  position: relative;
+}
+.subSection .subSectionCourseLists .btnContainer .error_message span {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 10px 0;
+}
+.subSection
+  .subSectionCourseLists
+  .btnContainer
+  .error_message
+  span.negative_fb {
+  color: hsl(0, 100%, 40%);
+  background-color: hsl(0, 100%, 96%);
+}
+.subSection
+  .subSectionCourseLists
+  .btnContainer
+  .error_message
+  span.positive_fb {
+  color: hsl(200, 50%, 35%);
+  background-color: hsl(200, 100%, 96%);
+}
+.subSection form {
+  width: 100%;
+}
+.subSection .deleteContainer {
+  width: 100%;
+  margin: 10px 0;
+}
+.subSection .deleteContainer button {
+  width: auto;
+  padding: 8px 15px;
+}
+.subSection .subSectionCourseLists .quill_editor_container {
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+.subSection .subSectionCourseLists .quill_editor_container #editor .ql-editor {
+  min-height: 100px;
+  width: 100%;
+}
+#homeEmployeeSection .inputsContainer {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+#homeEmployeeSection .inputsContainer select {
+  float: left;
+  width: auto;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+#employee_lists_section {
+  padding: 0 0 40px 0;
+  min-height: 500px;
+}
+#employee_lists_section ul.employee_lists,
+#employee_lists_section ul.employee_lists_title,
+#addLessonSection ul {
+  width: 100%;
+  height: auto;
+}
+#addLessonSection ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#employee_lists_section ul.employee_lists li,
+#employee_lists_section ul.employee_lists_title li,
+#addLessonSection ul li {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#addLessonSection ul li {
+  flex-direction: column;
+  position: relative;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 5px;
+}
+#addLessonSection ul li:hover {
+  border: 1px solid hsl(200, 50%, 55%);
+}
+#addLessonSection ul li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#employee_lists_section ul.employee_lists_title li {
+  padding: 0 5px;
+}
+#addLessonSection ul li {
+  padding: 0 10px;
+  padding: 10px;
+}
+#addLessonSection ul li .image_container {
+  width: 100%;
+  height: 200px;
+  border: 1px solid hsl(900, 50%, 90%);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#addLessonSection ul li .image_container img {
+  width: 100%;
+  height: auto;
+}
+#employee_lists_section ul.employee_lists li span,
+#employee_lists_section ul.employee_lists_title span,
+#addLessonSection ul li span {
+  width: 3%;
+}
+#employee_lists_section ul.employee_lists_title span,
+#addLessonSection ul li span {
+  font-weight: 600;
+  font-size: 17px;
+}
+#employee_lists_section ul.employee_lists li input,
+#employee_lists_section ul.employee_lists_title span.input_wave {
+  padding: 10px;
+  min-width: 15%;
+  margin-right: 0.25%;
+}
+#employee_lists_section ul.employee_lists_title span.input_wave {
+  padding: 4px 0px;
+}
+#employee_lists_section ul.employee_lists li button {
+  padding: 5px;
+  margin-right: 0.25%;
+  cursor: pointer;
+}
+#employee_lists_section ul.employee_lists li button:hover {
+  background-color: hsl(0, 0%, 70%);
+}
+#employee_lists_section ul.employee_lists li button#manage {
+  background-color: hsl(0, 0%, 15%);
+  color: hsl(0, 0%, 100%);
+}
+#employee_lists_section ul.employee_lists li button#manage:hover {
+  background-color: hsl(0, 0%, 50%);
+}
+#premiumCoursesSection {
+  width: 100%;
+  min-height: 70vh;
+}
+#premiumCoursesSection .add_premium {
+  width: 100%;
+  margin: 10px 0;
+}
+#premiumCoursesSection .add_premium #add_p_course_btn {
+  width: auto;
+  float: left;
+  position: relative;
+}
+#premiumCoursesSection .add_premium #add_p_course_btn a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#premiumCoursesSection .premium_lists,
+#premiumCoursesSection .premium_courses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#premiumCoursesSection .premium_lists {
+  margin-bottom: 30px;
+}
+#premiumCoursesSection .premium_lists li,
+#premiumCoursesSection .premium_courses li {
+  margin-bottom: 10px;
+  width: auto;
+  border: 1px solid hsl(0, 0%, 70%);
+  border-radius: 0px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#premiumCoursesSection .premium_lists li button {
+  width: auto;
+  position: relative;
+}
+#premiumCoursesSection .premium_lists li button a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+#premiumCoursesSection .premium_courses li.courses_list,
+#premiumCoursesSection .premium_courses li.courses_list .lessons_list {
+  border: none;
+  padding: 0;
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#premiumCoursesSection .premium_courses li.courses_list .lessons_list {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+#premiumCoursesSection .premium_courses li.courses_list .lessons_list span {
+  margin-right: 10px;
+  font-size: 17px;
+}
+#premiumCoursesSection .premium_courses li.courses_list .lessons_list input {
+  margin: 0;
+}
+#premiumCoursesSection .premium_lists li input,
+#premiumCoursesSection .premium_lists li select {
+  width: calc(85% / 4);
+  height: 100%;
+  padding: 10px;
+}
+#premiumCoursesSection .premium_courses li h3 {
+  width: 100%;
+}
+#premiumCoursesSection .premium_courses li .lessons_section {
+  width: 100%;
+  height: auto;
+}
+#premiumCoursesSection .add_courses_container {
+  width: 100%;
+  margin-bottom: 100px;
+}
+#premiumCoursesSection .add_courses_container #edit_and_save {
+  width: auto;
+}
+#p_course_section {
+  min-height: 70vh;
+}
+#p_course_section #add_p_course_form,
+#p_course_section #edit_p_course_form {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+#p_course_section #main_error_message_div {
+  width: 70%;
+  float: left;
+}
+#p_course_section #main_error_message_div p {
+  width: 100%;
+  padding: 10px;
+  color: hsl(0, 100%, 50%);
+  background-color: hsl(0, 50%, 96%);
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+#p_course_section #main_error_message_div p.positive_feedback {
+  color: hsl(200, 100%, 50%);
+  background-color: hsl(200, 50%, 96%);
+}
+#p_course_section .inputs_container {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+#p_course_section .inputs_container label {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  font-weight: 600;
+}
+#p_course_section .inputs_container input,
+#p_course_section .inputs_container select {
+  width: 60%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 10px;
+}
+#p_course_section .inputs_container input:focus,
+#p_course_section .inputs_container select:focus {
+  border: 1px solid hsl(200, 50%, 30%);
+}
+#p_course_section #submit_btn_container {
+  width: 100%;
+  height: auto;
+}
+#p_course_section #submit_btn_container button {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(200, 50%, 55%);
+  color: hsl(0, 0%, 100%);
+}
+#p_course_section #submit_btn_container button:hover {
+  background-color: hsl(200, 50%, 50%);
+  cursor: pointer;
+}
+#p_course_section .delete_btn_container {
+  width: 100%;
+  float: left;
+  margin: 20px 0;
+}
+.absolutePage .section .manage_employees {
+  width: 100%;
+  padding: 20px 0;
+}
+.absolutePage .section .manage_employees form {
+  width: 100%;
+}
+.absolutePage .section .manage_employees form .input_container {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.absolutePage .section .manage_employees form .input_container label {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.absolutePage .section .manage_employees form .input_container .radio_elements {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.absolutePage
+  .section
+  .manage_employees
+  form
+  .input_container
+  .radio_elements
+  input {
+  margin: 0;
+}
+.absolutePage
+  .section
+  .manage_employees
+  form
+  .input_container
+  .radio_elements
+  span {
+  margin: 0;
+  margin-right: 15px;
+  margin-left: 3px;
+}
+.absolutePage .section .manage_employees form button {
+  padding: 8px 15px;
+}
+#courseEmployeeSection {
+  min-height: 500px;
+}
+.absolutePage .section .subSection .book_enterpretor_div form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.absolutePage .section .subSection .book_enterpretor_div .input_container {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.absolutePage
+  .section
+  .subSection
+  .book_enterpretor_div
+  .input_container
+  label {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.absolutePage
+  .section
+  .subSection
+  .book_enterpretor_div
+  .input_container
+  select,
+.absolutePage
+  .section
+  .subSection
+  .book_enterpretor_div
+  .input_container
+  input {
+  width: 60%;
+  border: none;
+  font-size: 15px;
+  background-color: hsl(0, 0%, 80%);
+  padding: 5px;
+}
+.absolutePage .section .subSection .book_enterpretor_div {
+  width: 80%;
+  float: left;
+}
+.absolutePage .section .subSection .book_enterpretor_div .text_area_container {
+  width: 100%;
+}
+.absolutePage
+  .section
+  .subSection
+  .book_enterpretor_div
+  .text_area_container
+  h5 {
+  margin-top: 20px;
+}
+.absolutePage .section .subSection .book_enterpretor_div #booking_summary {
+  width: 80%;
+  padding: 10px;
+  height: auto;
+  margin-top: 20px;
+  min-height: 150px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 10px;
+}
+.absolutePage .section .subSection .book_enterpretor_div #book_interpreter_btn {
+  width: auto;
+  padding: 9px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(120, 80%, 35%);
+  border: none;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+.absolutePage
+  .section
+  .subSection
+  .book_enterpretor_div
+  #book_interpreter_btn:hover {
+  background-color: hsl(120, 80%, 20%);
+  cursor: pointer;
+}
+.absolutePage .section .subSection .book_enterpretor_div span {
+  float: left;
+  font-size: 15px;
+  margin-right: 9px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+.absolutePage .section .subSection .book_enterpretor_div form svg {
+  float: left;
+  width: 21px;
+  height: 21px;
+  fill: hsl(120, 50%, 100%);
+}

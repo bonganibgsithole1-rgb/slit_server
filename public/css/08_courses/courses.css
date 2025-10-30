@@ -1,15 +1,38 @@
-#coursesSection {
-  margin-top: 30px;
-  margin-bottom: 100px;
+#coursesSection .subSection {
+  margin: 30px 0;
+  float: left;
+}
+#coursesSection .pageHero .imageHeroContainer {
+  padding: 15px;
+}
+#coursesSection .imageDivider {
+  width: 60%;
+  height: auto;
+  border-radius: 4px;
+}
+#coursesSection .imageDivider .imageContainer {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 4px;
+  height: auto;
+}
+#coursesSection .imageDivider img {
+  width: 100%;
+  float: left;
+  height: auto;
 }
 #coursesSection #progressText {
-  font-size: 15px;
+  font-size: 17px;
   margin-top: 30px;
+  float: left;
+  font-weight: 600;
 }
 #coursesSection #progressBar {
   width: 100%;
   float: left;
   height: 20px;
+  border-radius: 2px;
   background-color: #6685b74f;
 }
 #coursesSection .courseDiv {
@@ -18,29 +41,69 @@
 }
 #coursesSection .courseDiv h3 {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 #coursesSection .courseDiv h3 span {
   font-weight: normal;
 }
+#coursesSection .courseDiv h3 span.course_number {
+  margin-right: 5px;
+}
 #coursesSection .courseDiv ul {
-  padding: 5px;
-  justify-content: space-between;
+  padding: 20px 0;
+  justify-content: flex-start;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 #coursesSection .courseDiv ul .lesson {
   position: relative;
-  width: 47%;
-  box-shadow: lightgrey -1px 2px 11px 1px;
+  width: calc(98% / 3);
+  margin: 0 calc(2% / 6);
   height: auto;
   cursor: pointer;
+  position: relative;
   float: left;
-  padding: 17px 17px;
+  padding: 10px 0 10px 0;
+  transition: padding ease-in-out 300ms;
+  transition-delay: 100ms;
 }
-#coursesSection .courseDiv ul .lesson:hover h4 {
+#coursesSection .courseDiv ul .lesson .is_premium {
+  width: auto;
+  height: auto;
+  right: 10px;
+  top: 20px;
+  position: absolute;
+  z-index: 2;
+}
+#coursesSection .courseDiv ul .lesson .is_premium svg {
+  width: 20px;
+  height: 20px;
+}
+#coursesSection .courseDiv ul .lesson .lesson_contentDiv {
+  border-radius: 5px;
+  box-shadow: lightgrey -1px 2px 11px 1px;
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+#coursesSection .courseDiv ul .lesson .lesson_contentDiv .lesson_content {
+  float: left;
+  border: 1px solid hsl(0, 0%, 93%);
+  padding: 8px 0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 9px 10px;
+}
+#coursesSection .courseDiv ul .lesson .lesson_contentDiv:hover .lesson_content {
+  border: 1px solid #0e810e;
+}
+#coursesSection .courseDiv ul .lesson .lesson_contentDiv:hover h4 {
   text-decoration: underline;
+  color: #0e810e;
 }
-#coursesSection .courseDiv ul .lesson:hover {
+#coursesSection .courseDiv ul .lesson .lesson_contentDiv:hover {
   box-shadow: lightgrey -1px 2px 6px 3px;
 }
 #coursesSection .courseDiv ul .lesson a {
@@ -50,12 +113,60 @@
   top: 0;
   left: 0;
 }
+#coursesSection .courseDiv ul .lesson .image_container {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: center;
+}
 #coursesSection .courseDiv ul .lesson img {
   width: 100%;
+  height: auto;
 }
 #coursesSection ul .lesson {
   width: 100%;
-  margin-top: 30px;
   float: left;
   font-size: 18px;
+}
+#coursesSection .moreCourseInfo {
+  float: left;
+  width: 100%;
+  border-top: 1px solid hsl(0, 0%, 90%);
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  padding: 10px 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#coursesSection .moreCourseInfo button {
+  margin: 0;
+  width: auto;
+  background: linear-gradient(90deg, #0b650b 10%, #0e810e 40%);
+  cursor: pointer;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 15px;
+  float: left;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+#coursesSection .moreCourseInfo button span {
+  float: left;
+  width: auto;
+}
+#coursesSection .moreCourseInfo button svg {
+  float: left;
+  margin-left: 6px;
+  fill: hsl(0, 0%, 100%);
+  width: 18px;
+  height: 18px;
+}
+#coursesSection .moreCourseInfo button:hover {
+  background: linear-gradient(90deg, #0b650b 40%, #0e810e 80%);
 }

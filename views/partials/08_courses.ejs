@@ -1,44 +1,84 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/courses">Online Lessons</a></span>
+  <span><a href="/blogsAndNews"> News & Blogs</a></span>
+</div>
 <div class="section" id="coursesSection">
-  <div class="subSection">
-    <h2>Commodi repudiandae consequuntur voluptatum laborum.</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-      molestiae quas vel sint commodi repudiandae consequuntur voluptatum
-      laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-      praesentium optio.
-    </p>
-    <div class="ctaBtn01">
-      <p>Start Course</p>
-      <svg viewBox="0 0 512 512">
-        <polygon points="352,115.4 331.3,96 160,256 331.3,416 352,396.7 201.5,256 " />
-      </svg>
+  <div class="pageHero">
+    <div class="contentContainer">
+      <h2>Online Lessons</h2>
+      <p>Behind every good cause, is a good leader</p>
     </div>
-    <p id="progressText">Your progress : <span>10%</span></p>
+    <div class="imageHeroContainer">
+      <div class="imageDivider">
+        <div class="imageContainer">
+          <img
+            src="./Media/SLIT_IMAGES/WhatsApp Image 2024-07-16 at 21.21.44.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="coloredPortion"></div>
+    </div>
+  </div>
+  <div class="subSection">
+    <div class="moreCourseInfo">
+      <button>
+        <span>Check Syllabus</span
+        ><svg viewBox="0 0 512 512">
+          <polygon
+            points="160,115.4 180.7,96 352,256 180.7,416 160,396.7 310.5,256 "
+          ></polygon>
+        </svg>
+      </button>
+    </div>
+    <p id="progressText">
+      <span>Progress : </span> <span id="syllabus_progress">10%</span>
+    </p>
     <div id="progressBar"></div>
+    <%courses.forEach(function(course){%>
     <div class="courseDiv">
-      <h3>Course 1 | <span>Sint commodi repudiandae consequuntur</span></h3>
+      <h3>
+        <span class="course_number">Course <%=course.course_number%> |</span>
+        <span class="course_title"><%=course.course_title%></span>
+      </h3>
       <ul>
-        <li class="lesson">
-          <a href="/courses/C01L01S01"></a>
-          <img src="/media/08_chapters/firstImage.jpg" />
-          <h5>Lesson 1</h5>
-          <h4>Maxime mollitia, molestiae quas</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur.
-          </p>
+        <%lessons.forEach(function(lesson){%>
+        <!--  -->
+        <% if(''+lesson.course_id === ''+course._id){%>
+        <li class="lesson" id="<%=lesson._id%>">
+          <div class="lesson_contentDiv">
+            <a
+              href="/courses/<%=course._id%>/lesson/<%=lesson._id%>/viewLesson"
+            ></a>
+            <div class="image_container">
+              <img src="<%=lesson.lesson_image_url%>" />
+            </div>
+            <div class="lesson_content">
+              <h4 class="limittoone"><%=lesson.lesson_title%></h4>
+              <p class="limittoone"><%=lesson.lesson_body%></p>
+            </div>
+          </div>
+          <div class="is_premium">
+            <%if(lesson.lesson_is_premium && p_courses.length > 0){%>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"
+              ></path>
+            </svg>
+            <%}else{%>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M10.6,12.71a1,1,0,0,1,0-1.42l4.59-4.58a1,1,0,0,0,0-1.42,1,1,0,0,0-1.41,0L9.19,9.88a3,3,0,0,0,0,4.24l4.59,4.59a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.42Z"
+              ></path>
+            </svg>
+            <%}%>
+          </div>
         </li>
-        <li class="lesson">
-          <a href="/courses/C01L01S01"></a>
-          <img src="/media/08_chapters/secondImage.jpg" />
-          <h5>Lesson 2</h5>
-          <h4>Lorem ipsum dolor sit</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            mollitia, molestiae quas vel sint commodi repudiandae consequuntur.
-          </p>
-        </li>
+        <%}%>
+        <!--  -->
+        <%})%>
       </ul>
     </div>
+    <%})%>
   </div>
 </div>

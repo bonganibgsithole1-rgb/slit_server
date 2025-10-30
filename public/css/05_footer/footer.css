@@ -1,10 +1,11 @@
 #footerSection {
   overflow: auto;
-  margin-top: 30px;
+  margin-top: 0;
+  background-color: hsl(0, 0%, 100%);
 }
 #footerSection #logoRibbon {
   width: 100%;
-  padding: 0 9%;
+  padding: 0 5%;
   display: flex;
   align-items: center;
   height: 100px;
@@ -17,13 +18,15 @@
 #footerSection #logoRibbon #byoWebsitesLogo {
   height: 32%;
 }
-#footerSection .siteMap {
-  margin-top: 35px;
-}
+/* #footerSection .siteMap { */
+/* margin-top: 20px; */
+/* } */
 #footerSection .siteMap li {
   border: none;
   padding: 0;
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
 }
 #footerSection .siteMap li img {
   margin-bottom: 20px;
@@ -33,4 +36,132 @@
   display: block;
   margin-bottom: 13px;
   cursor: pointer;
+}
+#footerSection .siteMap li a:hover {
+  text-decoration: underline;
+}
+#footerSection .company_information {
+  float: left;
+  width: 100%;
+  border-bottom: 2px solid hsl(120, 80%, 23%);
+  margin: 30px 0;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 22px;
+}
+#footerSection .company_information .company_socials {
+  width: 40%;
+  height: auto;
+  display: flex;
+  margin: 0;
+  align-items: CENTER;
+  /* flex-direction: column; */
+}
+#footerSection .company_socials h5 {
+  color: hsl(120, 55%, 21%);
+  font-size: 17px;
+  /* font-weight: 100; */
+  margin-bottom: 0;
+  border-bottom: NONE;
+  width: AUTO;
+  margin-right: 15px;
+  padding-bottom: 0;
+}
+#footerSection .company_socials .socials_icons {
+  width: AUTO;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-content: flex-start;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+#footerSection .company_socials .socials_icons button {
+  border: 1px solid hsl(120, 55%, 21%);
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 100%;
+  background-color: hsl(120, 55%, 21%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#footerSection .company_socials .socials_icons button:hover {
+  background-color: hsl(120, 55%, 71%);
+}
+#footerSection .company_socials .socials_icons button:hover svg {
+  fill: hsl(120, 55%, 21%);
+}
+#footerSection .company_socials .socials_icons button svg {
+  width: 20px;
+  height: 20px;
+  fill: hsl(120, 55%, 100%);
+}
+#footerSection .company_contact {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+}
+#footerSection .company_contact h5 {
+  color: hsl(220, 85%, 61%);
+  /* font-weight: 100; */
+  margin-bottom: 15px;
+  border-bottom: 2px solid hsl(220, 85%, 61%);
+  padding-bottom: 7px;
+}
+#footerSection .company_contact .contact_nos,
+#footerSection .company_contact .whatsapp_nos {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 30px;
+}
+#footerSection .company_contact .contact_nos svg,
+#footerSection .company_contact .whatsapp_nos svg {
+  margin-right: 10px;
+  stroke: hsl(120, 55%, 100%);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: hsl(120, 44%, 24%);
+  padding: 4px;
+  border-radius: 8px;
+}
+#footerSection .company_contact .contact_nos span,
+#footerSection .company_contact .whatsapp_nos span {
+  width: auto;
+  font-size: 18px;
+  color: hsl(120, 50%, 21%);
+  font-family: cursive;
+}
+#footerSection .company_contact .email_address {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#footerSection .company_contact .email_address svg {
+  fill: hsl(120, 55%, 100%);
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: hsl(120, 44%, 24%);
+  padding: 4px;
+  border-radius: 8px;
+}
+#footerSection .company_contact .email_address span {
+  width: auto;
+  font-size: 18px;
+  color: hsl(120, 50%, 21%);
+  font-family: cursive;
 }

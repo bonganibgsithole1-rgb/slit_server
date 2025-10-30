@@ -1,0 +1,44 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"
+    ><a href="/employees/courses#<%=course._id%>">Course</a></span
+  >
+  <span class="pageChoosen"><a href="/employees/home">Home Employees</a></span>
+</div>
+<div class="section" id="addLessonSection">
+  <div class="subSection">
+    <ul class="subSectionCourseLists">
+      <h2>Course : <%= course.course_title%></h2>
+      <div class="new_course_div">
+        <button id="add_new_lesson">
+          New Lesson
+          <a href="/employees/lesson/newLesson/course_id/<%=course._id%>"></a>
+        </button>
+      </div>
+      <h3>Lessons</h3>
+      <%if(lessons.length === 0){%>
+      <p>No Lessons Available</p>
+
+      <%}else{%> <%lessons.forEach(function(lesson){%>
+      <div class="title_lists">
+        <li id="<%=lesson._id%>">
+          <a
+            href="/employees/course/<%=course._id%>/lesson/<%=lesson._id%>/view"
+          ></a>
+          <div class="image_container">
+            <img src="<%=lesson.lesson_image_url%>" alt="" />
+          </div>
+          <h5><%=lesson.lesson_number%>.<%=lesson.lesson_title%></h5>
+          <p class="limittofour"><%=lesson.lesson_body%></p>
+        </li>
+
+        <button>
+          Edit Lesson
+          <a
+            href="/employees/course/<%=course._id%>/lesson/<%=lesson._id%>/edit"
+          ></a>
+        </button>
+      </div>
+      <%})%> <%}%>
+    </ul>
+  </div>
+</div>

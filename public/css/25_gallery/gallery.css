@@ -1,0 +1,146 @@
+#gallery_section .container_gallery {
+  float: left;
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  padding: 10px 0;
+  max-width: 100%;
+  border-radius: 7px;
+  border: 1px solid hsl(0, 0%, 90%);
+  scroll-behavior: smooth;
+  margin: 20px 0;
+}
+#gallery_section h3 {
+  margin-top: 20px;
+}
+#gallery_section .container_gallery .imageDiv {
+  float: left;
+  width: 20%;
+  /* display: none; */
+  min-width: 20%;
+  max-width: 20%;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  border-radius: 5px;
+  min-height: 250px;
+  /* max-height: 250px; */
+  text-align: center;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#gallery_section .container_gallery .imageDiv .img_wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gallery_section .container_gallery .imageDiv img,
+#gallery_section .container_gallery .imageDiv iframe {
+  float: left;
+  height: auto;
+  width: 100%;
+}
+#gallery_section .container_gallery .imageDiv .btns_container {
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid hsl(0, 0%, 90%);
+  justify-content: space-between;
+  padding-top: 8px;
+}
+#gallery_section .container_gallery .imageDiv .btns_container button {
+  width: auto;
+  height: auto;
+  border: none;
+  margin: 0;
+  padding: 2px;
+  border-radius: 6px;
+}
+#gallery_section .container_gallery .imageDiv .btns_container button:hover {
+  background-color: hsl(0, 0%, 80%);
+  cursor: pointer;
+}
+#gallery_section .container_gallery .imageDiv .btns_container button svg {
+  width: 25px;
+  height: 25px;
+  fill: black;
+}
+#gallery_section .add_new_gallery_container {
+  width: 100%;
+  margin-bottom: 60px;
+}
+#gallery_section .add_new_gallery_container form {
+  width: 50%;
+  display: flex;
+  padding: 10px 0;
+  flex-direction: column;
+}
+#gallery_section .add_new_gallery_container form select,
+#gallery_section .add_new_gallery_container form input,
+#gallery_section .add_new_gallery_container form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+  border-radius: 4px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+#gallery_section .add_new_gallery_container form .error_message {
+  width: 100%;
+  height: auto;
+  margin: 3px 0;
+}
+#gallery_section .add_new_gallery_container form .error_message p {
+  margin: 0;
+  padding: 0;
+  color: hsl(0, 100%, 50%);
+  font-size: 14px;
+}
+#gallery_section
+  .add_new_gallery_container
+  form
+  .error_message#main_error_message_div
+  p {
+  background-color: hsl(200, 100%, 97%);
+  padding: 10px;
+  margin-bottom: 10px;
+  color: hsl(200, 100%, 50%);
+}
+#gallery_section .container_gallery .no_images_added,
+#gallery_section .container_gallery .no_videos_added {
+  padding: 10px;
+}
+.absolutePage .section .edit_gallery_container,
+.absolutePage .section .edit_gallery_container form {
+  width: 100%;
+  height: auto;
+}
+
+.absolutePage .section .edit_gallery_container form input,
+.absolutePage .section .edit_gallery_container form select,
+.absolutePage .section .gallery_url,
+.absolutePage .section .gallery_explanation {
+  width: 100%;
+}
+.absolutePage .section .edit_gallery_container form input,
+.absolutePage .section .edit_gallery_container form select {
+  width: 60%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 90%);
+}
+.absolutePage .section .edit_gallery_container form .edit_container_btn {
+  margin-top: 20px;
+  padding: 10px;
+}

@@ -1,0 +1,58 @@
+<div class="horizontalNav tabsLists">
+  <span class="pageChoosen"><a href="/">Home</a></span>
+</div>
+<div class="section sectionCourses" id="lessonAddSection">
+  <div class="subSection">
+    <h3>Add new lesson</h3>
+    <ul class="subSectionCourseLists">
+      <form
+        action="/employees/lesson/<%=lesson._id%>/action/edit"
+        method="post"
+      >
+        <div class="textAreaSection">
+          <input
+            type="text"
+            name="lesson_image_url"
+            placeholder="Lesson image url ...from google cloud"
+            id="lesson_image_url"
+            value="<%=lesson.lesson_image_url%>"
+            required
+          />
+          <input
+            type="number"
+            name="lesson_number"
+            placeholder="Lesson number"
+            value="<%=lesson.lesson_number%>"
+            required
+          />
+          <input
+            type="text"
+            name="lesson_title"
+            value="<%=lesson.lesson_title%>"
+            placeholder="Lesson description"
+            required
+          />
+          <textarea
+            name="lesson_body"
+            id="lesson_body"
+            placeholder="Lesson body"
+            required
+          >
+<%=lesson.lesson_body%></textarea
+          >
+        </div>
+        <button class="submit_btn">Edit Lesson</button>
+      </form>
+      <div class="deleteContainer">
+        <button class="deleteContainer delete_lesson" id="<%=lesson._id%>">
+          Delete
+        </button>
+        <span
+          class="course_id"
+          id="<%=lesson.course_id%>"
+          style="display: none"
+        ></span>
+      </div>
+    </ul>
+  </div>
+</div>

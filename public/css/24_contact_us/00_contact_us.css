@@ -1,0 +1,123 @@
+#contact_us_section {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  background-color: hsl(120, 45%, 93%);
+  background-repeat: repeat;
+  background-size: auto 100%;
+  background-image: url("../../../../Media/SLIT_IMAGES/fainter-background-image.png");
+}
+#contact_us_section .subSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#contact_us_section .subSection .svg_container {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+#contact_us_section .subSection .svg_container svg {
+  width: 100px;
+  height: 100px;
+}
+#contact_us_section .subSection .heading_container {
+  width: auto;
+  padding: 20px 4%;
+  max-width: 50%;
+  min-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact_us_section .subSection .heading_container h2 {
+  width: 100;
+  margin-bottom: 30px;
+  color: hsl(120, 50%, 21%);
+}
+#contact_us_section .subSection .heading_container p {
+  width: auto;
+  line-height: 20px;
+  color: hsl(120, 50%, 21%);
+}
+#contact_us_section .subSection .heading_container .contact_nos {
+  width: auto;
+  display: flex;
+  margin: 25px 0;
+  align-items: center;
+}
+#contact_us_section .subSection .heading_container .contact_nos svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  stroke: hsl(120, 50%, 21%);
+}
+#contact_us_section .subSection .heading_container .contact_nos span {
+  color: hsl(120, 50%, 21%);
+  font-size: 23px;
+}
+#contact_us_section .subSection .cta_container {
+  width: auto;
+}
+#contact_us_section .subSection .cta_container button {
+  width: auto;
+  border: 2px solid hsl(120, 50%, 21%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: hsl(120, 50%, 21%);
+}
+#contact_us_section .subSection .cta_container button:hover {
+  border: 2px solid hsl(120, 85%, 23%);
+  cursor: pointer;
+}
+#contact_us_section .subSection .cta_container button span {
+  width: auto;
+  font-size: 16px;
+  margin-right: 5px;
+  color: hsl(0, 0%, 100%);
+}
+#contact_us_section .subSection .cta_container button:hover span {
+  color: hsl(120, 85%, 61%);
+}
+#contact_us_section .subSection .cta_container button svg {
+  width: 30px;
+  fill: hsl(0, 0%, 100%);
+  height: 30px;
+}
+#contact_us_section .subSection .cta_container button:hover svg {
+  fill: hsl(120, 55%, 61%);
+}
+@media (max-width: 1200px) {
+  #contact_us_section {
+    padding: 50px 20px;
+  }
+  #contact_us_section .subSection .cta_container.desktop_cta_container {
+    display: none !important;
+  }
+  #contact_us_section .subSection .cta_container.mobile_cta_container {
+    display: block !important;
+  }
+  #contact_us_section .subSection .heading_container .contact_nos {
+    width: 100% !important;
+  }
+  #contact_us_section .subSection .heading_container {
+    width: 70%;
+    min-width: 70%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 750px) {
+  #contact_us_section .subSection {
+    flex-direction: column !important;
+  }
+  #contact_us_section .subSection .heading_container {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+}
