@@ -12,15 +12,22 @@ let cookieParser = require("cookie-parser");
 let ejsRender = require("../Slit server/views/module_exports/02_ejsRender");
 
 // MONGODB
-mongoose.connect("mongodb://127.0.0.1:27017/slit_Server", {
-  serverSelectionTimeoutMS: 5000,
-  socketTimeoutMS: 45000,
-});
+mongoose.connect(
+  "mongodb+srv://bonganibgsithole1_db_user:bongani123%21%23%40BG@cluster0.jbqebvd.mongodb.net/?appName=Cluster0",
+  {
+    serverSelectionTimeoutMS: 5000,
+    socketTimeoutMS: 45000,
+  }
+);
 mongoose.connection.on("disconnected", () => {
   console.log("MONGODB disconnected. Reconnecting ...");
-  mongoose.connect("mongodb://127.0.0.1:27017/slit_Server").then(() => {
-    console.log("database reconnected");
-  });
+  mongoose
+    .connect(
+      "mongodb+srv://bonganibgsithole1_db_user:bongani123%21%23%40BG@cluster0.jbqebvd.mongodb.net/?appName=Cluster0"
+    )
+    .then(() => {
+      console.log("database reconnected");
+    });
 });
 let db = mongoose.connection;
 mongoose.set("strictQuery", true);
@@ -35,7 +42,8 @@ app.use(
     saveUninitialized: false,
     store: MongoStore.create({
       mongooseConnection: db,
-      mongoUrl: "mongodb://127.0.0.1:27017/slit_Server",
+      mongoUrl:
+        "mongodb+srv://bonganibgsithole1_db_user:bongani123%21%23%40BG@cluster0.jbqebvd.mongodb.net/?appName=Cluster0",
       collections: "sessions",
     }),
   })
@@ -81,7 +89,8 @@ app.use(
     saveUninitialized: false,
     store: MongoStore.create({
       mongooseConnection: db,
-      mongoUrl: "mongodb://0.0.0.0:27017/slit_Server",
+      mongoUrl:
+        "mongodb+srv://bonganibgsithole1_db_user:bongani123%21%23%40BG@cluster0.jbqebvd.mongodb.net/?appName=Cluster0",
       collections: "sessions",
     }),
     cookie: {
@@ -2030,6 +2039,5 @@ app.post("/signOut", function (req, res) {
   }
   console.log(req.session.profile);
 });
-app.listen("3300", function () {
-  console.log("Server is connected");
-});
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
